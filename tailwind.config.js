@@ -10,6 +10,7 @@ module.exports = {
 	
   plugins: [
 	  require('tailwind-scrollbar-hide'),
-	  require('tailwind-hamburgers')
+	  require('tailwind-hamburgers'),
+    require('tailwindcss-border-gradient-radius'),
   ],
 }

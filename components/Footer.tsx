@@ -1,8 +1,9 @@
 import { NextComponentType } from "next"
 import Image from "next/image";
 import { FaFacebookF,FaTwitter, FaGoogle, FaLinkedin, FaPhoneAlt, FaInstagram } from "react-icons/fa";
-// import { AiFillInstagram } from "react-icons/ai";
 import { MdEmail, MdMail } from "react-icons/md";
+import Link from "next/link"
+
 const Footer: NextComponentType = () => {
   return (
    	<div className="w-full flex flex-col">
@@ -36,23 +37,23 @@ const Footer: NextComponentType = () => {
 				</ul>
 			</div>
 		</div>
-		<div className="w-full grid grid-cols-1 md:grid-cols-2 p-4"> 
+		<div className="w-full grid grid-cols-1 md:grid-cols-2 p-2"> 
 			<div className="w-full flex items-center justify-center font-semibold text-center pt-4 md:pt-0">
 				<p>Get connected with us on social networks:</p>
 			</div>
 			<div className="w-full flex items-center justify-center pt-4 md:pt-0">
 				<ul className="flex items-center text-emerald-600 space-x-4">
-					<li><FaFacebookF/></li>
-					<li><FaTwitter/></li>
-					<li><FaGoogle/></li>
-					<li><FaLinkedin/></li>
-					<li><FaInstagram/></li>
+					<Link href="https://www.facebook.com/saptkrishi"><li className="hover:cursor-pointer"><FaFacebookF/></li></Link>
+					<Link href="https://twitter.com/saptkrishi?lang=en"><li className="hover:cursor-pointer"><FaTwitter/></li></Link>
+					<Link href="https://www.google.com/search?q=saptkrishi&oq=saptkrishi&aqs=chrome..69i57j46i39i175i199i275j35i39j69i60l4.3752j0j7&sourceid=chrome&ie=UTF-8"><li className="hover:cursor-pointer"><FaGoogle/></li></Link>
+					<Link href="https://www.linkedin.com/company/saptkrishi/?originalSubdomain=in"><li className="hover:cursor-pointer"><FaLinkedin/></li></Link>
+					<Link href="https://www.instagram.com/saptkrishi/?hl=en"><li className="hover:cursor-pointer"><FaInstagram/></li></Link>
 				</ul>
 			</div>
 		</div>
 		<div className="w-full flex items-center justify-center">
-			<div className="w-full flex items-center justify-center bg-gray-300 p-4">
-				<p className="text-sm text-slate-200">Copyright © 2022 All rights reserved | SaptKrishi Scientific Pvt. Ltd. | Terms and conditions</p>
+			<div className="w-full flex items-center justify-center bg-gray-500 p-2">
+				<p className="text-[12px] text-center text-slate-200">Copyright © 2022 All rights reserved | SaptKrishi Scientific Pvt. Ltd. | Terms and conditions</p>
 			</div>
 		</div>
 	</div>
