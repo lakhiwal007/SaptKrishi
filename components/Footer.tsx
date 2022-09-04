@@ -23,8 +23,8 @@ const Footer: NextComponentType = () => {
 			<div className="w-full h-full flex flex-col justify-start text-center p-4">
 				<h2  className="text-lg font-bold uppercase underline decoration-2 decoration-slate-200 underline-offset-8 pb-4">Quick Links</h2>
 				<ul>
-					<li>Team</li>
-					<li>Contact Us</li>
+					<li><a href="team/">Team</a></li>
+					<li> <a href="contact/">Contact Us</a> </li>
 					<li>Developer</li>
 				</ul>
 			</div>

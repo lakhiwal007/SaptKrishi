@@ -58,7 +58,7 @@ const PreservatorTraders: NextComponentType = () => {
 							<p className="text-green-700 text-xl mb-2">
 								<HiChip />
 							</p>
-							<p className="text-green-700 mb-2 text-center">10000</p>
+							<p className="text-green-700 mb-2 text-center">Intelligent</p>
 							<p className="text-center">Self-Adaptable</p>
 						</li>
 					</ul>
