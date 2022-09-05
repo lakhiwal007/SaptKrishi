@@ -1,9 +1,33 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { NextPage } from "next";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import { app, database } from "../firebaseConfig";
+import { addDoc, collection } from "firebase/firestore";
 
 const contact: NextPage = () => {
+    const [inputData, setInputData] = useState({});
+    const collectionRef = collection(database, "Queries");
+    
+	const handleInput = (event) => {
+		let newInput = { [event.target.name]: event.target.value };
+		setInputData({ ...inputData, ...newInput })
+	};
+    const handleSubmit = () => {
+		addDoc(collectionRef, {
+			name: inputData.Name,
+			email: inputData.Email,
+			subject: inputData.Subject,
+			message: inputData.Message,
+		})
+			.then(() => {
+				alert("Query added!")
+			})
+			.catch((err) => {
+				alert(err.message);
+			})
+		
+	};
 	return (
 		<div>
 			<NavBar />
@@ -20,9 +44,11 @@ const contact: NextPage = () => {
 						</label>
 						<input
 							type="text"
+                            name="Name"
 							className="form-control"
 							id="formGroupExampleInput"
 							placeholder="Name"
+                            onChange={(event) => handleInput(event)}
 						/>
 					</div>
 					<div className="mb-3">
@@ -31,9 +57,11 @@ const contact: NextPage = () => {
 						</label>
 						<input
 							type="email"
+                            name="Email"
 							className="form-control"
 							id="formGroupExampleInput2"
 							placeholder="example@email.com"
+                            onChange={(event) => handleInput(event)}
 						/>
 					</div>
 
@@ -43,9 +71,11 @@ const contact: NextPage = () => {
 						</label>
 						<input
 							type="text"
+                            name="Subject"
 							className="form-control"
 							id="formGroupExampleInput4"
 							placeholder="subject"
+                            onChange={(event) => handleInput(event)}
 						/>
 					</div>
 					<div className="mb-3">
@@ -53,16 +83,18 @@ const contact: NextPage = () => {
 							Message
 						</label>
 						<textarea
+                            name="Message"
 							class="form-control"
 							id="exampleFormControlTextarea1"
 							rows="3"
+                            onChange={(event) => handleInput(event)}
 						></textarea>
 					</div>
 
 					<div>
 						<button
 							className="btn btn-success rounded-full"
-							// onClick={() => booking()}
+                            onClick={handleSubmit}
 						>
 							Submit
 						</button>

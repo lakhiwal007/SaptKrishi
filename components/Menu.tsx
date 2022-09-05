@@ -17,6 +17,11 @@ const Menu: NextComponentType = ({isShow}:IProps) => {
 							Home
 						</li>
 					</Link>
+                    <Link href="products/">
+						<li className="p-[15px] hover:cursor-pointer rounded-full hover:bg-emerald-500 hover:text-white">
+							Products
+						</li>
+					</Link>
 					<Link href="about/">
 						<li className="p-[15px] hover:cursor-pointer rounded-full hover:bg-emerald-500 hover:text-white">
 							About

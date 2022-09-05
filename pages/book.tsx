@@ -1,14 +1,38 @@
 // import { useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NextPage } from "next";
 import NavBar from "../components/NavBar";
 import Image from "next/image";
 import Footer from "../components/Footer";
-// import { config } from '../config/config'
-import helper, { IDataDoc } from "../components/helper";
+import { app, database } from "../firebaseConfig";
+import { addDoc, collection } from "firebase/firestore";
 
 const book: NextPage = () => {
-	const [data, setData] = useState<IDataDoc[]>([]);
+	const [inputData, setInputData] = useState({});
+    const collectionRef = collection(database, "Bookings");
+    
+	const handleInput = (event) => {
+		let newInput = { [event.target.name]: event.target.value };
+		setInputData({ ...inputData, ...newInput })
+	};
+    const handleSubmit = () => {
+		addDoc(collectionRef, {
+			full_name: inputData.FullName,
+			email: inputData.Email,
+			mobile_no: inputData.MobileNo,
+			state: inputData.State,
+            city: inputData.City,
+            quantity: inputData.Quantity,
+		})
+			.then(() => {
+				alert("Booking added!")
+			})
+			.catch((err) => {
+				alert(err.message);
+			})
+		
+	};
+
 	return (
 		<div className="relative">
 			<NavBar />
@@ -42,9 +66,11 @@ const book: NextPage = () => {
 								</label>
 								<input
 									type="text"
+                                    name="FullName"
 									className="form-control"
 									id="formGroupExampleInput"
 									placeholder="Name"
+                                    onChange={(event) => handleInput(event)}
 								/>
 							</div>
 							<div className="mb-3">
@@ -53,9 +79,11 @@ const book: NextPage = () => {
 								</label>
 								<input
 									type="email"
+                                    name="Email"
 									className="form-control"
 									id="formGroupExampleInput2"
 									placeholder="example@email.com"
+                                    onChange={(event) => handleInput(event)}
 								/>
 							</div>
 							<div className="mb-3">
@@ -64,9 +92,11 @@ const book: NextPage = () => {
 								</label>
 								<input
 									type="telephone"
+                                    name="MobileNo"
 									className="form-control"
 									id="formGroupExampleInput3"
 									placeholder="1234567890"
+                                    onChange={(event) => handleInput(event)}
 								/>
 							</div>
 							<div className="mb-3">
@@ -75,9 +105,11 @@ const book: NextPage = () => {
 								</label>
 								<input
 									type="text"
+                                    name="State"
 									className="form-control"
 									id="formGroupExampleInput4"
 									placeholder="state"
+                                    onChange={(event) => handleInput(event)}
 								/>
 							</div>
 							<div className="mb-3">
@@ -86,9 +118,11 @@ const book: NextPage = () => {
 								</label>
 								<input
 									type="text"
+                                    name="City"
 									className="form-control"
 									id="formGroupExampleInput5"
 									placeholder="city"
+                                    onChange={(event) => handleInput(event)}
 								/>
 							</div>
 							<div className="mb-3">
@@ -97,15 +131,17 @@ const book: NextPage = () => {
 								</label>
 								<input
 									type="text"
+                                    name="Quantity"
 									className="form-control"
 									id="formGroupExampleInput6"
 									placeholder="0"
+                                    onChange={(event) => handleInput(event)}
 								/>
 							</div>
 							<div>
 								<button
 									className="btn btn-success rounded-full"
-									onClick={() => booking()}
+									onClick={handleSubmit}
 								>
 									Book Now
 								</button>
