@@ -39,12 +39,12 @@ const NavBar: NextComponentType = () => {
 							Brochure
 						</a>
 						<ul className="dropdown-menu">
-							<li><a className="dropdown-item" href="#">English</a></li>
-							<li><a className="dropdown-item" href="#">Hindi</a></li>
-							<li><a className="dropdown-item" href="#">Odiya</a></li>
-							<li><a className="dropdown-item" href="#">Malayalam</a></li>
-							<li><a className="dropdown-item" href="#">Tamil</a></li>
-							<li><a className="dropdown-item" href="#">Marathi</a></li>
+							<li><a className="dropdown-item" target="_blank" href="https://firebasestorage.googleapis.com/v0/b/saptkrishi-8eb12.appspot.com/o/S_eng.jpg?alt=media&token=f4559adc-799e-4352-8b7a-a45eed634aa0">English</a></li>
+							<li><a className="dropdown-item" target="_blank" href="https://firebasestorage.googleapis.com/v0/b/saptkrishi-8eb12.appspot.com/o/sabji%20kothi%20HINDI.jpg?alt=media&token=501c521f-6df6-4375-bf2a-a1e8aed7d8a0">Hindi</a></li>
+							<li><a className="dropdown-item" target="_blank" href="https://firebasestorage.googleapis.com/v0/b/saptkrishi-8eb12.appspot.com/o/sabji%20kothi%20-%20ODIYA.jpg?alt=media&token=0fcd75a7-ac89-469d-87cc-3695e4ea03a1">Odiya</a></li>
+							<li><a className="dropdown-item" target="_blank" href="https://firebasestorage.googleapis.com/v0/b/saptkrishi-8eb12.appspot.com/o/sabji%20kothi%20-Malayalam.jpg?alt=media&token=3383c388-b41b-4b74-b715-3b3656b32554">Malayalam</a></li>
+							<li><a className="dropdown-item" target="_blank" href="https://firebasestorage.googleapis.com/v0/b/saptkrishi-8eb12.appspot.com/o/Sabjikothi%20-%20Tamil.jpg?alt=media&token=f7dfd715-04e6-4102-a720-dd272f7fc35a">Tamil</a></li>
+							<li><a className="dropdown-item" target="_blank" href="https://firebasestorage.googleapis.com/v0/b/saptkrishi-8eb12.appspot.com/o/sabji%20kothi%20Marathi.jpg?alt=media&token=84c350ff-e514-4d85-8ba5-db1c0e089e3e">Marathi</a></li>
 						</ul>
 					</li>
 				</ul>
