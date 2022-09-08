@@ -4,8 +4,17 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import { app, database } from "../firebaseConfig";
 import { addDoc, collection } from "firebase/firestore";
+import { useForm } from "react-hook-form";
+
+type Inputs = {
+  Name: string,
+  Email: string,
+  Subject: number,
+  Message: string,
+};
 
 const contact: NextPage = () => {
+	const { register, handleSubmit, formState: { errors } } = useForm<Inputs>();
     const [inputData, setInputData] = useState({});
     const collectionRef = collection(database, "Queries");
     
@@ -13,7 +22,7 @@ const contact: NextPage = () => {
 		let newInput = { [event.target.name]: event.target.value };
 		setInputData({ ...inputData, ...newInput })
 	};
-    const handleSubmit = () => {
+    const onSubmit = () => {
 		addDoc(collectionRef, {
 			name: inputData.Name,
 			email: inputData.Email,
@@ -31,7 +40,8 @@ const contact: NextPage = () => {
 	return (
 		<div>
 			<NavBar />
-            <div className="w-full mih-h-screen flex flex-col items-center justify-center mt-8 p-4">
+            <form onSubmit={handleSubmit(onSubmit)}>
+                <div className="w-full mih-h-screen flex flex-col items-center justify-center mt-8 p-4">
             <h1 className="text-4xl mb-8">Find on Google Map</h1>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3570.1451954187555!2d80.22859511467087!3d26.515454383300344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39930458fb4b03cb%3A0xd3d50448218c5e30!2sSAPTKRISHI!5e0!3m2!1sen!2sin!4v1662316629702!5m2!1sen!2sin" width="300" height="300" className="w-full md:w-1/2" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
@@ -48,8 +58,11 @@ const contact: NextPage = () => {
 							className="form-control"
 							id="formGroupExampleInput"
 							placeholder="Name"
+                            {...register("Name", { required: true })}
+                            
                             onChange={(event) => handleInput(event)}
 						/>
+                        {errors.Name && <p className="text-sm bg-red-300 text-red-600 p-2 rounded">Enter your name</p>}
 					</div>
 					<div className="mb-3">
 						<label for="formGroupExampleInput2" className="form-label">
@@ -61,8 +74,10 @@ const contact: NextPage = () => {
 							className="form-control"
 							id="formGroupExampleInput2"
 							placeholder="example@email.com"
+                            {...register("Email", { required: true })}
                             onChange={(event) => handleInput(event)}
 						/>
+                        {errors.Email && <p className="text-sm bg-red-300 text-red-600 p-2 rounded">Enter your email address</p>}
 					</div>
 
 					<div className="mb-3">
@@ -75,8 +90,10 @@ const contact: NextPage = () => {
 							className="form-control"
 							id="formGroupExampleInput4"
 							placeholder="subject"
+                            {...register("Subject", { required: true })}
                             onChange={(event) => handleInput(event)}
 						/>
+                        {errors.Subject && <p className="text-sm bg-red-300 text-red-600 p-2 rounded">Enter subject</p>}
 					</div>
 					<div className="mb-3">
 						<label for="exampleFormControlTextarea1" class="form-label">
@@ -87,20 +104,23 @@ const contact: NextPage = () => {
 							class="form-control"
 							id="exampleFormControlTextarea1"
 							rows="3"
+                            
                             onChange={(event) => handleInput(event)}
 						></textarea>
+                        
 					</div>
 
 					<div>
 						<button
-							className="btn btn-success rounded-full"
-                            onClick={handleSubmit}
+							className="btn btn-outline-success rounded-full"
+                            type="submit"
 						>
 							Submit
 						</button>
 					</div>
 				</div>
 			</div>
+            </form>
 			<Footer />
 		</div>
 	);

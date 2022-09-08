@@ -13,7 +13,6 @@ const Home: NextPage = () => {
   return (
    	<div className="w-full min-h-screen p-0 m-0">
 		<NavBar/>
-		
 		<Intro/>
 		<Feature/>
 		<Products/>

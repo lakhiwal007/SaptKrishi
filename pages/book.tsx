@@ -1,4 +1,3 @@
-// import { useNavigate } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import { NextPage } from "next";
 import NavBar from "../components/NavBar";
@@ -6,8 +5,18 @@ import Image from "next/image";
 import Footer from "../components/Footer";
 import { app, database } from "../firebaseConfig";
 import { addDoc, collection } from "firebase/firestore";
+import { useForm } from "react-hook-form";
 
+type Inputs = {
+  FullName: string,
+  Email: string,
+  MobileNo: number,
+  State: string,
+  City: string,
+  Quantity: number,
+};
 const book: NextPage = () => {
+	const { register, handleSubmit, formState: { errors } } = useForm<Inputs>();
 	const [inputData, setInputData] = useState({});
     const collectionRef = collection(database, "Bookings");
     
@@ -15,7 +24,7 @@ const book: NextPage = () => {
 		let newInput = { [event.target.name]: event.target.value };
 		setInputData({ ...inputData, ...newInput })
 	};
-    const handleSubmit = () => {
+    const onSubmit = () => {
 		addDoc(collectionRef, {
 			full_name: inputData.FullName,
 			email: inputData.Email,
@@ -36,8 +45,8 @@ const book: NextPage = () => {
 	return (
 		<div className="relative">
 			<NavBar />
-
-			<div className="w-full mih-h-screen flex justify-center">
+				<form onSubmit={handleSubmit(onSubmit)}>
+					<div className="w-full mih-h-screen flex justify-center">
 				<div className="w-full mih-h-screen grid grid-cols-1 lg:grid-cols-2">
 					<div className="w-full mih-h-screen flex justify-center">
 						<div className="flex-cols items-center content-center p-16">
@@ -70,8 +79,10 @@ const book: NextPage = () => {
 									className="form-control"
 									id="formGroupExampleInput"
 									placeholder="Name"
+									{...register("FullName", { required: true, maxLength: 50 })}
                                     onChange={(event) => handleInput(event)}
 								/>
+								{errors.FullName && <p className="text-sm bg-red-300 text-red-600 p-2 rounded">Enter your name</p>}
 							</div>
 							<div className="mb-3">
 								<label for="formGroupExampleInput2" className="form-label">
@@ -83,34 +94,61 @@ const book: NextPage = () => {
 									className="form-control"
 									id="formGroupExampleInput2"
 									placeholder="example@email.com"
+									{...register("Email", { required: true, maxLength: 50})}
                                     onChange={(event) => handleInput(event)}
 								/>
+								{errors.Email && <p className="text-sm bg-red-300 text-red-600 p-2 rounded">Enter valid email address</p>}
 							</div>
 							<div className="mb-3">
 								<label for="formGroupExampleInput3" className="form-label">
 									Mob. No.
 								</label>
 								<input
-									type="telephone"
+									type="tel"
                                     name="MobileNo"
 									className="form-control"
 									id="formGroupExampleInput3"
 									placeholder="1234567890"
+									{...register("MobileNo", { required: true, minLength:10, pattern:/^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$/})}
                                     onChange={(event) => handleInput(event)}
 								/>
+								{errors.MobileNo && <p className="text-sm bg-red-300 text-red-600 p-2 rounded">Enter valid mobile number</p>}
 							</div>
 							<div className="mb-3">
-								<label for="formGroupExampleInput4" className="form-label">
-									State
-								</label>
-								<input
-									type="text"
-                                    name="State"
-									className="form-control"
-									id="formGroupExampleInput4"
-									placeholder="state"
-                                    onChange={(event) => handleInput(event)}
-								/>
+								<label for="exampleFormControlSelect1">Select State</label>
+								<select className="form-control" name="State" id="exampleFormControlSelect1"
+								{...register("State", { required: true })} onChange={(event) => handleInput(event)}>
+								<option>Andhra Pradesh</option>
+								<option>Andaman and Nicobar Islands</option>
+								<option>Arunachal Pradesh</option>
+								<option>Assam</option>
+								<option>Bihar</option>
+								<option>Chhattisgarh</option>
+								<option>Delhi</option>
+								<option>Goa</option>
+								<option>Gujarat</option>
+								<option>Haryana</option>
+								<option>Himachal Pradesh</option>
+								<option>Jammu and Kashmir</option>
+								<option>Jharkhand</option>
+								<option>Karnataka</option>
+								<option>Kerala</option>
+								<option>Madhya Pradesh</option>
+								<option>Maharashtra</option>
+								<option>Manipur</option>
+								<option>Meghalaya</option>
+								<option>Mizoram</option>
+								<option>Nagaland</option>
+								<option>Odisha</option>
+								<option>Rajasthan</option>
+								<option>Sikkim</option>
+								<option>Tamil Nadu</option>
+								<option>Telangana</option>
+								<option>Tripura</option>
+								<option>Uttar Pradesh</option>
+								<option>Uttarakhand</option>
+								<option>West Bengal</option>
+								</select>
 							</div>
 							<div className="mb-3">
 								<label for="formGroupExampleInput5" className="form-label">
@@ -122,26 +160,30 @@ const book: NextPage = () => {
 									className="form-control"
 									id="formGroupExampleInput5"
 									placeholder="city"
+									{...register("City", { required: true })}
                                     onChange={(event) => handleInput(event)}
 								/>
+								{errors.City && <p className="text-sm bg-red-300 text-red-600 p-2 rounded">Enter city name</p>}
 							</div>
 							<div className="mb-3">
 								<label for="formGroupExampleInput6" className="form-label">
 									Quantity
 								</label>
 								<input
-									type="text"
+									type="number"
                                     name="Quantity"
 									className="form-control"
 									id="formGroupExampleInput6"
-									placeholder="0"
+									placeholder="1"
+									{...register("Quantity", { required: true, min:1 })}
                                     onChange={(event) => handleInput(event)}
 								/>
+								{errors.Quantity && <p className="text-sm bg-red-300 text-red-600 p-2 rounded">Enter valid quantity</p>}
 							</div>
 							<div>
 								<button
-									className="btn btn-success rounded-full"
-									onClick={handleSubmit}
+									type="submit"
+									className="btn btn-outline-success rounded-full "
 								>
 									Book Now
 								</button>
@@ -150,6 +192,7 @@ const book: NextPage = () => {
 					</div>
 				</div>
 			</div>
+				</form>
 			<Footer />
 		</div>
 	);
