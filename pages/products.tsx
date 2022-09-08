@@ -4,8 +4,7 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import StorageFarmer from '../components/Product/StorageFarmer';
 import PreservatorTraders from '../components/Product/PreservatorTraders';
-import Technology from '../components/Product/Technology';
-import Preservator from '../components/Preservator';
+import Preservator from '../components/Product/Preservator';
 
 const products: NextPage = () => {
   return (
@@ -15,7 +14,7 @@ const products: NextPage = () => {
             <StorageFarmer/>
             <PreservatorTraders/>
             <Preservator/>
-            <Technology/>
+            
         </div>
         <Footer />
     </div>

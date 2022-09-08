@@ -6,7 +6,7 @@ import Products from '../components/Products'
 import Supporters from '../components/Supporters'
 import SocialMedia from '../components/SocialMedia'
 import Feature from '../components/Feature'
-
+import Technology from '../components/Product/Technology';
 
 const Home: NextPage = () => {
 	
@@ -16,6 +16,7 @@ const Home: NextPage = () => {
 		<Intro/>
 		<Feature/>
 		<Products/>
+        <Technology/>
 		<SocialMedia/>
 		<Supporters/>
 		<Footer/>

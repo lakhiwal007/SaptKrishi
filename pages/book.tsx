@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { NextPage } from "next";
+import { useRouter } from "next/router"
 import NavBar from "../components/NavBar";
 import Image from "next/image";
 import Footer from "../components/Footer";
@@ -8,6 +9,7 @@ import { addDoc, collection } from "firebase/firestore";
 import { useForm } from "react-hook-form";
 
 type Inputs = {
+  ProductName: string,
   FullName: string,
   Email: string,
   MobileNo: number,
@@ -15,7 +17,13 @@ type Inputs = {
   City: string,
   Quantity: number,
 };
-const book: NextPage = () => {
+
+
+
+const book: NextPage = ({productsList}:Array<string>) => {
+    const router = useRouter();
+    const {query: { name },} = router;
+    const productName = productsList.find(item=> item.name === name)
 	const { register, handleSubmit, formState: { errors } } = useForm<Inputs>();
 	const [inputData, setInputData] = useState({});
     const collectionRef = collection(database, "Bookings");
@@ -26,6 +34,7 @@ const book: NextPage = () => {
 	};
     const onSubmit = () => {
 		addDoc(collectionRef, {
+            product_name: inputData.ProductName,
 			full_name: inputData.FullName,
 			email: inputData.Email,
 			mobile_no: inputData.MobileNo,
@@ -52,15 +61,15 @@ const book: NextPage = () => {
 						<div className="flex-cols items-center content-center p-16">
 							<div className="content-center items-center  justify-center">
 								<h1 className="flex v-screen items-center justify-center font-bold text-5xl">
-									Booking Form
+									{productName? productName.name : 'Thela SabjiKothi'} Booking Form 
 								</h1>
 							</div>
-							<div className="w-full flex flex-cols items-center">
+							<div className="w-full flex flex-cols items-center mt-4">
 								<div>
 									<Image
-										src="/../public/src/Thela-and-Box3D.png"
-										width={800}
-										height={700}
+										src={productName?productName.imgURL : '/../public/src/Thela-and-Box3D.png'}
+										width={650}
+										height={600}
 										className="flex items-center justify-center rounded"
 									></Image>{" "}
 								</div>
@@ -70,6 +79,23 @@ const book: NextPage = () => {
 					<div className="w-full mih-h-screen flex items-center justify-center">
 						<div className="w-3/4  mih-h-screen bordershadow p-3 mb-5 bg-body rounded">
 							<div className="mb-3">
+								<label for="formGroupExampleInput" className="form-label">
+									Product Name
+								</label>
+								<input
+									type="text"
+                                    name="ProductName"
+                                    value={productName? productName.name : 'Thela SabjiKothi'}
+                                    readOnly
+									className="form-control"
+									id="formGroupExampleInput"
+									placeholder="Name"
+									{...register("ProductName", { required: true, maxLength: 50 })}
+                                    onChange={(event) => handleInput(event)}
+								/>
+								
+							</div>
+                            <div className="mb-3">
 								<label for="formGroupExampleInput" className="form-label">
 									Full Name
 								</label>
@@ -184,6 +210,7 @@ const book: NextPage = () => {
 								<button
 									type="submit"
 									className="btn btn-outline-success rounded-full "
+                                    
 								>
 									Book Now
 								</button>
@@ -197,5 +224,14 @@ const book: NextPage = () => {
 		</div>
 	);
 };
+
+book.getInitialProps = () => {
+    const productsList = [{'id': 1, 'name': 'SabjiKothi Farmer', 'imgURL':"/../public/src/sabjikothi-farmer-web-min.png"},
+                          {'id': 2, 'name': 'Preservator', 'imgURL':"/../public/src/preservator.jpg"},
+                          {'id': 3, 'name': 'Preservator Trader', 'imgURL':"/../public/src/preservator-trader-web-min.jpg"},
+                          {'id': 4, 'name': 'Three Wheeler SabjiKothi', 'imgURL':"/../public/src/threeWheeler.png"},
+                          {'id': 5, 'name': 'E-Cart', 'imgURL':"/../public/src/ecart.PNG"}]
+  return { productsList}
+}
 
 export default book;
