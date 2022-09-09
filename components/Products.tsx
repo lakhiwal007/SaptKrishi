@@ -34,11 +34,11 @@ const Products: NextPage = () => {
 				</div>
 				<div className="w-[350px] h-[350px] relative shadow-2xl rounded m-auto mt-4 group">
 					<Image
-						src="/../public/src/threeWheeler.png"
+						src="/../public/src/threeWheelCart.JPG"
 						layout="fill"
 						className="rounded"
 					></Image>
-					<KnowMore  name={"Three Wheeler SabjiKothi"}/>
+					<KnowMore  name={"Three Wheeler Cart"}/>
 				</div>
 				<div className="w-[350px] h-[350px] relative shadow-2xl rounded m-auto mt-4 group">
 					<Image

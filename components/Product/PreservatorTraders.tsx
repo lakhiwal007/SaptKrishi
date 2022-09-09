@@ -4,6 +4,7 @@ import Image from "next/image";
 import { FaRupeeSign, FaPlug, FaInbox, FaMobileAlt } from "react-icons/fa";
 import { GoGear } from "react-icons/go";
 import { HiChip } from "react-icons/hi";
+import BookNow from '../BookNow';
 
 const PreservatorTraders: NextComponentType = () => {
 	return (
@@ -16,7 +17,7 @@ const PreservatorTraders: NextComponentType = () => {
 					className="rounded object-cover"
 				></Image>
 			</div>
-			<div className="w-full h-full flex items-center justify-center order-2 md:order-1">
+			<div className="w-full h-full flex flex-col items-center justify-center order-2 md:order-1">
 				<div className="w-full flex items-center justify-center">
 					<ul className="w-full gap-8 grid grid-cols-2 lg:grid-cols-3 p-2">
 						<li className="w-full flex flex-col items-center justify-start">
@@ -62,6 +63,9 @@ const PreservatorTraders: NextComponentType = () => {
 							<p className="text-center">Self-Adaptable</p>
 						</li>
 					</ul>
+				</div>
+                <div className="pt-8">
+					<BookNow name={"Preservator Trader"}/>
 				</div>
 			</div>
             

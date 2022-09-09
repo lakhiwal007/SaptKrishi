@@ -25,16 +25,18 @@ const book: NextPage = ({productsList}:Array<string>) => {
     const {query: { name },} = router;
     const productName = productsList.find(item=> item.name === name)
 	const { register, handleSubmit, formState: { errors } } = useForm<Inputs>();
-	const [inputData, setInputData] = useState({});
+	const [inputData, setInputData] = useState();
     const collectionRef = collection(database, "Bookings");
     
 	const handleInput = (event) => {
 		let newInput = { [event.target.name]: event.target.value };
+        
+        // console.log(newInput)
 		setInputData({ ...inputData, ...newInput })
 	};
     const onSubmit = () => {
 		addDoc(collectionRef, {
-            product_name: inputData.ProductName,
+            product_name: productName? productName.name : 'Thela SabjiKothi',
 			full_name: inputData.FullName,
 			email: inputData.Email,
 			mobile_no: inputData.MobileNo,
@@ -54,7 +56,7 @@ const book: NextPage = ({productsList}:Array<string>) => {
 	return (
 		<div className="relative">
 			<NavBar />
-				<form onSubmit={handleSubmit(onSubmit)}>
+				<form method="POST" onSubmit={handleSubmit(onSubmit)}>
 					<div className="w-full mih-h-screen flex justify-center">
 				<div className="w-full mih-h-screen grid grid-cols-1 lg:grid-cols-2">
 					<div className="w-full mih-h-screen flex justify-center">
@@ -89,9 +91,9 @@ const book: NextPage = ({productsList}:Array<string>) => {
                                     readOnly
 									className="form-control"
 									id="formGroupExampleInput"
-									placeholder="Name"
+									placeholder="Product name"
 									{...register("ProductName", { required: true, maxLength: 50 })}
-                                    onChange={(event) => handleInput(event)}
+                                    // onClick={(event) => handleInput(event)}
 								/>
 								
 							</div>
@@ -229,7 +231,7 @@ book.getInitialProps = () => {
     const productsList = [{'id': 1, 'name': 'SabjiKothi Farmer', 'imgURL':"/../public/src/sabjikothi-farmer-web-min.png"},
                           {'id': 2, 'name': 'Preservator', 'imgURL':"/../public/src/preservator.jpg"},
                           {'id': 3, 'name': 'Preservator Trader', 'imgURL':"/../public/src/preservator-trader-web-min.jpg"},
-                          {'id': 4, 'name': 'Three Wheeler SabjiKothi', 'imgURL':"/../public/src/threeWheeler.png"},
+                          {'id': 4, 'name': 'Three Wheeler Cart', 'imgURL':"/../public/src/threeWheelCart.JPG"},
                           {'id': 5, 'name': 'E-Cart', 'imgURL':"/../public/src/ecart.PNG"}]
   return { productsList}
 }
