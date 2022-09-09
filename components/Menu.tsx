@@ -12,36 +12,43 @@ const Menu: NextComponentType = ({isShow}:IProps) => {
 		<div className={`${isShow} w-full min-h-screen items-center justify-center absolute top-20 bg-white z-10`}>
 			<div className="w-full min-h-screen flex items-center justify-center">
 				<ul className=" w-full flex text-4xl flex-col items-center justify-start">
+        
 					<Link href="/">
 						<li className="p-[15px] hover:cursor-pointer rounded-full hover:bg-emerald-500 hover:text-white">
 							Home
 						</li>
 					</Link>
-                    <Link href="products/">
+
+					<Link href="products/">
 						<li className="p-[15px] hover:cursor-pointer rounded-full hover:bg-emerald-500 hover:text-white">
 							Products
 						</li>
 					</Link>
+          
 					<Link href="about/">
 						<li className="p-[15px] hover:cursor-pointer rounded-full hover:bg-emerald-500 hover:text-white">
 							About
 						</li>
 					</Link>
+          
 					<Link href="gallery/">
 						<li className="p-[15px] hover:cursor-pointer rounded-full hover:bg-emerald-500 hover:text-white">
 							Gallery
 						</li>
 					</Link>
+          
 					<Link href="news/">
 						<li className="p-[15px] hover:cursor-pointer rounded-full hover:bg-emerald-500 hover:text-white">
 							News
 						</li>
 					</Link>
+          
 					<Link href="team/">
 						<li className="p-[15px] hover:cursor-pointer rounded-full hover:bg-emerald-500 hover:text-white">
 							Team
 						</li>
 					</Link>
+          
 					<li className=" nav-item dropdown p-[15px] hover:cursor-pointer rounded-full hover:bg-emerald-500 hover:text-white lg:block">
 						<a
 							className="nav-link dropdown-toggle"
