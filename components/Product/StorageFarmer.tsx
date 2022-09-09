@@ -4,6 +4,7 @@ import Image from "next/image";
 import { FaRupeeSign, FaPlug, FaInbox, FaMobileAlt } from "react-icons/fa";
 import { GoGear } from "react-icons/go";
 import { HiChip } from "react-icons/hi";
+import BookNow from '../BookNow';
 
 const StorageFarmer: NextComponentType = () => {
 	return (
@@ -16,7 +17,7 @@ const StorageFarmer: NextComponentType = () => {
 					className="rounded object-cover"
 				></Image>
 			</div>
-			<div className="w-full h-full flex items-center justify-center">
+			<div className="w-full h-full flex flex-col items-center justify-center">
 				<div className="w-full flex items-center justify-center">
 					<ul className="w-full gap-8 grid grid-cols-2 lg:grid-cols-3 p-2">
 						<li className="w-full flex flex-col items-center justify-start">
@@ -55,6 +56,9 @@ const StorageFarmer: NextComponentType = () => {
 							<p className="text-center">Self-Adaptable</p>
 						</li>
 					</ul>
+				</div>
+                <div className="pt-8">
+					<BookNow name={"SabjiKothi Farmer"}/>
 				</div>
 			</div>
 		</div>

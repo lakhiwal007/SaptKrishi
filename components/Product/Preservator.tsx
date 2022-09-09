@@ -1,7 +1,7 @@
 import { NextComponentType } from 'next'
 import React from 'react'
 import Image from "next/image";
-import Link from 'next/link';
+import BookNow from '../BookNow';
 const Preservator: NextComponentType= () => {
   return (
     <div className="w-[80%] h-auto grid grid-cols-1 gap-4 lg:grid-cols-2 rounded bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-gray-200 mt-8 pb-4">
@@ -37,7 +37,7 @@ const Preservator: NextComponentType= () => {
 						</li>
 					</ul>
                     <div className="pt-2 md:pt-4">
-					<Link href="book/"><button className="flex items-center justify-center text-white pt-2 pb-2 pr-4 pl-4 bg-gradient-to-r from-green-500  to-cyan-400 border-0 rounded-full hover:bg-gradient-to-r hover:last:from-green-500  hover:to-cyan-400">Book Now</button></Link>
+					<BookNow name={"Preservator"}/>
 				</div>
 				</div>
 			</div>

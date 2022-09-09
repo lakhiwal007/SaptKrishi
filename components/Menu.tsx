@@ -12,36 +12,43 @@ const Menu: NextComponentType = ({isShow}:IProps) => {
 		<div className={`${isShow} w-full min-h-screen items-center justify-center absolute top-20 bg-white z-10`}>
 			<div className="w-full min-h-screen flex items-center justify-center">
 				<ul className=" w-full flex text-4xl flex-col items-center justify-start">
+        
 					<Link href="/">
 						<li className="p-[15px] hover:cursor-pointer rounded-full hover:bg-emerald-500 hover:text-white">
 							Home
 						</li>
 					</Link>
+
 					<Link href="products/">
 						<li className="p-[15px] hover:cursor-pointer rounded-full hover:bg-emerald-500 hover:text-white">
 							Products
 						</li>
 					</Link>
+          
 					<Link href="about/">
 						<li className="p-[15px] hover:cursor-pointer rounded-full hover:bg-emerald-500 hover:text-white">
 							About
 						</li>
 					</Link>
+          
 					<Link href="gallery/">
 						<li className="p-[15px] hover:cursor-pointer rounded-full hover:bg-emerald-500 hover:text-white">
 							Gallery
 						</li>
 					</Link>
+          
 					<Link href="news/">
 						<li className="p-[15px] hover:cursor-pointer rounded-full hover:bg-emerald-500 hover:text-white">
 							News
 						</li>
 					</Link>
+          
 					<Link href="team/">
 						<li className="p-[15px] hover:cursor-pointer rounded-full hover:bg-emerald-500 hover:text-white">
 							Team
 						</li>
 					</Link>
+          
 					<li className=" nav-item dropdown p-[15px] hover:cursor-pointer rounded-full hover:bg-emerald-500 hover:text-white lg:block">
 						<a
 							className="nav-link dropdown-toggle"
@@ -54,32 +61,32 @@ const Menu: NextComponentType = ({isShow}:IProps) => {
 						</a>
 						<ul className="dropdown-menu">
 							<li>
-								<a className="dropdown-item" href="#">
+								<a className="dropdown-item" target="_blank" href="https://firebasestorage.googleapis.com/v0/b/saptkrishi-8eb12.appspot.com/o/S_eng.jpg?alt=media&token=f4559adc-799e-4352-8b7a-a45eed634aa0">
 									English
 								</a>
 							</li>
 							<li>
-								<a className="dropdown-item" href="#">
+								<a className="dropdown-item" target="_blank" href="https://firebasestorage.googleapis.com/v0/b/saptkrishi-8eb12.appspot.com/o/sabji%20kothi%20HINDI.jpg?alt=media&token=501c521f-6df6-4375-bf2a-a1e8aed7d8a0">
 									Hindi
 								</a>
 							</li>
 							<li>
-								<a className="dropdown-item" href="#">
+								<a className="dropdown-item" target="_blank" href="https://firebasestorage.googleapis.com/v0/b/saptkrishi-8eb12.appspot.com/o/sabji%20kothi%20-%20ODIYA.jpg?alt=media&token=0fcd75a7-ac89-469d-87cc-3695e4ea03a1">
 									Odiya
 								</a>
 							</li>
 							<li>
-								<a className="dropdown-item" href="#">
+								<a className="dropdown-item" target="_blank" href="https://firebasestorage.googleapis.com/v0/b/saptkrishi-8eb12.appspot.com/o/sabji%20kothi%20-Malayalam.jpg?alt=media&token=3383c388-b41b-4b74-b715-3b3656b32554">
 									Malayalam
 								</a>
 							</li>
 							<li>
-								<a className="dropdown-item" href="#">
+								<a className="dropdown-item" target="_blank" href="https://firebasestorage.googleapis.com/v0/b/saptkrishi-8eb12.appspot.com/o/Sabjikothi%20-%20Tamil.jpg?alt=media&token=f7dfd715-04e6-4102-a720-dd272f7fc35a">
 									Tamil
 								</a>
 							</li>
 							<li>
-								<a className="dropdown-item" href="#">
+								<a className="dropdown-item" target="_blank" href="https://firebasestorage.googleapis.com/v0/b/saptkrishi-8eb12.appspot.com/o/sabji%20kothi%20Marathi.jpg?alt=media&token=84c350ff-e514-4d85-8ba5-db1c0e089e3e">
 									Marathi
 								</a>
 							</li>

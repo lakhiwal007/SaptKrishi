@@ -2,5 +2,6 @@
 const nextConfig = {
   reactStrictMode: true,
 }
+const withImages = require('next-images')
 
-module.exports = nextConfig
+module.exports = nextConfig, withImages()

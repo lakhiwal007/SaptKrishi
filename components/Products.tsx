@@ -14,7 +14,7 @@ const Products: NextPage = () => {
 						className="rounded"
 					></Image>
 					{/* <KnowMore/> */}
-					<KnowMore/>
+					<KnowMore  name={"SabjiKothi Farmer"} />
 				</div>
 				<div className="w-[350px] h-[350px] relative shadow-2xl rounded m-auto mt-4 group">
 					<Image
@@ -22,7 +22,7 @@ const Products: NextPage = () => {
 						layout="fill"
 						className="rounded"
 					></Image>
-					<KnowMore/>
+					<KnowMore  name={"Preservator"}/>
 				</div>
 				<div className="w-[350px] h-[350px] relative shadow-2xl rounded m-auto mt-4 group">
 					<Image
@@ -30,15 +30,15 @@ const Products: NextPage = () => {
 						layout="fill"
 						className="rounded"
 					></Image>
-					<KnowMore/>
+					<KnowMore  name={"Preservator Trader"}/>
 				</div>
 				<div className="w-[350px] h-[350px] relative shadow-2xl rounded m-auto mt-4 group">
 					<Image
-						src="/../public/src/threeWheeler.png"
+						src="/../public/src/threeWheelCart.JPG"
 						layout="fill"
 						className="rounded"
 					></Image>
-					<KnowMore/>
+					<KnowMore  name={"Three Wheeler Cart"}/>
 				</div>
 				<div className="w-[350px] h-[350px] relative shadow-2xl rounded m-auto mt-4 group">
 					<Image
@@ -46,7 +46,7 @@ const Products: NextPage = () => {
 						layout="fill"
 						className="rounded"
 					></Image>
-					<KnowMore/>
+					<KnowMore  name={"E-Cart"}/>
 				</div>
 			</div>
 		</div>
