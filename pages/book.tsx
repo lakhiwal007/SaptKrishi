@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState,useRef } from "react";
 import { NextPage } from "next";
 import { useRouter } from "next/router"
 import NavBar from "../components/NavBar";
@@ -26,6 +26,7 @@ const book: NextPage = ({productsList}:Array<string>) => {
     const productName = productsList.find(item=> item.name === name)
 	const { register, handleSubmit, formState: { errors } } = useForm<Inputs>();
 	const [inputData, setInputData] = useState();
+    const buttonRef = useRef(null);
     const collectionRef = collection(database, "Bookings");
     
 	const handleInput = (event) => {
@@ -35,6 +36,7 @@ const book: NextPage = ({productsList}:Array<string>) => {
 		setInputData({ ...inputData, ...newInput })
 	};
     const onSubmit = () => {
+        buttonRef.current.disabled = true;
 		addDoc(collectionRef, {
             product_name: productName? productName.name : 'Thela SabjiKothi',
 			full_name: inputData.FullName,
@@ -212,6 +214,7 @@ const book: NextPage = ({productsList}:Array<string>) => {
 								<button
 									type="submit"
 									className="btn btn-outline-success rounded-full "
+                                    ref={buttonRef}
                                     
 								>
 									Book Now
