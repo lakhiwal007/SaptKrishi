@@ -6,7 +6,7 @@ const SharkTank = () => {
 			<div className="w-full row p-4">
                 <h2 className="text-xl p-2 mb-2 border-l-8 border-emerald-600 md:text-4xl">SabjiKothi in Shark Tank</h2>
                 <div className="w-full flex flex-col  items-center justify-center lg:p-8">
-                    <div id="carouselExampleIndicators" className="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div id="carouselExampleIndicators" className="carousel carousel-dark slide border-8 border-green-600 hover:border-blue-600 rounded" data-bs-ride="carousel">
                         <div className="carousel-inner">
                             <div className="carousel-item active">
                             <img src="src/gallery/sharkTank/st1.png" className="d-block w-100" alt="..."/>
