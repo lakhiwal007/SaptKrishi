@@ -5,9 +5,9 @@ import KnowMore from "./KnowMore"
 const Products: NextPage = () => {
 	return (
 		<div className="w-full flex flex-col items-center justify-center mt-8">
-			<h1 className="text-4xl md:text-6xl ">Our Products</h1>
+			<h1 data-aos="fade-down" className="text-4xl md:text-6xl ">Our Products</h1>
 			<div className="w-full flex items-center justify-center flex-wrap p-8 md:p-16">
-				<div className="w-[350px] h-[350px] relative shadow-2xl rounded m-auto mt-4 group">
+				<div data-aos="zoom-out-up" className="w-[350px] h-[350px] relative shadow-2xl rounded m-auto mt-4 group">
 					<Image
 						src="/../public/src/sabjikothi-farmer-web-min.png"
 						layout="fill"
@@ -16,7 +16,7 @@ const Products: NextPage = () => {
 					{/* <KnowMore/> */}
 					<KnowMore  name={"SabjiKothi Farmer"} />
 				</div>
-				<div className="w-[350px] h-[350px] relative shadow-2xl rounded m-auto mt-4 group">
+				<div data-aos="zoom-out-down" className="w-[350px] h-[350px] relative shadow-2xl rounded m-auto mt-4 group">
 					<Image
 						src="/../public/src/preservator.jpg"
 						layout="fill"
@@ -24,7 +24,7 @@ const Products: NextPage = () => {
 					></Image>
 					<KnowMore  name={"Preservator"}/>
 				</div>
-				<div className="w-[350px] h-[350px] relative shadow-2xl rounded m-auto mt-4 group">
+				<div data-aos="zoom-in-up" className="w-[350px] h-[350px] relative shadow-2xl rounded m-auto mt-4 group">
 					<Image
 						src="/../public/src/preservator-trader-web-min.jpg"
 						layout="fill"
@@ -32,7 +32,7 @@ const Products: NextPage = () => {
 					></Image>
 					<KnowMore  name={"Preservator Trader"}/>
 				</div>
-				<div className="w-[350px] h-[350px] relative shadow-2xl rounded m-auto mt-4 group">
+				<div data-aos="zoom-in-down" className="w-[350px] h-[350px] relative shadow-2xl rounded m-auto mt-4 group">
 					<Image
 						src="/../public/src/threeWheelCart.JPG"
 						layout="fill"
@@ -40,7 +40,7 @@ const Products: NextPage = () => {
 					></Image>
 					<KnowMore  name={"Three Wheel Cart"}/>
 				</div>
-                <div className="w-[350px] h-[350px] relative shadow-2xl rounded m-auto mt-4 group">
+                <div data-aos="zoom-out-down" className="w-[350px] h-[350px] relative shadow-2xl rounded m-auto mt-4 group">
 					<Image
 						src="/../public/src/4WheelCart.png"
 						layout="fill"
@@ -48,7 +48,7 @@ const Products: NextPage = () => {
 					></Image>
 					<KnowMore  name={"Four Wheel Cart"}/>
 				</div>
-				<div className="w-[350px] h-[350px] relative shadow-2xl rounded m-auto mt-4 group">
+				<div data-aos="zoom-out-up" className="w-[350px] h-[350px] relative shadow-2xl rounded m-auto mt-4 group">
 					<Image
 						src="/../public/src/ecart.PNG"
 						layout="fill"

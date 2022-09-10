@@ -8,6 +8,7 @@ import SocialMedia from '../components/SocialMedia'
 import Feature from '../components/Feature'
 import Technology from '../components/Product/Technology';
 
+
 const Home: NextPage = () => {
 	
   return (
