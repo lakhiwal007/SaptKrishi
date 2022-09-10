@@ -38,7 +38,15 @@ const Products: NextPage = () => {
 						layout="fill"
 						className="rounded"
 					></Image>
-					<KnowMore  name={"Three Wheeler Cart"}/>
+					<KnowMore  name={"Three Wheel Cart"}/>
+				</div>
+                <div className="w-[350px] h-[350px] relative shadow-2xl rounded m-auto mt-4 group">
+					<Image
+						src="/../public/src/4WheelCart.png"
+						layout="fill"
+						className="rounded"
+					></Image>
+					<KnowMore  name={"Four Wheel Cart"}/>
 				</div>
 				<div className="w-[350px] h-[350px] relative shadow-2xl rounded m-auto mt-4 group">
 					<Image

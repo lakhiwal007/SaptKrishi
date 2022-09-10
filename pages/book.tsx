@@ -38,7 +38,7 @@ const book: NextPage = ({productsList}:Array<string>) => {
     const onSubmit = () => {
         buttonRef.current.disabled = true;
 		addDoc(collectionRef, {
-            product_name: productName? productName.name : 'Thela SabjiKothi',
+            product_name: productName? productName.name : 'Four Wheel Cart',
 			full_name: inputData.FullName,
 			email: inputData.Email,
 			mobile_no: inputData.MobileNo,
@@ -64,14 +64,14 @@ const book: NextPage = ({productsList}:Array<string>) => {
 					<div className="w-full mih-h-screen flex justify-center">
 						<div className="flex-cols items-center content-center p-16">
 							<div className="content-center items-center  justify-center">
-								<h1 className="flex v-screen items-center justify-center font-bold text-5xl">
-									{productName? productName.name : 'Thela SabjiKothi'} Booking Form 
+								<h1 className="flex text-center items-center justify-center font-semibold text-4xl">
+									{productName? productName.name : 'Four Wheel Cart'} Booking Form 
 								</h1>
 							</div>
 							<div className="w-full flex flex-cols items-center mt-4">
 								<div>
 									<Image
-										src={productName?productName.imgURL : '/../public/src/Thela-and-Box3D.png'}
+										src={productName?productName.imgURL : '/../public/src/4WheelCart.png'}
 										width={650}
 										height={600}
 										className="flex items-center justify-center rounded"
@@ -89,7 +89,7 @@ const book: NextPage = ({productsList}:Array<string>) => {
 								<input
 									type="text"
                                     name="ProductName"
-                                    value={productName? productName.name : 'Thela SabjiKothi'}
+                                    value={productName? productName.name : 'Four Wheel Cart'}
                                     readOnly
 									className="form-control"
 									id="formGroupExampleInput"
@@ -234,8 +234,9 @@ book.getInitialProps = () => {
     const productsList = [{'id': 1, 'name': 'SabjiKothi Farmer', 'imgURL':"/../public/src/sabjikothi-farmer-web-min.png"},
                           {'id': 2, 'name': 'Preservator', 'imgURL':"/../public/src/preservator.jpg"},
                           {'id': 3, 'name': 'Preservator Trader', 'imgURL':"/../public/src/preservator-trader-web-min.jpg"},
-                          {'id': 4, 'name': 'Three Wheeler Cart', 'imgURL':"/../public/src/threeWheelCart.JPG"},
-                          {'id': 5, 'name': 'E-Cart', 'imgURL':"/../public/src/ecart.PNG"}]
+                          {'id': 4, 'name': 'Three Wheel Cart', 'imgURL':"/../public/src/threeWheelCart.JPG"},
+						  {'id': 5, 'name': 'Four Wheel Cart', 'imgURL':"/../public/src/4WheelCart.png"},
+                          {'id': 6, 'name': 'E-Cart', 'imgURL':"/../public/src/ecart.PNG"}]
   return { productsList}
 }
 
