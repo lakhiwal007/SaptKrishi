@@ -18,15 +18,18 @@ const about: NextPage = () => {
 				</div>
 
 				{/* Certificates */}
-				<div className="w-[80%] min-h-full flex flex-col items-center justify-center rounded-xl shadow-lg shadow-slate-300 mt-16 p-16 mb-16">
+				<div className="w-[80%] min-h-full flex flex-col items-center justify-center rounded-xl shadow-lg shadow-slate-300 mt-16 p-8 mb-16">
 					<div><h1 className="text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 md:text-6xl">Certificates</h1></div>
 					<div className="w-full flex items-center justify-center mt-16 m-auto">
 						<div className="w-full flex items-center justify-center flex-wrap">
-							<div className=" w-80  m-2 flex items-center justify-center shadow-lg rounded transition ease-in-out duration-500 hover:scale-110 ">
-								<Image src="/../public/src/certificates/certificate1.jpg" width={350} height={450} className="border rounded" alt="..."></Image>
+							<div className=" w-90  m-2 flex items-center justify-center shadow-lg rounded transition ease-in-out duration-500 hover:scale-110 ">
+								<Image src="/../public/src/certificates/certificate1.jpg" width={450} height={550} className="border rounded" alt="..."></Image>
 							</div >
-							<div className=" w-80  m-2 flex items-center justify-center shadow-lg rounded transition ease-in-out duration-500 hover:scale-110">
-								<Image src="/../public/src/certificates/certificate2.jpg" width={350} height={450} className="border rounded" alt="..."></Image>
+							<div className=" w-90  m-2 flex items-center justify-center shadow-lg rounded transition ease-in-out duration-500 hover:scale-110">
+								<Image src="/../public/src/certificates/certificate2.jpg" width={450} height={550} className="border rounded" alt="..."></Image>
+							</div>
+                            <div className=" w-90  m-2 flex items-center justify-center shadow-lg rounded transition ease-in-out duration-500 hover:scale-110">
+								<Image src="/../public/src/certificates/certificate3.jpg" width={450} height={450} className="border rounded" alt="..."></Image>
 							</div>
 						</div>
 					</div>

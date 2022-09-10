@@ -43,11 +43,11 @@ const Footer: NextComponentType = () => {
 			</div>
 			<div className="w-full flex items-center justify-center pt-4 md:pt-0">
 				<ul className="flex items-center text-emerald-600 space-x-4">
-					<Link href="https://www.facebook.com/saptkrishi"><li className="hover:cursor-pointer"><FaFacebookF/></li></Link>
-					<Link href="https://twitter.com/saptkrishi?lang=en"><li className="hover:cursor-pointer"><FaTwitter/></li></Link>
-					<Link href="https://www.google.com/search?q=saptkrishi&oq=saptkrishi&aqs=chrome..69i57j46i39i175i199i275j35i39j69i60l4.3752j0j7&sourceid=chrome&ie=UTF-8"><li className="hover:cursor-pointer"><FaGoogle/></li></Link>
-					<Link href="https://www.linkedin.com/company/saptkrishi/?originalSubdomain=in"><li className="hover:cursor-pointer"><FaLinkedin/></li></Link>
-					<Link href="https://www.instagram.com/saptkrishi/?hl=en"><li className="hover:cursor-pointer"><FaInstagram/></li></Link>
+					<Link href="https://www.facebook.com/saptkrishi"><li className="hover:cursor-pointer"><FaFacebookF className="text-2xl"/></li></Link>
+					<Link href="https://twitter.com/saptkrishi?lang=en"><li className="hover:cursor-pointer"><FaTwitter className="text-2xl"/></li></Link>
+					<Link href="https://www.google.com/search?q=saptkrishi&oq=saptkrishi&aqs=chrome..69i57j46i39i175i199i275j35i39j69i60l4.3752j0j7&sourceid=chrome&ie=UTF-8"><li className="hover:cursor-pointer"><FaGoogle className="text-2xl"/></li></Link>
+					<Link href="https://www.linkedin.com/company/saptkrishi/?originalSubdomain=in"><li className="hover:cursor-pointer"><FaLinkedin className="text-2xl"/></li></Link>
+					<Link href="https://www.instagram.com/saptkrishi/?hl=en"><li className="hover:cursor-pointer"><FaInstagram className="text-2xl"/></li></Link>
 				</ul>
 			</div>
 		</div>
