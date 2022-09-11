@@ -9,9 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.7.0",
     "aos": "^2.3.4",
     "bootstrap": "^5.2.0",
+    "emailjs-com": "^3.2.0",
     "firebase": "^9.9.4",
+    "formik": "^2.2.9",
     "framer-motion": "^7.2.1",
     "hamburger-react": "^2.5.0",
     "next": "12.2.0",
@@ -27,7 +30,8 @@
     "react-twitter-embed": "^4.0.4",
     "tailwind-hamburgers": "^1.2.2",
     "tailwind-scrollbar-hide": "^1.1.7",
-    "tailwindcss-border-gradient-radius": "^3.0.1"
+    "tailwindcss-border-gradient-radius": "^3.0.1",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@types/node": "18.0.1",

@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import { app, database } from "../firebaseConfig";
 import { addDoc, collection } from "firebase/firestore";
 import { useForm } from "react-hook-form";
+import emailjs from '@emailjs/browser';
 
 type Inputs = {
   ProductName: string,
@@ -37,6 +38,20 @@ const book: NextPage = ({productsList}:Array<string>) => {
 	};
     const onSubmit = () => {
         buttonRef.current.disabled = true;
+        
+        emailjs.send(
+        "service_dp209r1",
+        "h8#9dy$w328dsu",
+        inputData, 
+        "ZB6XvniJN6hlmr8CM"
+        )
+        .then((response) => {
+            console.log('SUCCESS!', response.status, response.text);
+        })
+        .catch((err) => {
+            console.log('FAILED...', err);
+        });
+        
 		addDoc(collectionRef, {
             product_name: productName? productName.name : 'Four Wheel Cart',
 			full_name: inputData.FullName,
@@ -52,13 +67,15 @@ const book: NextPage = ({productsList}:Array<string>) => {
 			.catch((err) => {
 				alert(err.message);
 			})
+        
+        
 		
 	};
 
 	return (
 		<div className="relative">
 			<NavBar />
-				<form method="POST" onSubmit={handleSubmit(onSubmit)}>
+				<form method="POST" onSubmit={handleSubmit(onSubmit)} autoComplete="off">
 					<div className="w-full mih-h-screen flex justify-center">
 				<div className="w-full mih-h-screen grid grid-cols-1 lg:grid-cols-2">
 					<div className="w-full mih-h-screen flex justify-center">
