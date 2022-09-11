@@ -26,7 +26,8 @@ const book: NextPage = ({productsList}:Array<string>) => {
     const {query: { name },} = router;
     const productName = productsList.find(item=> item.name === name)
 	const { register, handleSubmit, formState: { errors } } = useForm<Inputs>();
-	const [inputData, setInputData] = useState();
+	const [inputData, setInputData] = useState<Inputs>();
+	
     const buttonRef = useRef(null);
     const collectionRef = collection(database, "Bookings");
     
@@ -36,22 +37,9 @@ const book: NextPage = ({productsList}:Array<string>) => {
         // console.log(newInput)
 		setInputData({ ...inputData, ...newInput })
 	};
-    const onSubmit = () => {
+    const onSubmit = (data) => {
         buttonRef.current.disabled = true;
-        
-        emailjs.send(
-        "service_dp209r1",
-        "h8#9dy$w328dsu",
-        inputData, 
-        "ZB6XvniJN6hlmr8CM"
-        )
-        .then((response) => {
-            console.log('SUCCESS!', response.status, response.text);
-        })
-        .catch((err) => {
-            console.log('FAILED...', err);
-        });
-        
+        // console.log(data)
 		addDoc(collectionRef, {
             product_name: productName? productName.name : 'Four Wheel Cart',
 			full_name: inputData.FullName,
@@ -63,10 +51,22 @@ const book: NextPage = ({productsList}:Array<string>) => {
 		})
 			.then(() => {
 				alert("Booking added!")
-			})
-			.catch((err) => {
-				alert(err.message);
-			})
+				emailjs.send(
+				"service_dp209r1",
+				"h8#9dy$w328dsu",
+				data, 
+				"ZB6XvniJN6hlmr8CM"
+				)
+				.then((response) => {
+					console.log('SUCCESS!', response.status, response.text);
+				})
+				.catch((err) => {
+					console.log('FAILED...', err);
+				});
+					})
+					.catch((err) => {
+						alert(err.message);
+					})
         
         
 		
