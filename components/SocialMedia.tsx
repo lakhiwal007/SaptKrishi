@@ -1,8 +1,8 @@
-import { NextPage } from "next"
+import { NextComponentType } from "next"
 import Iframe from 'react-iframe'
 import { TwitterTimelineEmbed} from 'react-twitter-embed';
 
-const SocialMedia: NextPage = () => {
+const SocialMedia: NextComponentType = () => {
 	return (
 		<div className="w-full flex flex-col items-center justify-center mt-8">
 			<h1 className="text-4xl md:text-6xl text-center p-4"

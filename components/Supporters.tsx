@@ -1,7 +1,7 @@
-import { NextPage } from "next"
+import { NextComponentType } from "next"
 import Image from "next/image"
 
-const Supporters: NextPage = () => {
+const Supporters: NextComponentType = () => {
   return (
    	<div className="w-full flex flex-col items-center justify-center mt-8" >
 		<h1 data-aos="fade-up" className="text-4xl md:text-6xl">Our Supporters</h1>

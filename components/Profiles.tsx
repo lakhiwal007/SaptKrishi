@@ -1,7 +1,7 @@
-import { NextPage } from "next"
+import { NextComponentType } from "next"
 import Profile from "./Profile";
 
-const Profiles: NextPage = () => {
+const Profiles: NextComponentType = () => {
 	return (
 
 		<div className="container">

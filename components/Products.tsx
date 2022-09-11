@@ -1,8 +1,8 @@
-import { NextPage } from "next";
+import { NextComponentType } from "next";
 import Image from "next/image";
 import KnowMore from "./KnowMore"
 
-const Products: NextPage = () => {
+const Products: NextComponentType = () => {
 	return (
 		<div className="w-full flex flex-col items-center justify-center mt-8">
 			<h1 data-aos="fade-down" className="text-4xl md:text-6xl ">Our Products</h1>

@@ -1,8 +1,9 @@
+import { NextComponentType } from "next"
 import React from "react";
 import Image from "next/image"
 import Iframe from 'react-iframe'
 
-const Photos = () => {
+const Photos: NextComponentType = () => {
 	return (
 			<div className="w-full row p-4">
                 <p className="text-4xl p-2 border-l-8 border-emerald-600">Photos</p>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { NextPage } from "next"
+import { NextComponentType } from "next"
 import Image from "next/image"
 import { FaFacebookF, FaTwitter, FaLinkedin } from "react-icons/fa";
 
@@ -12,7 +12,7 @@ type ProfileProps = {
 	designation: string;
 }
 
-const Profile: NextPage = ({imgURL, fbURL, twURL, liURL, name, designation}:ProfileProps) => {
+const Profile: NextComponentType = ({imgURL, fbURL, twURL, liURL, name, designation}:ProfileProps) => {
 	return (
 		<>
 			{/**  <!-- Single Advisor--> **/ }
@@ -22,7 +22,7 @@ const Profile: NextPage = ({imgURL, fbURL, twURL, liURL, name, designation}:Prof
 				<div className="advisor_thumb">
 					<Image src={imgURL} width={300} height={300} className="object-contain" alt="" ></Image>
 					{/** <!-- Social Info--> **/}
-					<div className="social-info"><a href={fbURL}> <FaFacebookF /> </a><a href={twURL}> <FaTwitter /> </a><a href={liURL}> <FaLinkedin /></a></div>
+					<div className="social-info"><a href={fbURL}> <FaFacebookF/> </a><a href={twURL}> <FaTwitter/> </a><a href={liURL}> <FaLinkedin/></a></div>
 				</div>
 				{/** <!-- Team Details--> **/}
 				<div className="single_advisor_details_info">

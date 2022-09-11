@@ -1,8 +1,8 @@
-import { NextPage } from "next"
+import { NextComponentType } from "next"
 import Image from "next/image"
 import Link from "next/link"
 
-const Intro: NextPage = () => {
+const Intro: NextComponentType = () => {
   return (
    	<div className="w-full grid grid-cols-1 md:grid-cols-2 mt-8">
 		<div className="w-full flex items-center justify-center">
