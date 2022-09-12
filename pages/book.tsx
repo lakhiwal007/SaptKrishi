@@ -1,4 +1,4 @@
-import React, { useEffect, useState,useRef } from "react";
+import React, { useState,useRef } from "react";
 import { NextPage } from "next";
 import { useRouter } from "next/router"
 import NavBar from "../components/NavBar";
@@ -8,6 +8,8 @@ import { app, database } from "../firebaseConfig";
 import { addDoc, collection } from "firebase/firestore";
 import { useForm } from "react-hook-form";
 import emailjs from '@emailjs/browser';
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from 'yup';
 
 type Inputs = {
   ProductName: string,
@@ -19,13 +21,23 @@ type Inputs = {
   Quantity: number,
 };
 
-
+const emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+const schema = yup
+  .object()
+  .shape({
+    FullName: yup.string().min(3,"Minimum 3 chracters required").required("Required"),
+    Email: yup.string().matches(emailPattern,{message:"email is invalid"}).required("Required"),
+    MobileNo: yup.number().positive().integer().required("Required"),
+    State: yup.string().min(3).required("Required"),
+    City: yup.string().min(3).required("Required"),
+    Quantity: yup.number().min(1,"Minimum quantity is 1.").positive("enter positive quantity").integer().required("Required"),
+  });
 
 const book: NextPage = ({productsList}:Array<string>) => {
     const router = useRouter();
     const {query: { name },} = router;
     const productName = productsList.find(item=> item.name === name)
-	const { register, handleSubmit, formState: { errors } } = useForm<Inputs>();
+	const { register, handleSubmit, formState: { errors } } = useForm<Inputs>({resolver: yupResolver(schema)});
 	const [inputData, setInputData] = useState<Inputs>();
 	
     const buttonRef = useRef(null);
@@ -53,7 +65,7 @@ const book: NextPage = ({productsList}:Array<string>) => {
 				alert("Booking added!")
 				emailjs.send(
 				"service_dp209r1",
-				"h8#9dy$w328dsu",
+				"2#sj%b5@4d41o",
 				data, 
 				"ZB6XvniJN6hlmr8CM"
 				)
@@ -117,16 +129,17 @@ const book: NextPage = ({productsList}:Array<string>) => {
 								
 							</div>
                             <div className="mb-3">
-								<label for="formGroupExampleInput" className="form-label">
+								<label for="FullName" className="form-label">
 									Full Name
 								</label>
 								<input
 									type="text"
                                     name="FullName"
 									className="form-control"
-									id="formGroupExampleInput"
+									id="FullName"
 									placeholder="Name"
 									{...register("FullName", { required: true, maxLength: 50 })}
+                                    
                                     onChange={(event) => handleInput(event)}
 								/>
 								{errors.FullName && <p className="text-sm bg-red-300 text-red-600 p-2 rounded">Enter your name</p>}
