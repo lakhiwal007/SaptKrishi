@@ -18,8 +18,8 @@ const NavBar: NextComponentType = () => {
 		setOpen(!isOpen)
 	  }
 	return (
-		<div className="w-full flex flex-cols items-center justify-center">
-		<div className="w-full flex items-center justify-between bg-white pt-2 pb-2 sticky top-0 bg-white z-10  border-b-[1px] border-gray-100">
+		<div className="w-full flex flex-cols items-center justify-center sticky top-0 z-10">
+		<div className="w-full flex items-center justify-between bg-white pt-2 pb-2 bg-white  border-b-[1px] border-gray-100">
 			<div className="w-full flex items-center justify-center">
 				<div className="pl-8 block w-full h-auto">
 					<Link href="/"><Image src="/../public/src/saptkrishi-logo.png" width={112.25} height={43.91} alt="logo" className="cursor-pointer object-contain"></Image></Link>

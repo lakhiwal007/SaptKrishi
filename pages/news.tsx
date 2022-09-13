@@ -10,7 +10,7 @@ const news: NextPage = () => {
 		<div className="w-full flex flex-col items-center justify-center mt-4" >
 		<h1 className="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-yellow-400 md:text-6xl">News</h1>
 		<div className="w-full row p-4">
-            <div className="w-full flex  items-center justify-center lg:p-32 lg:pt-8">
+            <div className="w-full flex  items-center justify-center lg:p-48 lg:pt-8">
             <div id="carouselExampleIndicators1" className="carousel carousel-dark slide border-8 border-green-600 hover:border-blue-600 rounded" data-bs-ride="carousel">
                 <div className="carousel-inner">
                     <div className="carousel-item active">
@@ -95,6 +95,7 @@ const news: NextPage = () => {
                     <a target="_blank" href="https://yourstory.com/2021/02/startup-bharat-bhagalpur-agritech-startup-saptkrishi/amp"><button className="flex cursor-pointer mb-2 items-center justify-center text-white pt-2 pb-2 pr-4 pl-4 bg-gradient-to-r from-green-500  to-cyan-400 border-0 items-center rounded-full bg-gradient-to-r from-green-500  hover:to-cyan-400">Read More...</button></a>
                 </div>
 			</div>
+            
 		</div>
 	</div>
 		<Footer/>
