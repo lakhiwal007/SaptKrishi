@@ -1,7 +1,7 @@
 import React from "react";
-import Image from "next/image"
+import { NextComponentType } from "next";
 
-const SharkTank = () => {
+const SharkTank: NextComponentType = () => {
 	return (
 			<div className="w-full row p-4">
                 <h2 className="text-xl p-2 mb-2 border-l-8 border-emerald-600 md:text-4xl">SabjiKothi in Shark Tank</h2>

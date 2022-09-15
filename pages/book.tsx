@@ -1,4 +1,4 @@
-import React, { useEffect, useState,useRef } from "react";
+import React, { useState,useRef } from "react";
 import { NextPage } from "next";
 import { useRouter } from "next/router"
 import NavBar from "../components/NavBar";
@@ -7,6 +7,9 @@ import Footer from "../components/Footer";
 import { app, database } from "../firebaseConfig";
 import { addDoc, collection } from "firebase/firestore";
 import { useForm } from "react-hook-form";
+import emailjs from '@emailjs/browser';
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from 'yup';
 
 type Inputs = {
   ProductName: string,
@@ -18,14 +21,25 @@ type Inputs = {
   Quantity: number,
 };
 
-
+const emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+const schema = yup
+  .object()
+  .shape({
+    FullName: yup.string().min(3,"Minimum 3 chracters required").required("Required"),
+    Email: yup.string().matches(emailPattern,{message:"email is invalid"}).required("Required"),
+    MobileNo: yup.number().positive().integer().required("Required"),
+    State: yup.string().min(3).required("Required"),
+    City: yup.string().min(3).required("Required"),
+    Quantity: yup.number().min(1,"Minimum quantity is 1.").positive("enter positive quantity").integer().required("Required"),
+  });
 
 const book: NextPage = ({productsList}:Array<string>) => {
     const router = useRouter();
     const {query: { name },} = router;
     const productName = productsList.find(item=> item.name === name)
-	const { register, handleSubmit, formState: { errors } } = useForm<Inputs>();
-	const [inputData, setInputData] = useState();
+	const { register, handleSubmit, formState: { errors } } = useForm<Inputs>({resolver: yupResolver(schema)});
+	const [inputData, setInputData] = useState<Inputs>();
+	
     const buttonRef = useRef(null);
     const collectionRef = collection(database, "Bookings");
     
@@ -35,8 +49,9 @@ const book: NextPage = ({productsList}:Array<string>) => {
         // console.log(newInput)
 		setInputData({ ...inputData, ...newInput })
 	};
-    const onSubmit = () => {
+    const onSubmit = (data) => {
         buttonRef.current.disabled = true;
+        // console.log(data)
 		addDoc(collectionRef, {
             product_name: productName? productName.name : 'Four Wheel Cart',
 			full_name: inputData.FullName,
@@ -48,17 +63,31 @@ const book: NextPage = ({productsList}:Array<string>) => {
 		})
 			.then(() => {
 				alert("Booking added!")
-			})
-			.catch((err) => {
-				alert(err.message);
-			})
+				emailjs.send(
+				"service_dp209r1",
+				"2#sj%b5@4d41o",
+				data, 
+				"ZB6XvniJN6hlmr8CM"
+				)
+				.then((response) => {
+					console.log('SUCCESS!', response.status, response.text);
+				})
+				.catch((err) => {
+					console.log('FAILED...', err);
+				});
+					})
+					.catch((err) => {
+						alert(err.message);
+					})
+        
+        
 		
 	};
 
 	return (
 		<div className="relative">
 			<NavBar />
-				<form method="POST" onSubmit={handleSubmit(onSubmit)}>
+				<form method="POST" onSubmit={handleSubmit(onSubmit)} autoComplete="off">
 					<div className="w-full mih-h-screen flex justify-center">
 				<div className="w-full mih-h-screen grid grid-cols-1 lg:grid-cols-2">
 					<div className="w-full mih-h-screen flex justify-center">
@@ -100,16 +129,17 @@ const book: NextPage = ({productsList}:Array<string>) => {
 								
 							</div>
                             <div className="mb-3">
-								<label for="formGroupExampleInput" className="form-label">
+								<label for="FullName" className="form-label">
 									Full Name
 								</label>
 								<input
 									type="text"
                                     name="FullName"
 									className="form-control"
-									id="formGroupExampleInput"
+									id="FullName"
 									placeholder="Name"
 									{...register("FullName", { required: true, maxLength: 50 })}
+                                    
                                     onChange={(event) => handleInput(event)}
 								/>
 								{errors.FullName && <p className="text-sm bg-red-300 text-red-600 p-2 rounded">Enter your name</p>}
