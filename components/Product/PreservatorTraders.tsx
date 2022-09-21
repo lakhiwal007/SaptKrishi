@@ -8,7 +8,7 @@ import BookNow from '../BookNow';
 
 const PreservatorTraders: NextComponentType = () => {
 	return (
-		<div className="w-[80%] h-auto grid grid-cols-1 gap-4 lg:grid-cols-2 rounded bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-gray-200 mt-8 pb-4">
+		<div className="w-[95%] h-auto grid grid-cols-1 gap-4 lg:grid-cols-2 rounded bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-gray-200 mt-8 pb-4 lg:w-[60%]">
 			<div className="w-full flex items-center justify-center relative order-2 p-2 lg:justify-start lg:order-1">
 				<Image
 					src="/../public/src/preservator-trader-web-min.jpg"

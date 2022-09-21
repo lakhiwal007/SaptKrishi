@@ -4,7 +4,7 @@ import Image from "next/image";
 import BookNow from '../BookNow';
 const Preservator: NextComponentType= () => {
   return (
-    <div className="w-[95%] h-auto grid grid-cols-1 gap-4 lg:grid-cols-2 rounded bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-gray-200 mt-8 pb-4 lg:w-[80%]">
+    <div className="w-[95%] h-auto grid grid-cols-1 gap-4 lg:grid-cols-2 rounded bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-gray-200 mt-8 pb-4 lg:w-[60%]">
 			<div className="w-full flex items-center justify-center lg:justify-start relative m-auto p-2">
 				<Image
 					src="/../public/src/preservator.jpg"
