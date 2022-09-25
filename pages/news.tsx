@@ -9,33 +9,33 @@ const news: NextPage = () => {
 		<NavBar/>
 		<div className="w-full flex flex-col items-center justify-center mt-4" >
 		<h1 className="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-yellow-400 md:text-6xl">News</h1>
-		<div className="w-full row p-4">
+		<div className="w-full row p-4 lg:w-[75%]">
             <div className="w-full flex  items-center justify-center lg:p-48 lg:pt-8">
-            <div id="carouselExampleIndicators1" className="carousel carousel-dark slide border-8 border-green-600 hover:border-blue-600 rounded" data-bs-ride="carousel">
+            <div id="carouselExampleIndicators1" className="carousel carousel-dark slide carousel-fade border-8 border-green-600 hover:border-blue-600 rounded shadow-xl" data-bs-ride="carousel">
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                     <img src="src/news/img27.jpg" className="d-block w-100" alt="..."/>
                     </div>
                     <div className="carousel-item">
-                    <img src="src/news/img7.jpg" className="d-block w-100" alt="..."/>
+                    <img src="src/news/img7.jpg" className="d-block w-100" alt="..." />
                     </div>
                     <div className="carousel-item">
-                    <img src="src/news/img32.jpg" className="d-block w-100" alt="..."/>
+                    <img src="src/news/img32.jpg" className="d-block w-100" alt="..." />
                     </div>
                     <div className="carousel-item">
-                    <img src="src/news/img37.jpg" className="d-block w-100" alt="..."/>
+                    <img src="src/news/img37.jpg" className="d-block w-100" alt="..." />
                     </div>
                     <div className="carousel-item">
-                    <img src="src/news/img57.jpg" className="d-block w-100" alt="..."/>
+                    <img src="src/news/img57.jpg" className="d-block w-100" alt="..." />
                     </div>
                     <div className="carousel-item">
-                    <img src="src/news/img62.jpg" className="d-block w-100" alt="..."/>
+                    <img src="src/news/img62.jpg" className="d-block w-100" alt="..." />
                     </div>
                     <div className="carousel-item">
-                    <img src="src/news/img72.jpg" className="d-block w-100" alt="..."/>
+                    <img src="src/news/img72.jpg" className="d-block w-100" alt="..." />
                     </div>
                     <div className="carousel-item">
-                    <img src="src/news/img62.jpg" className="d-block w-100" alt="..."/>
+                    <img src="src/news/img62.jpg" className="d-block w-100" alt="..." />
                     </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
