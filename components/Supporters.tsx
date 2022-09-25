@@ -15,14 +15,14 @@ const Supporters: NextComponentType = () => {
                     type : 'loop',
                     perPage: 4,
                     gap   : '1rem',
-                    // autoplay : true,
                     arrows : false,
+                    drag: false,
                     pagination: false,
                     autoScroll: {
                         pauseOnHover: false,
                         pauseOnFocus: false,
                         rewind: false,
-                        speed: 1,
+                        speed: 2,
                     },
                     breakpoints: {
                         1024: {

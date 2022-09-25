@@ -19,14 +19,18 @@ const Modiji: NextComponentType = () => {
                     gap   : '1rem',
                     perMove: 1,
                     autoplay : true,
+                    pagination: false,
+                    arrows: false,
                     breakpoints: {
                         912: {
                         perPage: 2,
                         gap    : '.7rem',
+                        arrows: true,
                         },
                         640: {
                         perPage: 1,
                         gap    : '.7rem',
+                        arrows: true,
                         },
                     },
                     } }>
