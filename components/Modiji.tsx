@@ -11,20 +11,23 @@ const Modiji: NextComponentType = () => {
                     <Splide aria-label="My Favorite Images"
                     options={ {
                     rewind : true,
-                    type  : 'loop',
+                    rewindSpeed: 2000,
+                    type : 'slide',
                     perPage: 3,
                     drag   : 'free',
                     snap   : true,
-                    perMove : 1,
+                    perMove : 0,
                     gap   : '1rem',
                     autoplay : true,
                     breakpoints: {
                         912: {
                         perPage: 2,
+                        perMove : 1,
                         gap    : '.7rem',
                         },
                         640: {
                         perPage: 1,
+                        perMove : 1,
                         gap    : '.7rem',
                         },
                     },

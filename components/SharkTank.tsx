@@ -12,7 +12,8 @@ const SharkTank: NextComponentType = () => {
                     <Splide aria-label="My Favorite Images"
                     options={ {
                     rewind : true,
-                    type  : 'loop',
+                    rewindSpeed: 2000,
+                    type : 'slide',
                     perPage: 3,
                     drag   : 'free',
                     focus  : 'center',
