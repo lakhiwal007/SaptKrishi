@@ -15,19 +15,17 @@ const Modiji: NextComponentType = () => {
                     type : 'slide',
                     perPage: 3,
                     drag   : 'free',
-                    snap   : true,
-                    perMove : 0,
+                    focus  : 'center',
                     gap   : '1rem',
+                    perMove: 1,
                     autoplay : true,
                     breakpoints: {
                         912: {
                         perPage: 2,
-                        perMove : 1,
                         gap    : '.7rem',
                         },
                         640: {
                         perPage: 1,
-                        perMove : 1,
                         gap    : '.7rem',
                         },
                     },
@@ -36,10 +34,10 @@ const Modiji: NextComponentType = () => {
                         <Image src="/../public/src/gallery/modiji/modiji2.png" width={500} height={350} className="object-fit rounded" alt="Image 2"></Image>
                     </SplideSlide>
                     <SplideSlide className="flex items-center justify-center">
-                        <Image src="/../public/src/gallery/modiji/modiji3.png" width={500} height={350} className="object-fit rounded"  alt="Image 1"></Image>
+                        <Image src="/../public/src/gallery/modiji/modiji3.png" width={500} height={350} className="object-fit rounded"  alt="Image 3"></Image>
                     </SplideSlide>
                     <SplideSlide className="flex items-center justify-center">
-                        <Image src="/../public/src/gallery/modiji/modiji4.png" width={500} height={350} className="object-fit rounded" alt="Image 2"></Image>
+                        <Image src="/../public/src/gallery/modiji/modiji4.png" width={500} height={350} className="object-fit rounded" alt="Image 4"></Image>
                     </SplideSlide>
                     </Splide>
                 </div>    
