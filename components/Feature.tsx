@@ -1,7 +1,7 @@
 import { NextComponentType } from "next"
 import { Splide, SplideSlide } from '@splidejs/react-splide';
-import Image from "next/image"
 import '@splidejs/react-splide/css';
+import Image from "next/image"
 
 const Feature: NextComponentType = () => {
   return (
@@ -13,13 +13,13 @@ const Feature: NextComponentType = () => {
             rewind : true,
             type  : 'loop',
             perPage: 3,
+            drag   : 'free',
             snap   : true,
             focus  : 'center',
             gap   : '1rem',
-            drag   : 'free',
             autoplay : true,
             breakpoints: {
-                768: {
+                912: {
                 perPage: 2,
                 gap    : '.7rem',
                 },
@@ -29,22 +29,22 @@ const Feature: NextComponentType = () => {
                 },
             },
             } }>
-            <SplideSlide className="flex items-center justify-center">
+            <SplideSlide className="flex items-center justify-center shadow-xl">
                 <Image src="/../public/src/Feature/cleanEnergy.png" width={300} height={300} className="object-fit rounded"  alt="Image 1"></Image>
             </SplideSlide>
-            <SplideSlide className="flex items-center justify-center">
+            <SplideSlide className="flex items-center justify-center shadow-xl">
                 <Image src="/../public/src/Feature/carbonFootprint.png" width={300} height={300} className="object-fit rounded" alt="Image 2"></Image>
             </SplideSlide>
-            <SplideSlide className="flex items-center justify-center">
+            <SplideSlide className="flex items-center justify-center shadow-xl">
                 <Image src="/../public/src/Feature/zeroMaint.png" width={300} height={300} className="object-fit rounded"  alt="Image 1"></Image>
             </SplideSlide>
-            <SplideSlide className="flex items-center justify-center">
+            <SplideSlide className="flex items-center justify-center shadow-xl">
                 <Image src="/../public/src/Feature/chemFree.png" width={300} height={300} className="object-fit rounded" alt="Image 2"></Image>
             </SplideSlide>
-            <SplideSlide className="flex items-center justify-center">
+            <SplideSlide className="flex items-center justify-center shadow-xl">
                 <Image src="/../public/src/Feature/saveEnergy.png" width={300} height={300} className="object-fit rounded"  alt="Image 1"></Image>
             </SplideSlide>
-            <SplideSlide className="flex items-center justify-center">
+            <SplideSlide className="flex items-center justify-center shadow-xl">
                 <Image src="/../public/src/Feature/envFrind.png" width={300} height={300} className="object-fit rounded" alt="Image 2"></Image>
             </SplideSlide>
             </Splide>

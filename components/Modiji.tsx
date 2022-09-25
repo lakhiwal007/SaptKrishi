@@ -1,34 +1,44 @@
 import { NextComponentType } from "next"
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/react-splide/css';
+import Image from "next/image"
+
 const Modiji: NextComponentType = () => {
 	return (
 			<div className="w-full row p-4">
                 <h2 className="text-xl p-2  mb-2 border-l-8 border-emerald-600 md:text-4xl">Demonstration of Sabjikothi to the PM Modi </h2>
                 <div className="w-full flex flex-col  items-center justify-center lg:p-8">
-                    <div id="carouselExampleIndicators2" className="carousel carousel-dark slide border-8 border-green-600 hover:border-blue-600 rounded" data-bs-ride="carousel">
-                        <div className="carousel-inner">
-                            <div className="carousel-item active">
-                            <img src="src/gallery/modiji/modiji1.png" className="d-block w-100" alt="..."/>
-                            </div>
-                            {/* <div className="carousel-item">
-                            <img src="src/gallery/modiji/modiji2.png" className="d-block w-100" alt="..."/>
-                            </div> */}
-                            <div className="carousel-item">
-                            <img src="src/gallery/modiji/modiji3.png" className="d-block w-100" alt="..."/>
-                            </div>
-                            <div className="carousel-item">
-                            <img src="src/gallery/modiji/modiji4.png" className="d-block w-100" alt="..."/>
-                            </div>
-                            
-                        </div>
-                        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
-                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span className="visually-hidden">Previous</span>
-                        </button>
-                        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
-                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span className="visually-hidden">Next</span>
-                        </button>
-                    </div>
+                    <Splide aria-label="My Favorite Images"
+                    options={ {
+                    rewind : true,
+                    type  : 'loop',
+                    perPage: 3,
+                    drag   : 'free',
+                    snap   : true,
+                    focus  : 'center',
+                    gap   : '1rem',
+                    autoplay : true,
+                    breakpoints: {
+                        912: {
+                        perPage: 2,
+                        gap    : '.7rem',
+                        },
+                        640: {
+                        perPage: 1,
+                        gap    : '.7rem',
+                        },
+                    },
+                    } }>
+                    <SplideSlide className="flex items-center justify-center">
+                        <Image src="/../public/src/gallery/modiji/modiji2.png" width={500} height={350} className="object-fit rounded" alt="Image 2"></Image>
+                    </SplideSlide>
+                    <SplideSlide className="flex items-center justify-center">
+                        <Image src="/../public/src/gallery/modiji/modiji3.png" width={500} height={350} className="object-fit rounded"  alt="Image 1"></Image>
+                    </SplideSlide>
+                    <SplideSlide className="flex items-center justify-center">
+                        <Image src="/../public/src/gallery/modiji/modiji4.png" width={500} height={350} className="object-fit rounded" alt="Image 2"></Image>
+                    </SplideSlide>
+                    </Splide>
                 </div>    
             </div>
 
