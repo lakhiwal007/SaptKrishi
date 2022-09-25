@@ -1,6 +1,7 @@
 import { NextComponentType } from "next"
 import Image from "next/image"
 import { Splide, SplideSlide } from '@splidejs/react-splide';
+import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 import '@splidejs/react-splide/css';
 
 const Supporters: NextComponentType = () => {
@@ -11,16 +12,18 @@ const Supporters: NextComponentType = () => {
             <div className="w-full flex items-center justify-center m-8">
                 <Splide className="w-full flex items-center justify-center" aria-label="My Favorite Images"
                     options={ {
-                    rewind : true,
-                    rewindSpeed: 2000,
-                    type : 'slide',
+                    type : 'loop',
                     perPage: 4,
-                    drag   : 'free',
-                    focus  : 'center',
                     gap   : '1rem',
-                    perMove: 1,
-                    autoplay : true,
+                    // autoplay : true,
                     arrows : false,
+                    pagination: false,
+                    autoScroll: {
+                        pauseOnHover: false,
+                        pauseOnFocus: false,
+                        rewind: false,
+                        speed: 1,
+                    },
                     breakpoints: {
                         1024: {
                         perPage: 3,
@@ -31,7 +34,8 @@ const Supporters: NextComponentType = () => {
                         gap    : '.7rem',
                         },
                     },
-                    } }>
+                    } }
+                    extensions={{ AutoScroll }}>
                     <SplideSlide className="flex items-center justify-center">
                         
                             <Image src="/../public/src/supporters/IIT_Kanpur_Logo.png" width={250} height={250} className="rounded-full object-contain"></Image>

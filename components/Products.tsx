@@ -7,7 +7,7 @@ import '@splidejs/react-splide/css';
 const Products: NextPage = () => {
 	return (
 		<div className="w-full flex flex-col items-center justify-center mt-8">
-			<h1 data-aos="fade-up" className="text-4xl md:text-6xl ">Our Products</h1>
+			<h1 className="text-4xl md:text-6xl ">Our Products</h1>
 			<div className="w-full flex items-center justify-center flex-wrap p-8">
                 <Splide className="w-full flex items-center justify-center" aria-label="My Favorite Images"
                     options={ {
@@ -19,7 +19,7 @@ const Products: NextPage = () => {
                     snap   : true,
                     gap   : '1rem',
                     perMove : 1,
-                    // autoplay : true,
+                    pagination : false,
                     breakpoints: {
                         912: {
                         perPage: 2,
@@ -32,7 +32,7 @@ const Products: NextPage = () => {
                     },
                     } }>
                     <SplideSlide className="flex items-center justify-center">
-                        <div data-aos="fade-up" className="w-[350px] h-[350px] flex items-center justify-center relative rounded touch-auto m-auto mt-4 group">
+                        <div className="w-[350px] h-[350px] flex items-center justify-center relative rounded touch-auto m-auto mt-4 group">
                         <Image
                             src="/../public/src/sabjikothi-farmer-web-min.png"
                             width={350} height={350}
@@ -43,7 +43,7 @@ const Products: NextPage = () => {
                         </div>
                     </SplideSlide>
                     <SplideSlide className="flex items-center justify-center">
-                        <div data-aos="fade-up" className="w-[350px] h-[350px] flex items-center justify-center relative rounded touch-auto m-auto mt-4 group">
+                        <div className="w-[350px] h-[350px] flex items-center justify-center relative rounded touch-auto m-auto mt-4 group">
                         <Image
                             src="/../public/src/preservator.jpg"
                             width={350} height={350}
@@ -53,7 +53,7 @@ const Products: NextPage = () => {
                     </div>
                     </SplideSlide>
                     <SplideSlide className="flex items-center justify-center">
-                        <div data-aos="fade-up" className="w-[350px] h-[350px] flex items-center justify-center relative rounded touch-auto m-auto mt-4 group">
+                        <div className="w-[350px] h-[350px] flex items-center justify-center relative rounded touch-auto m-auto mt-4 group">
                             <Image
                                 src="/../public/src/preservator-trader-web-min.jpg"
                                 width={350} height={350}
@@ -63,7 +63,7 @@ const Products: NextPage = () => {
                         </div>
                     </SplideSlide>
                     <SplideSlide className="flex items-center justify-center">
-                        <div data-aos="fade-up" className="w-[350px] h-[350px] flex items-center justify-center relative rounded touch-auto m-auto mt-4 group">
+                        <div className="w-[350px] h-[350px] flex items-center justify-center relative rounded touch-auto m-auto mt-4 group">
                             <Image
                                 src="/../public/src/threeWheelCart.JPG"
                                 width={350} height={350}
@@ -73,7 +73,7 @@ const Products: NextPage = () => {
                         </div>
                     </SplideSlide>
                     <SplideSlide className="flex items-center justify-center">
-                        <div data-aos="fade-up" className="w-[350px] h-[350px] flex items-center justify-center relative rounded touch-auto m-auto mt-4 group">
+                        <div className="w-[350px] h-[350px] flex items-center justify-center relative rounded touch-auto m-auto mt-4 group">
                             <Image
                                 src="/../public/src/4WheelCart.png"
                                 width={350} height={350}
@@ -83,7 +83,7 @@ const Products: NextPage = () => {
                         </div>
                     </SplideSlide>
                     <SplideSlide className="flex items-center justify-center">
-                        <div data-aos="fade-up" className="w-[350px] h-[350px] flex items-center justify-center relative rounded touch-auto m-auto mt-4 group">
+                        <div className="w-[350px] h-[350px] flex items-center justify-center relative rounded touch-auto m-auto mt-4 group">
                             <Image
                                 src="/../public/src/ecart.PNG"
                                 width={350} height={350}
