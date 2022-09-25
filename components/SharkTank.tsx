@@ -17,6 +17,7 @@ const SharkTank: NextComponentType = () => {
                     drag   : 'free',
                     focus  : 'center',
                     gap   : '1rem',
+                    perMove: 1,
                     autoplay : true,
                     breakpoints: {
                         912: {

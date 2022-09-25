@@ -12,7 +12,7 @@ import Technology from '../components/Product/Technology';
 const Home: NextPage = () => {
 	
   return (
-   	<div className="w-full min-h-screen p-0 m-0">
+   	<div className="w-full min-h-screen p-0 m-0 scroll-smooth">
 		<NavBar/>
 		<Intro/>
 		<Feature/>
