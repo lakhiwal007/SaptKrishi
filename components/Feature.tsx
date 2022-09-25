@@ -17,7 +17,7 @@ const Feature: NextComponentType = () => {
             perPage: 3,
             drag   : 'free',
             snap   : true,
-            perMove : 3,
+            perMove : 1,
             gap   : '1rem',
             autoplay : true,
             breakpoints: {
