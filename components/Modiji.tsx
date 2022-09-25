@@ -15,7 +15,6 @@ const Modiji: NextComponentType = () => {
                     perPage: 3,
                     drag   : 'free',
                     snap   : true,
-                    focus  : 'center',
                     gap   : '1rem',
                     autoplay : true,
                     breakpoints: {

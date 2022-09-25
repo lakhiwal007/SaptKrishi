@@ -15,7 +15,6 @@ const SharkTank: NextComponentType = () => {
                     type  : 'loop',
                     perPage: 3,
                     drag   : 'free',
-                    snap   : true,
                     focus  : 'center',
                     gap   : '1rem',
                     autoplay : true,
@@ -30,28 +29,28 @@ const SharkTank: NextComponentType = () => {
                         },
                     },
                     } }>
-            <SplideSlide className="flex items-center justify-center">
-                <Image src="/../public/src/gallery/sharkTank/st1.png" width={500} height={350} className="object-fit rounded"  alt="Image 1"></Image>
-            </SplideSlide>
-            <SplideSlide className="flex items-center justify-center">
-                <Image src="/../public/src/gallery/sharkTank/st2.png" width={500} height={350} className="object-fit rounded" alt="Image 2"></Image>
-            </SplideSlide>
-            <SplideSlide className="flex items-center justify-center">
-                <Image src="/../public/src/gallery/sharkTank/st3.png" width={500} height={350} className="object-fit rounded"  alt="Image 1"></Image>
-            </SplideSlide>
-            <SplideSlide className="flex items-center justify-center">
-                <Image src="/../public/src/gallery/sharkTank/st4.png" width={500} height={350} className="object-fit rounded" alt="Image 2"></Image>
-            </SplideSlide>
-            <SplideSlide className="flex items-center justify-center">
-                <Image src="/../public/src/gallery/sharkTank/st5.png" width={500} height={350} className="object-fit rounded"  alt="Image 1"></Image>
-            </SplideSlide>
-            <SplideSlide className="flex items-center justify-center">
-                <Image src="/../public/src/gallery/sharkTank/st6.png" width={500} height={350} className="object-fit rounded" alt="Image 2"></Image>
-            </SplideSlide>
-            <SplideSlide className="flex items-center justify-center">
-                <Image src="/../public/src/gallery/sharkTank/st7.png" width={500} height={350} className="object-fit rounded" alt="Image 2"></Image>
-            </SplideSlide>
-            </Splide>
+                    <SplideSlide className="flex items-center justify-center">
+                    <Image src="/../public/src/gallery/sharkTank/st1.png" width={500} height={350} className="object-fit rounded"  alt="Image 1"></Image>
+                    </SplideSlide>
+                    <SplideSlide className="flex items-center justify-center">
+                    <Image src="/../public/src/gallery/sharkTank/st2.png" width={500} height={350} className="object-fit rounded" alt="Image 2"></Image>
+                    </SplideSlide>
+                    <SplideSlide className="flex items-center justify-center">
+                    <Image src="/../public/src/gallery/sharkTank/st3.png" width={500} height={350} className="object-fit rounded"  alt="Image 1"></Image>
+                    </SplideSlide>
+                    <SplideSlide className="flex items-center justify-center">
+                    <Image src="/../public/src/gallery/sharkTank/st4.png" width={500} height={350} className="object-fit rounded" alt="Image 2"></Image>
+                    </SplideSlide>
+                    <SplideSlide className="flex items-center justify-center">
+                    <Image src="/../public/src/gallery/sharkTank/st5.png" width={500} height={350} className="object-fit rounded"  alt="Image 1"></Image>
+                    </SplideSlide>
+                    <SplideSlide className="flex items-center justify-center">
+                    <Image src="/../public/src/gallery/sharkTank/st6.png" width={500} height={350} className="object-fit rounded" alt="Image 2"></Image>
+                    </SplideSlide>
+                    <SplideSlide className="flex items-center justify-center">
+                    <Image src="/../public/src/gallery/sharkTank/st7.png" width={500} height={350} className="object-fit rounded" alt="Image 2"></Image>
+                    </SplideSlide>
+                    </Splide>
                 </div>
 
             </div>
