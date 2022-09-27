@@ -14,7 +14,7 @@ const NanoKawach: NextComponentType= () => {
 				></Image>
 			</div>
 			<div className="w-full h-full flex flex-col items-center justify-center order-2 md:order-1">
-                <p className='text-2xl font-bold mb-2 uppercase'>NanoKawach Pesticide</p>
+                <p className='text-2xl font-bold mb-4 uppercase'>NanoKawach Pesticide</p>
 				<div className="w-full flex items-center justify-center">
 					<ul className="w-full gap-8 grid grid-cols-2 lg:grid-cols-3 p-2">
 						

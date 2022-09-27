@@ -8,7 +8,7 @@ import { BsDisplayFill, BsFillKeyFill  } from "react-icons/bs";
 
 const SabjiKothiECart: NextComponentType= () => {
   return (
-    <div className="w-[95%] h-auto grid grid-cols-1 gap-4 lg:grid-cols-2 rounded bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-gray-200 mt-8 pb-4 lg:w-[60%]">
+    <div className="w-[95%] h-auto grid grid-cols-1 gap-4 lg:grid-cols-2 rounded bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-gray-200 mt-8 pb-4 lg:w-[70%]">
 			<div className="w-full flex items-center justify-center lg:justify-start relative m-auto p-2">
 				<Image
 					src="/../public/src/products/ecart.PNG"
@@ -18,7 +18,7 @@ const SabjiKothiECart: NextComponentType= () => {
 				></Image>
 			</div>
 			<div className="w-full h-full flex flex-col items-center justify-center order-2 md:order-1">
-                <p className='text-2xl font-bold mb-2 uppercase'>SabjiKothi E-Cart</p>
+                <p className='text-2xl font-bold mb-4 uppercase'>SabjiKothi E-Cart</p>
 				<div className="w-full flex items-center justify-center">
 					<ul className="w-full gap-8 grid grid-cols-2 lg:grid-cols-3 p-2">
 						<li className="w-full flex flex-col items-center justify-start">
