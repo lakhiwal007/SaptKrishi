@@ -13,32 +13,51 @@ const NanoKawach: NextComponentType= () => {
 					className="rounded object-cover"
 				></Image>
 			</div>
-			<div className="w-full h-full flex items-center justify-center">
-				<div className="w-full flex flex-col items-center justify-center">
-					<ul className="w-full flex flex-col items-center justify-start p-4 list-disc">
-						<li className="w-full mt-2 text-justify">
-                        Preservator/Sabjikothi is a wheel mountable storage for transportation of fresh fruits and vegetables.
+			<div className="w-full h-full flex flex-col items-center justify-center order-2 md:order-1">
+                <p className='text-2xl font-bold mb-2 uppercase'>NanoKawach Pesticide</p>
+				<div className="w-full flex items-center justify-center">
+					<ul className="w-full gap-8 grid grid-cols-2 lg:grid-cols-3 p-2">
+						
+                       <li className="w-full flex flex-col items-center justify-start">
+							<p className="text-green-700 text-xl mb-2">
+								<Image src="/../public/src/NanoKawach/BioDegradable.jpeg" width={50} height={50} className="rounded-full" ></Image>
+							</p>
+							{/* <p className="text-green-700 mb-2 text-center">Yes</p> */}
+							<p className="text-center">Biodegradable</p>
 						</li>
-						<li className="w-full mt-2 text-justify">
-                        It is a microclimate portable storage that extend the shelf-life of fruits and vegetables anywhere between 5 to 30 days.
-
+						<li className="w-full flex flex-col items-center justify-start">
+							<p className="text-green-700 text-xl mb-2">
+								<Image src="/../public/src/NanoKawach/ChemicalFree.jpeg" width={50} height={50} className="rounded-full" ></Image>
+							</p>
+							{/* <p className="text-green-700 mb-2 text-center">Upto 2 day</p> */}
+							<p className="text-center">Chemical Free</p>
 						</li>
-						<li className="w-full mt-2 text-justify">
-                        It requires 20 watts of power and 1 litre of water and has battery backup of a day and an option of solar charging.
+						<li className="w-full flex flex-col items-center justify-start">
+							<p className="text-green-700 text-xl mb-2">
+								<Image src="/../public/src/NanoKawach/NanoTech.jpeg" width={50} height={50} className="rounded-full" ></Image>
+							</p>
+							{/* <p className="text-green-700 mb-2 text-center">Yes</p> */}
+							<p className="text-center">Unique Nanoformulation</p>
 						</li>
-						<li className="w-full mt-2 text-justify">
-                        The entire setup can be unloaded from wheels, and can doubly acts as on-field & on-market storage.
+                       <li className="w-full flex flex-col items-center justify-start">
+							<p className="text-green-700 text-xl mb-2">
+								<Image src="/../public/src/NanoKawach/EcoFriendly.jpeg" width={50} height={50} className="rounded-full" ></Image>
+							</p>
+							{/* <p className="text-green-700 mb-2 text-center">Yes</p> */}
+							<p className="text-center">Eco-friendly</p>
 						</li>
-						<li className="w-full mt-2 text-justify">
-                        The entire setup can be assembled on any suitable means of transportation (E-rickshaw, mini-trucks, thelas etc.)
+						<li className="w-full flex flex-col items-center justify-start">
+							<p className="text-green-700 text-xl mb-2">
+								<Image src="/../public/src/NanoKawach/Natural.jpeg" width={50} height={50} className="rounded-full" ></Image>
+							</p>
+							{/* <p className="text-green-700 mb-2 text-center">Upto 200 KG</p> */}
+							<p className="text-center">Natural Ingredients</p>
 						</li>
-                        <li className="w-full mt-2 text-justify">
-                        It can transport contamination-free fruits and vegetables from field to market without any water loss and decay.
-						</li>
+                        
 					</ul>
-                    <div className="pt-2 md:pt-4">
-					<BookNow name={"Nano Kawach Pesticide"}/>
 				</div>
+                <div className="pt-8">
+					<BookNow name={"Nano Kawach Pesticide"}/>
 				</div>
 			</div>
 		</div>

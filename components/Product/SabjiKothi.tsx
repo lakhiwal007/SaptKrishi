@@ -18,6 +18,7 @@ const SabjiKothi: NextComponentType = () => {
 				></Image>
 			</div>
 			<div className="w-full h-full flex flex-col items-center justify-center">
+                 <p className='text-2xl font-bold mb-2 uppercase'>SabjiKothi</p>
 				<div className="w-full flex items-center justify-center">
 					<ul className="w-full gap-8 grid grid-cols-2 lg:grid-cols-3 p-2">
 						<li className="w-full flex flex-col items-center justify-start">
