@@ -93,7 +93,7 @@ const book: NextPage = ({productsList}:Array<string>) => {
 					<div className="w-full mih-h-screen flex justify-center">
 				<div className="w-full mih-h-screen grid grid-cols-1 lg:grid-cols-2">
 					<div className="w-full mih-h-screen flex justify-center">
-						<div className="flex-cols items-center content-center p-16">
+						<div className="flex-cols items-center content-center p-12">
 							<div className="content-center items-center  justify-center">
 								<h1 className="flex text-center items-center justify-center font-semibold text-4xl">
 									{productName? productName.name : 'SabjiKothi'} Booking Form 
@@ -112,7 +112,7 @@ const book: NextPage = ({productsList}:Array<string>) => {
 						</div>
 					</div>
 					<div className="w-full mih-h-screen flex items-center justify-center">
-						<div className="w-3/4  mih-h-screen bordershadow p-3 mb-5 bg-body rounded">
+						<div className="w-[90%]  mih-h-screen bordershadow p-3 mb-5 bg-body rounded lg:w-3/4">
 							<div className="mb-3">
 								<label htmlFor="formGroupExampleInput" className="form-label">
 									Product Name
