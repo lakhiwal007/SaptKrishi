@@ -26,7 +26,7 @@ const Profile: NextComponentType = ({imgURL, fbURL, twURL, liURL, name, designat
 				</div>
 				{/** <!-- Team Details--> **/}
 				<div className="single_advisor_details_info">
-					<h6>{name}</h6>
+					<h6 className="text-lg font-bold">{name}</h6>
 					<p className="designation">{designation}</p>
 				</div>
 			</div>

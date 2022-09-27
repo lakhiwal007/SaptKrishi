@@ -7,7 +7,7 @@ type Props = {
 }
 const KnowMore = ({name}:Props) => {
 	return (
-			<div className="w-full h-1/4 hidden items-center justify-center absolute bottom-5 group-hover:flex group-hover:transition">
+			<div className="w-full h-1/4 flex items-center justify-center">
 				<Link href={{
                     pathname: "/book",
                     query: { name: name },

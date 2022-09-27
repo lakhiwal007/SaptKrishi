@@ -44,13 +44,14 @@ const book: NextPage = ({productsList}:Array<string>) => {
     const collectionRef = collection(database, "Bookings");
     
 	const handleInput = (event) => {
+        event.preventDefault()
 		let newInput = { [event.target.name]: event.target.value };
         
         // console.log(newInput)
 		setInputData({ ...inputData, ...newInput })
 	};
     const onSubmit = (data) => {
-        buttonRef.current.disabled = true;
+        // buttonRef.current.disabled = true;
         // console.log(data)
 		addDoc(collectionRef, {
             product_name: productName? productName.name : 'Four Wheel Cart',
@@ -75,6 +76,7 @@ const book: NextPage = ({productsList}:Array<string>) => {
 				.catch((err) => {
 					console.log('FAILED...', err);
 				});
+                router.push('/');
 					})
 					.catch((err) => {
 						alert(err.message);
@@ -87,20 +89,20 @@ const book: NextPage = ({productsList}:Array<string>) => {
 	return (
 		<div className="relative">
 			<NavBar />
-				<form method="POST" onSubmit={handleSubmit(onSubmit)} autoComplete="off">
+				<form method="POST" onSubmit={handleSubmit(onSubmit)} autoComplete="nope">
 					<div className="w-full mih-h-screen flex justify-center">
 				<div className="w-full mih-h-screen grid grid-cols-1 lg:grid-cols-2">
 					<div className="w-full mih-h-screen flex justify-center">
 						<div className="flex-cols items-center content-center p-16">
 							<div className="content-center items-center  justify-center">
 								<h1 className="flex text-center items-center justify-center font-semibold text-4xl">
-									{productName? productName.name : 'Four Wheel Cart'} Booking Form 
+									{productName? productName.name : 'SabjiKothi'} Booking Form 
 								</h1>
 							</div>
 							<div className="w-full flex flex-cols items-center mt-4">
 								<div>
 									<Image
-										src={productName?productName.imgURL : '/../public/src/4WheelCart.png'}
+										src={productName?productName.imgURL : '/../public/src/products/sabjikothi-farmer-web-min.png'}
 										width={650}
 										height={600}
 										className="flex items-center justify-center rounded"
@@ -112,13 +114,13 @@ const book: NextPage = ({productsList}:Array<string>) => {
 					<div className="w-full mih-h-screen flex items-center justify-center">
 						<div className="w-3/4  mih-h-screen bordershadow p-3 mb-5 bg-body rounded">
 							<div className="mb-3">
-								<label for="formGroupExampleInput" className="form-label">
+								<label htmlFor="formGroupExampleInput" className="form-label">
 									Product Name
 								</label>
 								<input
 									type="text"
                                     name="ProductName"
-                                    value={productName? productName.name : 'Four Wheel Cart'}
+                                    value={productName? productName.name : 'SabjiKothi'}
                                     readOnly
 									className="form-control"
 									id="formGroupExampleInput"
@@ -129,7 +131,7 @@ const book: NextPage = ({productsList}:Array<string>) => {
 								
 							</div>
                             <div className="mb-3">
-								<label for="FullName" className="form-label">
+								<label htmlFor="FullName" className="form-label">
 									Full Name
 								</label>
 								<input
@@ -145,7 +147,7 @@ const book: NextPage = ({productsList}:Array<string>) => {
 								{errors.FullName && <p className="text-sm bg-red-300 text-red-600 p-2 rounded">Enter your name</p>}
 							</div>
 							<div className="mb-3">
-								<label for="formGroupExampleInput2" className="form-label">
+								<label htmlFor="formGroupExampleInput2" className="form-label">
 									Email address
 								</label>
 								<input
@@ -160,7 +162,7 @@ const book: NextPage = ({productsList}:Array<string>) => {
 								{errors.Email && <p className="text-sm bg-red-300 text-red-600 p-2 rounded">Enter valid email address</p>}
 							</div>
 							<div className="mb-3">
-								<label for="formGroupExampleInput3" className="form-label">
+								<label htmlFor="formGroupExampleInput3" className="form-label">
 									Mob. No.
 								</label>
 								<input
@@ -175,43 +177,44 @@ const book: NextPage = ({productsList}:Array<string>) => {
 								{errors.MobileNo && <p className="text-sm bg-red-300 text-red-600 p-2 rounded">Enter valid mobile number</p>}
 							</div>
 							<div className="mb-3">
-								<label for="exampleFormControlSelect1">Select State</label>
+								<label htmlFor="exampleFormControlSelect1">Select State</label>
 								<select className="form-control" name="State" id="exampleFormControlSelect1"
 								{...register("State", { required: true })} onChange={(event) => handleInput(event)}>
-								<option>Andhra Pradesh</option>
-								<option>Andaman and Nicobar Islands</option>
-								<option>Arunachal Pradesh</option>
-								<option>Assam</option>
-								<option>Bihar</option>
-								<option>Chhattisgarh</option>
-								<option>Delhi</option>
-								<option>Goa</option>
-								<option>Gujarat</option>
-								<option>Haryana</option>
-								<option>Himachal Pradesh</option>
-								<option>Jammu and Kashmir</option>
-								<option>Jharkhand</option>
-								<option>Karnataka</option>
-								<option>Kerala</option>
-								<option>Madhya Pradesh</option>
-								<option>Maharashtra</option>
-								<option>Manipur</option>
-								<option>Meghalaya</option>
-								<option>Mizoram</option>
-								<option>Nagaland</option>
-								<option>Odisha</option>
-								<option>Rajasthan</option>
-								<option>Sikkim</option>
-								<option>Tamil Nadu</option>
-								<option>Telangana</option>
-								<option>Tripura</option>
-								<option>Uttar Pradesh</option>
-								<option>Uttarakhand</option>
-								<option>West Bengal</option>
+                                <option defaultValue={""} >Select State</option>
+								<option value={"Andhra Pradesh"} >Andhra Pradesh</option>
+								<option value={"Andaman and Nicobar Islands"}>Andaman and Nicobar Islands</option>
+								<option value={"Arunachal Pradesh"}>Arunachal Pradesh</option>
+								<option value={"Assam"}>Assam</option>
+								<option value={"Bihar"}>Bihar</option>
+								<option value={"Chhattisgarh"}>Chhattisgarh</option>
+								<option value={"Delhi"}>Delhi</option>
+								<option value={"Goa"}>Goa</option>
+								<option value={"Gujarat"}>Gujarat</option>
+								<option value={"Haryana"}>Haryana</option>
+								<option value={"Himachal Pradesh"}>Himachal Pradesh</option>
+								<option value={"Jammu and Kashmir"}>Jammu and Kashmir</option>
+								<option value={"Jharkhand"}>Jharkhand</option>
+								<option value={"Karnataka"}>Karnataka</option>
+								<option value={"Kerala"}>Kerala</option>
+								<option value={"Madhya Pradesh"}>Madhya Pradesh</option>
+								<option value={"Maharashtra"}>Maharashtra</option>
+								<option value={"Manipur"}>Manipur</option>
+								<option value={"Meghalaya"}>Meghalaya</option>
+								<option value={"Mizoram"}>Mizoram</option>
+								<option value={"Nagaland"}>Nagaland</option>
+								<option value={"Odisha"}>Odisha</option>
+								<option value={"Rajasthan"}>Rajasthan</option>
+								<option value={"Sikkim"}>Sikkim</option>
+								<option value={"Tamil Nadu"}>Tamil Nadu</option>
+								<option value={"Telangana"}>Telangana</option>
+								<option value={"Tripura"}>Tripura</option>
+								<option value={"Uttar Pradesh"}>Uttar Pradesh</option>
+								<option value={"Uttarakhand"}>Uttarakhand</option>
+								<option value={"West Bengal"}>West Bengal</option>
 								</select>
 							</div>
 							<div className="mb-3">
-								<label for="formGroupExampleInput5" className="form-label">
+								<label htmlFor="formGroupExampleInput5" className="form-label">
 									City
 								</label>
 								<input
@@ -226,7 +229,7 @@ const book: NextPage = ({productsList}:Array<string>) => {
 								{errors.City && <p className="text-sm bg-red-300 text-red-600 p-2 rounded">Enter city name</p>}
 							</div>
 							<div className="mb-3">
-								<label for="formGroupExampleInput6" className="form-label">
+								<label htmlFor="formGroupExampleInput6" className="form-label">
 									Quantity
 								</label>
 								<input
@@ -261,12 +264,13 @@ const book: NextPage = ({productsList}:Array<string>) => {
 };
 
 book.getInitialProps = () => {
-    const productsList = [{'id': 1, 'name': 'SabjiKothi Farmer', 'imgURL':"/../public/src/sabjikothi-farmer-web-min.png"},
-                          {'id': 2, 'name': 'Preservator', 'imgURL':"/../public/src/preservator.jpg"},
-                          {'id': 3, 'name': 'Preservator Trader', 'imgURL':"/../public/src/preservator-trader-web-min.jpg"},
-                          {'id': 4, 'name': 'Three Wheel Cart', 'imgURL':"/../public/src/threeWheelCart.JPG"},
-						  {'id': 5, 'name': 'Four Wheel Cart', 'imgURL':"/../public/src/4WheelCart.png"},
-                          {'id': 6, 'name': 'E-Cart', 'imgURL':"/../public/src/ecart.PNG"}]
+    const productsList = [{'id': 1, 'name': 'SabjiKothi', 'imgURL':"/../public/src/products/sabjikothi-farmer-web-min.png"},
+                          {'id': 2, 'name': 'Preservator', 'imgURL':"/../public/src/products/preservator.jpg"},
+                          {'id': 3, 'name': 'Preservator Trader', 'imgURL':"/../public/src/products/preservator-trader-web-min.jpg"},
+                          {'id': 4, 'name': 'SabjiKothi Cart', 'imgURL':"/../public/src/products/threeWheelCart.JPG"},
+						  {'id': 5, 'name': 'Four Wheel Cart', 'imgURL':"/../public/src/products/4WheelCart.png"},
+                          {'id': 6, 'name': 'SabjiKothi E-Cart', 'imgURL':"/../public/src/products/ecart.PNG"},
+                          {'id': 7, 'name': 'Nano Kawach Pesticide', 'imgURL':"/../public/src/products/NanoKawach.jpeg"}]
   return { productsList}
 }
 

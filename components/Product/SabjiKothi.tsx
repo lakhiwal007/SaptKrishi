@@ -6,12 +6,12 @@ import { GoGear } from "react-icons/go";
 import { HiChip } from "react-icons/hi";
 import BookNow from '../BookNow';
 
-const StorageFarmer: NextComponentType = () => {
+const SabjiKothi: NextComponentType = () => {
 	return (
 		<div className="w-[95%] h-auto grid grid-cols-1 gap-4 lg:grid-cols-2 rounded bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-gray-200 mt-8 pb-4 lg:w-[60%]">
 			<div className="w-full flex items-center justify-center relative m-auto p-2 relative lg:justify-start">
 				<Image
-					src="/../public/src/sabjikothi-farmer-web-min.png"
+					src="/../public/src/products/sabjikothi-farmer-web-min.png"
 					width={450}
 					height={450}
 					className="rounded object-cover"
@@ -24,7 +24,7 @@ const StorageFarmer: NextComponentType = () => {
 							<p className="text-green-700 text-xl mb-2">
 								<FaRupeeSign />
 							</p>
-							<p className="text-green-700 mb-2 text-center">10000</p>
+							<p className="text-green-700 mb-2 text-center">Flexible</p>
 							<p className="text-center">Affordable</p>
 						</li>
 						<li className="w-full flex flex-col items-center justify-start">
@@ -58,11 +58,11 @@ const StorageFarmer: NextComponentType = () => {
 					</ul>
 				</div>
                 <div className="pt-8">
-					<BookNow name={"SabjiKothi Farmer"}/>
+					<BookNow name={"SabjiKothi"}/>
 				</div>
 			</div>
 		</div>
 	);
 };
 
-export default StorageFarmer;
+export default SabjiKothi;

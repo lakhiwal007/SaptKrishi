@@ -16,7 +16,7 @@ const Profiles: NextPage = () => {
 					</div>
 				</div>
 			</div>
-			<div className="row p-16">
+			<div className="row p-16 flex items-center justify-center">
 				<Profile imgURL={'/../public/src/team/nikky-jha.jpg'} fbURL={'#'} twURL={'#'} liURL={'#'} name={'Nikky Kumar Jha'} designation={'Co-Founder & CEO'} />
 				<Profile imgURL={'/../public/src/team/rashmi-jha.jpg'} fbURL={'#'} twURL={'#'} liURL={'#'} name={'Rashmi Jha'} designation={'Co-Founder & CEO'} />
 			</div>
@@ -30,7 +30,7 @@ const Profiles: NextPage = () => {
 					</div>
 				</div>
 			</div>
-			<div className="row p-16">
+			<div className="row p-16 flex items-center justify-center">
 				<Profile imgURL={'/../public/src/team/diksha.png'} fbURL={'#'} twURL={'#'} liURL={'#'} name={'Ms. Deeksha Yadav'} designation={'...'} />
 				<Profile imgURL={'/../public/src/team/shivani.png'} fbURL={'#'} twURL={'#'} liURL={'#'} name={'Ms. Shivani Jha'} designation={'...'} />
 				<Profile imgURL={'/../public/src/team/harsh.jpeg'} fbURL={'#'} twURL={'#'} liURL={'#'} name={'Mr. Harsh Marolia'} designation={'...'} />
@@ -48,7 +48,7 @@ const Profiles: NextPage = () => {
 					</div>
 				</div>
 			</div>
-			<div className="row p-16">
+			<div className="row p-16 flex items-center justify-center">
 				<Profile imgURL={'/../public/src/team/j-ramkumar.jpg'} fbURL={'#'} twURL={'#'} liURL={'#'} name={'Dr. J Ramkumar'} designation={'Advisory Board'} />
 				<Profile imgURL={'/../public/src/team/amitabha.png'} fbURL={'#'} twURL={'#'} liURL={'#'} name={'Prof. Amitabha Bandyopadhyay'} designation={'Advisory Board'} />
 				<Profile imgURL={'/../public/src/team/jagdesh-suknad.jpg'} fbURL={'#'} twURL={'#'} liURL={'#'} name={'Jagdeesh Suknad'} designation={'Advisory Board'} />
