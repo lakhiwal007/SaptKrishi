@@ -16,7 +16,7 @@ const Supporters: NextComponentType = () => {
           options={{
             rewind: true,
             rewindSpeed: 2000,
-            gap: "1rem",
+            type: "slide",
             arrows: false,
             drag: true,
             pagination: true,
@@ -32,10 +32,11 @@ const Supporters: NextComponentType = () => {
             breakpoints: {
               1024: {
                 grid: {
-                  rows: 2,
+                  rows: 1,
                   cols: 3,
                 },
                 gap: ".7rem",
+                arrows: true,
               },
               640: {
                 grid: {
@@ -43,6 +44,7 @@ const Supporters: NextComponentType = () => {
                   cols: 1,
                 },
                 gap: ".7rem",
+                arrows: true,
               },
             },
           }}

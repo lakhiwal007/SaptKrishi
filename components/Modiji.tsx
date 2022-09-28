@@ -6,7 +6,7 @@ import Image from "next/image"
 const Modiji: NextComponentType = () => {
 	return (
 			<div className="w-full row p-4">
-                <h2 className="text-xl p-2  mb-2 border-l-8 border-emerald-600 md:text-4xl">Demonstration of Sabjikothi to the PM Modi </h2>
+                <h2 className="text-xl p-2  mb-2 border-l-8 border-emerald-600 md:text-4xl" id="modiji">Demonstration of Sabjikothi to the PM Modi </h2>
                 <div className="w-full flex flex-col  items-center justify-center lg:p-8">
                     <Splide aria-label="My Favorite Images"
                     options={ {
