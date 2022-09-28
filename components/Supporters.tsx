@@ -19,6 +19,7 @@ const Supporters: NextComponentType = () => {
             type: "slide",
             arrows: false,
             drag: true,
+            snap: true,
             pagination: true,
             perMove: 3,
             grid: {

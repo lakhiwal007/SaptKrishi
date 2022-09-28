@@ -22,7 +22,7 @@ const HallOfFame: NextComponentType = () => {
           perMove: 1,
           autoplay: true,
           pagination: false,
-          arrows: true,
+          arrows: false,
           breakpoints: {
             912: {
               gap: ".7rem",
