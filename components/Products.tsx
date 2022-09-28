@@ -1,3 +1,4 @@
+import React from "react";
 import { NextPage } from "next";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";

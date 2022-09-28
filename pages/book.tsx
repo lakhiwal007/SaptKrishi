@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import NavBar from "../components/NavBar";
 import Image from "next/image";
 import Footer from "../components/Footer";
-import { app, database } from "../firebaseConfig";
+import { database } from "../firebaseConfig";
 import { addDoc, collection } from "firebase/firestore";
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";

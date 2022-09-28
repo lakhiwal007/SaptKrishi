@@ -1,5 +1,5 @@
-import { NextComponentType } from "next";
 import React from "react";
+import { NextComponentType } from "next";
 import Image from "next/image";
 import BookNow from "../BookNow";
 import { FaInbox, FaThermometerHalf } from "react-icons/fa";

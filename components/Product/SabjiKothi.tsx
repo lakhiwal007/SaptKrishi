@@ -1,5 +1,5 @@
-import { NextComponentType } from "next";
 import React from "react";
+import { NextComponentType } from "next";
 import Image from "next/image";
 import { FaRupeeSign, FaPlug, FaInbox } from "react-icons/fa";
 import { GoGear } from "react-icons/go";

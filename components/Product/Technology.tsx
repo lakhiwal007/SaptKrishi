@@ -1,6 +1,5 @@
-import { NextComponentType } from "next";
 import React from "react";
-import Image from "next/image";
+import { NextComponentType } from "next";
 
 const Technology: NextComponentType = () => {
   return (

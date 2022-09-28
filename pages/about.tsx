@@ -1,3 +1,4 @@
+import React from 'react';
 import { NextPage } from "next"
 import Footer from "../components/Footer"
 import NavBar from "../components/NavBar"

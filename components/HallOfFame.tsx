@@ -1,5 +1,5 @@
-import { NextComponentType } from "next";
 import React from "react";
+import { NextComponentType } from "next";
 import Image from "next/image";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import Link from "next/link";
