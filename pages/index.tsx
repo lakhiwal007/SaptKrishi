@@ -7,6 +7,7 @@ import Products from "../components/Products";
 import Supporters from "../components/Supporters";
 import SocialMedia from "../components/SocialMedia";
 import Feature from "../components/Feature";
+import Awards from "../components/Awards";
 import Technology from "../components/Product/Technology";
 import HallOfFame from "../components/HallOfFame";
 
@@ -21,6 +22,7 @@ const Home: NextPage = () => {
       <Technology />
       <SocialMedia />
       <Supporters />
+      <Awards />
       <Footer />
     </div>
   );

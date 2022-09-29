@@ -12,13 +12,13 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
 type Inputs = {
-  ProductName: string;
-  FullName: string;
-  Email: string;
-  MobileNo: number;
-  State: string;
-  City: string;
-  Quantity: number;
+  ProductName?: string;
+  FullName?: string;
+  Email?: string;
+  MobileNo?: number;
+  State?: string;
+  City?: string;
+  Quantity?: number;
 };
 
 const emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; //eslint-disable-line
@@ -42,7 +42,15 @@ const schema = yup.object().shape({
     .required("Required"),
 });
 
-const book: NextPage = ({ productsList }: Array<string>) => {
+// interface productProps {
+
+// }
+
+interface Props {
+  productsList: Array<{ id: number; name: string; imgURL: string }>;
+}
+
+const book: NextPage<Props> = ({ productsList }) => {
   const router = useRouter();
   const {
     query: { name },
@@ -58,16 +66,16 @@ const book: NextPage = ({ productsList }: Array<string>) => {
   const buttonRef = useRef(null);
   const collectionRef = collection(database, "Bookings");
 
-  const handleInput = (event) => {
+  const handleInput = (event: React.ChangeEvent<HTMLInputElement>) => {
     event.preventDefault();
     const newInput = { [event.target.name]: event.target.value };
 
     // console.log(newInput)
     setInputData({ ...inputData, ...newInput });
   };
-  const onSubmit = (data) => {
+  const onSubmit = (data: Inputs) => {
     // buttonRef.current.disabled = true;
-    console.log(data);
+    // console.log(data);
     addDoc(collectionRef, {
       product_name: productName ? productName.name : "SabjiKothi",
       full_name: data.FullName,
@@ -81,8 +89,8 @@ const book: NextPage = ({ productsList }: Array<string>) => {
         alert("Booking Confirmed!");
         emailjs
           .send(
-            process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-            process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+            process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+            process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
             data,
             process.env.NEXT_PUBLIC_EMAILJS_USER_ID
           )
@@ -136,7 +144,7 @@ const book: NextPage = ({ productsList }: Array<string>) => {
                   </label>
                   <input
                     type="text"
-                    name="ProductName"
+                    // name="ProductName"
                     value={productName ? productName.name : "SabjiKothi"}
                     readOnly
                     className="form-control"
@@ -155,7 +163,7 @@ const book: NextPage = ({ productsList }: Array<string>) => {
                   </label>
                   <input
                     type="text"
-                    name="FullName"
+                    // name="FullName"
                     className="form-control"
                     id="FullName"
                     placeholder="Name"
@@ -177,7 +185,7 @@ const book: NextPage = ({ productsList }: Array<string>) => {
                   </label>
                   <input
                     type="email"
-                    name="Email"
+                    // name="Email"
                     className="form-control"
                     id="formGroupExampleInput2"
                     placeholder="example@email.com"
@@ -199,7 +207,7 @@ const book: NextPage = ({ productsList }: Array<string>) => {
                   </label>
                   <input
                     type="tel"
-                    name="MobileNo"
+                    // name="MobileNo"
                     className="form-control"
                     id="formGroupExampleInput3"
                     placeholder="1234567890"
@@ -223,7 +231,7 @@ const book: NextPage = ({ productsList }: Array<string>) => {
                   </label>
                   <select
                     className="form-control"
-                    name="State"
+                    // name="State"
                     id="exampleFormControlSelect1"
                     {...register("State", { required: true })}
                     onBlur={(event) => handleInput(event)}
@@ -275,7 +283,7 @@ const book: NextPage = ({ productsList }: Array<string>) => {
                   </label>
                   <input
                     type="text"
-                    name="City"
+                    // name="City"
                     className="form-control"
                     id="formGroupExampleInput5"
                     placeholder="city"
@@ -297,7 +305,7 @@ const book: NextPage = ({ productsList }: Array<string>) => {
                   </label>
                   <input
                     type="number"
-                    name="Quantity"
+                    // name="Quantity"
                     className="form-control"
                     id="formGroupExampleInput6"
                     placeholder="1"
@@ -330,7 +338,7 @@ const book: NextPage = ({ productsList }: Array<string>) => {
 };
 
 book.getInitialProps = () => {
-  const productsList = [
+  const productsList: Array<{ id: number; name: string; imgURL: string }> = [
     {
       id: 1,
       name: "SabjiKothi",

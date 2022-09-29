@@ -22,16 +22,16 @@ const contact: NextPage = () => {
   const [inputData, setInputData] = useState({});
   const collectionRef = collection(database, "Queries");
 
-  const handleInput = (event) => {
+  const handleInput = (event: React.ChangeEvent<HTMLInputElement>) => {
     const newInput = { [event.target.name]: event.target.value };
     setInputData({ ...inputData, ...newInput });
   };
-  const onSubmit = () => {
+  const onSubmit = (data: Inputs) => {
     addDoc(collectionRef, {
-      name: inputData.Name,
-      email: inputData.Email,
-      subject: inputData.Subject,
-      message: inputData.Message,
+      name: data.Name,
+      email: data.Email,
+      subject: data.Subject,
+      message: data.Message,
     })
       .then(() => {
         alert("Query added!");
@@ -64,7 +64,7 @@ const contact: NextPage = () => {
               </label>
               <input
                 type="text"
-                name="Name"
+                // name="Name"
                 className={
                   errors.Name ? "form-control border-red-600" : "form-control"
                 }
@@ -83,7 +83,7 @@ const contact: NextPage = () => {
               </label>
               <input
                 type="email"
-                name="Email"
+                // name="Email"
                 className={
                   errors.Email ? "form-control border-red-600" : "form-control"
                 }
@@ -105,7 +105,7 @@ const contact: NextPage = () => {
               </label>
               <input
                 type="text"
-                name="Subject"
+                // name="Subject"
                 className={
                   errors.Subject
                     ? "form-control border-red-600"
@@ -131,7 +131,6 @@ const contact: NextPage = () => {
                 name="Message"
                 className="form-control"
                 id="exampleFormControlTextarea1"
-                rows="3"
                 onChange={(event) => handleInput(event)}
               ></textarea>
             </div>

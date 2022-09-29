@@ -3,6 +3,7 @@ import { NextComponentType } from "next";
 import Image from "next/image";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { Grid } from "@splidejs/splide-extension-grid";
+import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/react-splide/css";
 
 const Supporters: NextComponentType = () => {
@@ -12,58 +13,51 @@ const Supporters: NextComponentType = () => {
 
       <div className="w-full flex items-center justify-center m-8">
         <Splide
-          className="w-full flex items-center justify-center"
+          className="my-carousel"
           aria-label="My Favorite Images"
           options={{
-            rewind: true,
-            rewindSpeed: 2000,
-            type: "slide",
+            type: "loop",
             arrows: false,
             drag: true,
             snap: true,
             pagination: true,
-            perMove: 3,
-            grid: {
-              rows: 1,
-              cols: 3,
-              gap: {
-                row: "1rem",
-                col: "1.5rem",
-              },
+            // perMove: 3,
+
+            gap: "10px",
+            perPage: 5,
+            autoScroll: {
+              pauseOnHover: false,
+              speed: 2,
             },
             breakpoints: {
-              1024: {
-                grid: {
-                  rows: 1,
-                  cols: 3,
-                },
-                gap: ".7rem",
-                arrows: true,
-              },
               640: {
-                grid: {
-                  rows: 3,
-                  cols: 1,
-                },
-                gap: ".7rem",
-                arrows: true,
+                perPage: 1,
               },
             },
           }}
-          extensions={{ Grid }}
+          extensions={{ Grid, AutoScroll }}
         >
           <SplideSlide className="flex items-center justify-center">
             <Image
-              src="/../public/src/supporters/IIT_Kanpur_Logo.png"
-              width={200}
-              height={200}
+              src="/../public/src/supporters/siicllogoAssetLOf.png"
+              width={800}
+              height={500}
               className="rounded-full object-contain"
             ></Image>
           </SplideSlide>
 
           <SplideSlide className="flex items-center justify-center">
             <Image
-              src="/../public/src/supporters/incubation iitk.png"
+              src="/../public/src/supporters/Incubation-Center-IIT-Patna-Logo-Original-Colors.png"
+              width={220}
+              height={220}
+              className="rounded-full object-contain"
+            ></Image>
+          </SplideSlide>
+
+          <SplideSlide className="flex items-center justify-center">
+            <Image
+              src="/../public/src/supporters/uast.jpeg"
               width={200}
               height={200}
               className="rounded object-contain"
@@ -72,10 +66,19 @@ const Supporters: NextComponentType = () => {
 
           <SplideSlide className="flex items-center justify-center">
             <Image
-              src="/../public/src/supporters/siic iitk.png"
+              src="/../public/src/supporters/abiJammu.jfif"
               width={200}
               height={200}
               className="rounded object-contain"
+            ></Image>
+          </SplideSlide>
+
+          <SplideSlide className="flex items-center justify-center">
+            <Image
+              src="/../public/src/supporters/mafw.png"
+              width={200}
+              height={200}
+              className="rounded-full object-contain"
             ></Image>
           </SplideSlide>
 
@@ -117,7 +120,7 @@ const Supporters: NextComponentType = () => {
 
           <SplideSlide className="flex items-center justify-center">
             <Image
-              src="/../public/src/supporters/abiJammu.jfif"
+              src="/../public/src/supporters/medTechIITK.jfif"
               width={200}
               height={200}
               className="rounded object-contain"
@@ -126,7 +129,7 @@ const Supporters: NextComponentType = () => {
 
           <SplideSlide className="flex items-center justify-center">
             <Image
-              src="/../public/src/supporters/uast.jpeg"
+              src="/../public/src/supporters/rkvy.jpeg"
               width={200}
               height={200}
               className="rounded object-contain"
