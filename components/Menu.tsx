@@ -2,14 +2,10 @@ import React from "react";
 import { NextComponentType } from "next";
 import Link from "next/link";
 
-interface IProps {
-  isShow: string;
-}
-
-const Menu: NextComponentType<IProps> = ({ isShow }) => {
+const Menu: NextComponentType = () => {
   return (
     <div
-      className={`${isShow} w-full min-h-screen items-center justify-center absolute top-20 bg-white z-10`}
+      className={`flex w-full min-h-screen items-center justify-center absolute top-20 bg-white z-10`}
     >
       <div className="w-full min-h-screen flex items-center justify-center">
         <ul className=" w-full flex text-4xl flex-col items-center justify-start">

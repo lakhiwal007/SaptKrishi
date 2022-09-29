@@ -157,7 +157,8 @@ const NavBar: NextComponentType = () => {
           <Hamburger rounded onToggle={handleToggle} />
         </div>
       </div>
-      {isOpen ? <Menu isShow={"flex"} /> : <Menu isShow={"hidden"} />}
+      {/* {isOpen ? <Menu isShow={"flex"} /> : <Menu isShow={"hidden"} />} */}
+      {isOpen ? <Menu /> : ""}
     </div>
   );
 };

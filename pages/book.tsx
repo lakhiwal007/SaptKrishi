@@ -21,7 +21,7 @@ type Inputs = {
   Quantity: number;
 };
 
-const emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+const emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; //eslint-disable-line
 const schema = yup.object().shape({
   FullName: yup
     .string()
@@ -60,27 +60,32 @@ const book: NextPage = ({ productsList }: Array<string>) => {
 
   const handleInput = (event) => {
     event.preventDefault();
-    let newInput = { [event.target.name]: event.target.value };
+    const newInput = { [event.target.name]: event.target.value };
 
     // console.log(newInput)
     setInputData({ ...inputData, ...newInput });
   };
   const onSubmit = (data) => {
     // buttonRef.current.disabled = true;
-    // console.log(data)
+    console.log(data);
     addDoc(collectionRef, {
       product_name: productName ? productName.name : "SabjiKothi",
-      full_name: inputData.FullName,
-      email: inputData.Email,
-      mobile_no: inputData.MobileNo,
-      state: inputData.State,
-      city: inputData.City,
-      quantity: inputData.Quantity,
+      full_name: data.FullName,
+      email: data.Email,
+      mobile_no: data.MobileNo,
+      state: data.State,
+      city: data.City,
+      quantity: data.Quantity,
     })
       .then(() => {
-        alert("Booking added!");
+        alert("Booking Confirmed!");
         emailjs
-          .send("service_dp209r1", "2#sj%b5@4d41o", data, "ZB6XvniJN6hlmr8CM")
+          .send(
+            process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+            process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+            data,
+            process.env.NEXT_PUBLIC_EMAILJS_USER_ID
+          )
           .then((response) => {
             console.log("SUCCESS!", response.status, response.text);
           })
@@ -155,7 +160,7 @@ const book: NextPage = ({ productsList }: Array<string>) => {
                     id="FullName"
                     placeholder="Name"
                     {...register("FullName", { required: true, maxLength: 50 })}
-                    onChange={(event) => handleInput(event)}
+                    onBlur={(event) => handleInput(event)}
                   />
                   {errors.FullName && (
                     <p className="text-sm bg-red-300 text-red-600 p-2 rounded">
@@ -177,7 +182,7 @@ const book: NextPage = ({ productsList }: Array<string>) => {
                     id="formGroupExampleInput2"
                     placeholder="example@email.com"
                     {...register("Email", { required: true, maxLength: 50 })}
-                    onChange={(event) => handleInput(event)}
+                    onBlur={(event) => handleInput(event)}
                   />
                   {errors.Email && (
                     <p className="text-sm bg-red-300 text-red-600 p-2 rounded">
@@ -202,9 +207,9 @@ const book: NextPage = ({ productsList }: Array<string>) => {
                       required: true,
                       minLength: 10,
                       pattern:
-                        /^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$/,
+                        /^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$/, //eslint-disable-line
                     })}
-                    onChange={(event) => handleInput(event)}
+                    onBlur={(event) => handleInput(event)}
                   />
                   {errors.MobileNo && (
                     <p className="text-sm bg-red-300 text-red-600 p-2 rounded">
@@ -221,9 +226,8 @@ const book: NextPage = ({ productsList }: Array<string>) => {
                     name="State"
                     id="exampleFormControlSelect1"
                     {...register("State", { required: true })}
-                    onChange={(event) => handleInput(event)}
+                    onBlur={(event) => handleInput(event)}
                   >
-                    <option defaultValue={""}>Select State</option>
                     <option value={"Andhra Pradesh"}>Andhra Pradesh</option>
                     <option value={"Andaman and Nicobar Islands"}>
                       Andaman and Nicobar Islands
@@ -276,7 +280,7 @@ const book: NextPage = ({ productsList }: Array<string>) => {
                     id="formGroupExampleInput5"
                     placeholder="city"
                     {...register("City", { required: true })}
-                    onChange={(event) => handleInput(event)}
+                    onBlur={(event) => handleInput(event)}
                   />
                   {errors.City && (
                     <p className="text-sm bg-red-300 text-red-600 p-2 rounded">
@@ -298,7 +302,7 @@ const book: NextPage = ({ productsList }: Array<string>) => {
                     id="formGroupExampleInput6"
                     placeholder="1"
                     {...register("Quantity", { required: true, min: 1 })}
-                    onChange={(event) => handleInput(event)}
+                    onBlur={(event) => handleInput(event)}
                   />
                   {errors.Quantity && (
                     <p className="text-sm bg-red-300 text-red-600 p-2 rounded">

@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 type Props = {
-  imgURL: string;
+//   imgURL: string;
   name: string;
 };
 const KnowMore = ({ name }: Props) => {
