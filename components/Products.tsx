@@ -1,64 +1,51 @@
+import React from "react";
 import { NextPage } from "next";
-import Image from "next/image";
-import KnowMore from "./KnowMore"
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/react-splide/css";
+import SabjiKothi from "../components/Product/SabjiKothi";
+import NanoKawach from "../components/Product/NanoKawach";
+import SabjiKothiECart from "../components/Product/SabjiKothiECart";
+import SabjiKothiCart from "../components/Product/SabjiKothiCart";
 
 const Products: NextPage = () => {
-	return (
-		<div className="w-full flex flex-col items-center justify-center mt-8">
-			<h1 data-aos="fade-down" className="text-4xl md:text-6xl ">Our Products</h1>
-			<div className="w-full flex items-center justify-center flex-wrap p-8 md:p-16">
-				<div data-aos="fade-up" className="w-[350px] h-[350px] relative shadow-2xl rounded m-auto mt-4 group">
-					<Image
-						src="/../public/src/sabjikothi-farmer-web-min.png"
-						layout="fill"
-						className="rounded"
-					></Image>
-					{/* <KnowMore/> */}
-					<KnowMore  name={"SabjiKothi Farmer"} />
-				</div>
-				<div data-aos="fade-up" className="w-[350px] h-[350px] relative shadow-2xl rounded m-auto mt-4 group">
-					<Image
-						src="/../public/src/preservator.jpg"
-						layout="fill"
-						className="rounded"
-					></Image>
-					<KnowMore  name={"Preservator"}/>
-				</div>
-				<div data-aos="fade-up" className="w-[350px] h-[350px] relative shadow-2xl rounded m-auto mt-4 group">
-					<Image
-						src="/../public/src/preservator-trader-web-min.jpg"
-						layout="fill"
-						className="rounded"
-					></Image>
-					<KnowMore  name={"Preservator Trader"}/>
-				</div>
-				<div data-aos="zoom-in-down" className="w-[350px] h-[350px] relative shadow-2xl rounded m-auto mt-4 group">
-					<Image
-						src="/../public/src/threeWheelCart.JPG"
-						layout="fill"
-						className="rounded"
-					></Image>
-					<KnowMore  name={"Three Wheel Cart"}/>
-				</div>
-                <div data-aos="fade-up" className="w-[350px] h-[350px] relative shadow-2xl rounded m-auto mt-4 group">
-					<Image
-						src="/../public/src/4WheelCart.png"
-						layout="fill"
-						className="rounded"
-					></Image>
-					<KnowMore  name={"Four Wheel Cart"}/>
-				</div>
-				<div data-aos="fade-up" className="w-[350px] h-[350px] relative shadow-2xl rounded m-auto mt-4 group">
-					<Image
-						src="/../public/src/ecart.PNG"
-						layout="fill"
-						className="rounded"
-					></Image>
-					<KnowMore  name={"E-Cart"}/>
-				</div>
-			</div>
-		</div>
-	);
+  return (
+    <div className="w-full flex flex-col items-center justify-center mt-8">
+      <h1 className="text-4xl md:text-6xl ">Our Products</h1>
+      <div className="w-full flex items-center justify-center flex-wrap p-4 pt-0">
+        <Splide
+          className="w-full flex items-center justify-center"
+          aria-label="My Favorite Images"
+          options={{
+            rewind: true,
+            rewindSpeed: 2000,
+            type: "slide",
+            perPage: 1,
+            gap: "1rem",
+            focus: "center",
+            perMove: 1,
+            pagination: false,
+            snap: true,
+          }}
+        >
+          <SplideSlide className="flex items-start justify-center lg:items-center">
+            <SabjiKothi />
+          </SplideSlide>
+
+          <SplideSlide className="flex items-start justify-center lg:items-center">
+            <SabjiKothiCart />
+          </SplideSlide>
+
+          <SplideSlide className="flex items-start justify-center lg:items-center">
+            <SabjiKothiECart />
+          </SplideSlide>
+
+          <SplideSlide className="flex items-start justify-center lg:items-center">
+            <NanoKawach />
+          </SplideSlide>
+        </Splide>
+      </div>
+    </div>
+  );
 };
 
 export default Products;
