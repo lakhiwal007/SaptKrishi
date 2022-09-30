@@ -2,7 +2,6 @@ import React from "react";
 import { NextComponentType } from "next";
 import Image from "next/image";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import { Grid } from "@splidejs/splide-extension-grid";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/react-splide/css";
 
@@ -32,10 +31,11 @@ const Supporters: NextComponentType = () => {
             breakpoints: {
               640: {
                 perPage: 1,
+                speed: 1,
               },
             },
           }}
-          extensions={{ Grid, AutoScroll }}
+          extensions={{ AutoScroll }}
         >
           <SplideSlide className="flex items-center justify-center">
             <div className="w-full flex items-center justify-around flex-col lg:flex-row">

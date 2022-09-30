@@ -6,7 +6,6 @@ import SabjiKothi from "../components/Product/SabjiKothi";
 import NanoKawach from "../components/Product/NanoKawach";
 import SabjiKothiECart from "../components/Product/SabjiKothiECart";
 import SabjiKothiCart from "../components/Product/SabjiKothiCart";
-import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 
 const Products: NextPage = () => {
   return (
@@ -17,19 +16,16 @@ const Products: NextPage = () => {
           className="w-full flex items-center justify-center"
           aria-label="My Favorite Images"
           options={{
-            type: "loop",
+            rewind: true,
+            rewindSpeed: 2000,
+            type: "slide",
             perPage: 1,
-            drag: "free",
-            snap: true,
             gap: "1rem",
             focus: "center",
             perMove: 1,
             pagination: false,
-            autoScroll: {
-              speed: 2,
-            },
+            snap: true,
           }}
-          extensions={{ AutoScroll }}
         >
           <SplideSlide className="flex items-start justify-center lg:items-center">
             <SabjiKothi />
