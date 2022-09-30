@@ -63,7 +63,7 @@ const HallOfFame: NextComponentType = () => {
           <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end bg-black opacity-40"></div>
           <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end lg:justify-center">
             <p className="text-lg sm:text-2xl text-white font-bold mb-2 md:text-4xl lg:text-6xl text-center">
-              SabjiKothi Demonstration in Front of PM Modi
+              SabjiKothi Demonstration in Front of Hon'ble PM Modi
             </p>
             <Link href={"/gallery/#modiji"}>
               <button className="btn btn-primary rounded-full mb-8">
@@ -82,7 +82,7 @@ const HallOfFame: NextComponentType = () => {
           ></Image>
           <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end bg-black opacity-40"></div>
           <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end lg:justify-center">
-            <p className="text-lg sm:text-2xl text-white font-bold mb-2 md:text-4xl lg:text-6xl text-center">
+            <p className="text-lg sm:text-2xl text-white font-bold mb-4 md:text-4xl lg:text-6xl text-center">
               Conferred By Youth Affairs & Sports Minister Anurag Thakur
             </p>
             <Link href={"/gallery/#photos"}>
@@ -123,7 +123,7 @@ const HallOfFame: NextComponentType = () => {
           <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end bg-black opacity-40"></div>
           <div className="w-full h-full absolute top-0 flex flex-col items-center justify-center">
             <p className="text-lg sm:text-2xl text-white font-bold mb-2 md:text-4xl lg:text-6xl text-center">
-              Happy Customer
+              Our Happy Customer
             </p>
           </div>
         </SplideSlide>

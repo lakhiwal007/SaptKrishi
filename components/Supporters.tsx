@@ -20,11 +20,11 @@ const Supporters: NextComponentType = () => {
             arrows: false,
             drag: true,
             snap: true,
-            pagination: true,
+            pagination: false,
             // perMove: 3,
 
-            gap: "10px",
-            perPage: 5,
+            gap: "20px",
+            perPage: 1,
             autoScroll: {
               pauseOnHover: false,
               speed: 2,
@@ -32,108 +32,81 @@ const Supporters: NextComponentType = () => {
             breakpoints: {
               640: {
                 perPage: 1,
+                autoScroll: {
+                  speed: 1,
+                },
               },
             },
           }}
           extensions={{ Grid, AutoScroll }}
         >
-          <SplideSlide className="flex items-center justify-center">
-            <Image
-              src="/../public/src/supporters/siicllogoAssetLOf.png"
-              width={800}
-              height={500}
-              className="rounded-full object-contain"
-            ></Image>
+          <SplideSlide className="w-full flex items-center justify-center">
+            <div className="w-full flex items-center justify-around flex-col lg:flex-row">
+              <Image
+                src="/../public/src/supporters/siicllogoAssetLOf.png"
+                width={700}
+                height={300}
+                className="rounded-full object-contain"
+              ></Image>
+              <Image
+                src="/../public/src/supporters/Incubation-Center-IIT-Patna-Logo-Original-Colors.png"
+                width={220}
+                height={220}
+                className="rounded-full object-contain"
+              ></Image>
+              <Image
+                src="/../public/src/supporters/MafwAbiUast.png"
+                width={600}
+                height={400}
+                className="rounded-full object-contain"
+              ></Image>
+            </div>
           </SplideSlide>
 
           <SplideSlide className="flex items-center justify-center">
-            <Image
-              src="/../public/src/supporters/Incubation-Center-IIT-Patna-Logo-Original-Colors.png"
-              width={220}
-              height={220}
-              className="rounded-full object-contain"
-            ></Image>
+            <div className="w-full flex items-center justify-around flex-col lg:flex-row">
+              <Image
+                src="/../public/src/supporters/msme.png"
+                width={200}
+                height={200}
+                className="rounded object-contain"
+              ></Image>
+              <Image
+                src="/../public/src/supporters/mst.png"
+                width={200}
+                height={200}
+                className="rounded object-contain"
+              ></Image>
+              <Image
+                src="/../public/src/supporters/panchayatiRaj.png"
+                width={200}
+                height={200}
+                className="rounded object-contain"
+              ></Image>
+            </div>
           </SplideSlide>
 
           <SplideSlide className="flex items-center justify-center">
-            <Image
-              src="/../public/src/supporters/uast.jpeg"
-              width={200}
-              height={200}
-              className="rounded object-contain"
-            ></Image>
-          </SplideSlide>
-
-          <SplideSlide className="flex items-center justify-center">
-            <Image
-              src="/../public/src/supporters/abiJammu.jfif"
-              width={200}
-              height={200}
-              className="rounded object-contain"
-            ></Image>
-          </SplideSlide>
-
-          <SplideSlide className="flex items-center justify-center">
-            <Image
-              src="/../public/src/supporters/mafw.png"
-              width={200}
-              height={200}
-              className="rounded-full object-contain"
-            ></Image>
-          </SplideSlide>
-
-          <SplideSlide className="flex items-center justify-center">
-            <Image
-              src="/../public/src/supporters/msme.png"
-              width={200}
-              height={200}
-              className="rounded object-contain"
-            ></Image>
-          </SplideSlide>
-
-          <SplideSlide className="flex items-center justify-center">
-            <Image
-              src="/../public/src/supporters/mst.png"
-              width={200}
-              height={200}
-              className="rounded object-contain"
-            ></Image>
-          </SplideSlide>
-
-          <SplideSlide className="flex items-center justify-center">
-            <Image
-              src="/../public/src/supporters/panchayatiRaj.png"
-              width={200}
-              height={200}
-              className="rounded object-contain"
-            ></Image>
-          </SplideSlide>
-
-          <SplideSlide className="flex items-center justify-center">
-            <Image
-              src="/../public/src/supporters/rtagiitk.png"
-              width={200}
-              height={200}
-              className="rounded object-contain"
-            ></Image>
-          </SplideSlide>
-
-          <SplideSlide className="flex items-center justify-center">
-            <Image
-              src="/../public/src/supporters/medTechIITK.jfif"
-              width={200}
-              height={200}
-              className="rounded object-contain"
-            ></Image>
-          </SplideSlide>
-
-          <SplideSlide className="flex items-center justify-center">
-            <Image
-              src="/../public/src/supporters/rkvy.jpeg"
-              width={200}
-              height={200}
-              className="rounded object-contain"
-            ></Image>
+            <div className="w-full flex items-center justify-around flex-col lg:flex-row">
+              <Image
+                src="/../public/src/supporters/rtagiitk.png"
+                width={200}
+                height={200}
+                className="rounded object-contain"
+              ></Image>
+              <Image
+                src="/../public/src/supporters/medTechIITK.jfif"
+                width={200}
+                height={200}
+                className="rounded object-contain"
+              ></Image>
+              <Image
+                src="/../public/src/supporters/rkvy.jpeg"
+                width={200}
+                height={200}
+                className="rounded object-contain"
+              ></Image>
+            </div>
           </SplideSlide>
         </Splide>
       </div>

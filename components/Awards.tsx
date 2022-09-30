@@ -17,14 +17,14 @@ const Supporters: NextComponentType = () => {
           aria-label="My Favorite Images"
           options={{
             type: "loop",
-            arrows: false,
             drag: true,
             snap: true,
+            arrows: false,
             pagination: true,
             // perMove: 3,
 
             gap: "10px",
-            perPage: 3,
+            perPage: 1,
             autoScroll: {
               pauseOnHover: false,
               speed: 2,
@@ -38,57 +38,49 @@ const Supporters: NextComponentType = () => {
           extensions={{ Grid, AutoScroll }}
         >
           <SplideSlide className="flex items-center justify-center">
-            <Image
-              src="/../public/src/awards/Award1.png"
-              width={200}
-              height={200}
-              className="rounded object-contain"
-            ></Image>
+            <div className="w-full flex items-center justify-around flex-col lg:flex-row">
+              <Image
+                src="/../public/src/awards/Award1.png"
+                width={200}
+                height={200}
+                className="rounded object-contain"
+              ></Image>
+              <Image
+                src="/../public/src/awards/Award2.png"
+                width={200}
+                height={200}
+                className="rounded object-contain"
+              ></Image>
+              <Image
+                src="/../public/src/awards/Award3.png"
+                width={200}
+                height={200}
+                className="rounded object-contain"
+              ></Image>
+            </div>
           </SplideSlide>
 
           <SplideSlide className="flex items-center justify-center">
-            <Image
-              src="/../public/src/awards/Award2.png"
-              width={200}
-              height={200}
-              className="rounded object-contain"
-            ></Image>
-          </SplideSlide>
-
-          <SplideSlide className="flex items-center justify-center">
-            <Image
-              src="/../public/src/awards/Award3.png"
-              width={200}
-              height={200}
-              className="rounded object-contain"
-            ></Image>
-          </SplideSlide>
-
-          <SplideSlide className="flex items-center justify-center">
-            <Image
-              src="/../public/src/awards/Award4.png"
-              width={200}
-              height={200}
-              className="rounded object-contain"
-            ></Image>
-          </SplideSlide>
-
-          <SplideSlide className="flex items-center justify-center">
-            <Image
-              src="/../public/src/awards/Award5.png"
-              width={200}
-              height={200}
-              className="rounded object-contain"
-            ></Image>
-          </SplideSlide>
-
-          <SplideSlide className="flex items-center justify-center">
-            <Image
-              src="/../public/src/awards/Award6.png"
-              width={200}
-              height={200}
-              className="rounded object-contain"
-            ></Image>
+            <div className="w-full flex items-center justify-around flex-col lg:flex-row">
+              <Image
+                src="/../public/src/awards/Award4.png"
+                width={200}
+                height={200}
+                className="rounded object-contain"
+              ></Image>
+              <Image
+                src="/../public/src/awards/Award5.png"
+                width={200}
+                height={200}
+                className="rounded object-contain"
+              ></Image>
+              <Image
+                src="/../public/src/awards/Award6.png"
+                width={200}
+                height={200}
+                className="rounded object-contain"
+              ></Image>
+            </div>
           </SplideSlide>
         </Splide>
       </div>
