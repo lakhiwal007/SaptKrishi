@@ -134,7 +134,7 @@ const news: NextPage = () => {
                 </div>
                 <div className="w-full flex flex-col items-center justify-center rounded absolute bottom-0  text-white">
                   <p className="text-justify p-2">
-                    This Bhagalpur agritech startup&apos s Preservator helps
+                    This Bhagalpur agritech startup&apos;s Preservator helps
                     farmers reduce produce wastage
                   </p>
                   <a
@@ -163,7 +163,7 @@ const news: NextPage = () => {
                 <div className="w-full flex flex-col items-center justify-center rounded absolute bottom-0  text-white">
                   <p className="text-justify p-2">
                     IIT Kanpur Engineer Built Cheap Cold Storage Device To
-                    Reduce Farmer's Losses
+                    Reduce Farmer&apos;s Losses
                   </p>
                   <a
                     target="_blank"
@@ -188,9 +188,9 @@ const news: NextPage = () => {
                 </div>
                 <div className="w-full flex flex-col items-center justify-center rounded absolute bottom-0  text-white">
                   <p className="text-justify p-2">
-                    SaptKrishi has developed a 'Microcliate Storage/
-                    Sabjikothi,' which is a low-cost storage and transportation
-                    solution...
+                    SaptKrishi has developed a &apos;Microcliate Storage/
+                    Sabjikothi,&apos; which is a low-cost storage and
+                    transportation solution...
                   </p>
                   <a
                     target="_blank"

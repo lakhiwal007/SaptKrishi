@@ -43,7 +43,7 @@ const SocialMedia: NextComponentType = () => {
         >
           <SplideSlide className="flex items-center justify-center">
             <div className="w-[350px] h-[450px] relative rounded m-auto mt-4 p-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  hover:from-green-400 hover:to-blue-500 shadow-xl">
-              <div className="w-full h-full relative flex items-start justify-center rounded m-auto  shadow-xl overflow-y-scroll scrollbar-hide">
+              <div className="w-full h-full relative  rounded m-auto  shadow-xl overflow-y-scroll scrollbar-hide">
                 <TwitterTimelineEmbed
                   sourceType="profile"
                   screenName={"saptkrishi"}

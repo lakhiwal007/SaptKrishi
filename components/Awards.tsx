@@ -31,7 +31,9 @@ const Supporters: NextComponentType = () => {
             breakpoints: {
               640: {
                 perPage: 1,
-                speed: 1,
+                autoScroll: {
+                  speed: 1,
+                },
               },
             },
           }}
@@ -51,8 +53,19 @@ const Supporters: NextComponentType = () => {
                 height={200}
                 className="rounded object-contain"
               ></Image>
+            </div>
+          </SplideSlide>
+
+          <SplideSlide className="flex items-center justify-center">
+            <div className="w-full flex items-center justify-around flex-col lg:flex-row">
               <Image
                 src="/../public/src/awards/Award3.png"
+                width={200}
+                height={200}
+                className="rounded object-contain"
+              ></Image>
+              <Image
+                src="/../public/src/awards/Award4.png"
                 width={200}
                 height={200}
                 className="rounded object-contain"
@@ -62,12 +75,6 @@ const Supporters: NextComponentType = () => {
 
           <SplideSlide className="flex items-center justify-center">
             <div className="w-full flex items-center justify-around flex-col lg:flex-row">
-              <Image
-                src="/../public/src/awards/Award4.png"
-                width={200}
-                height={200}
-                className="rounded object-contain"
-              ></Image>
               <Image
                 src="/../public/src/awards/Award5.png"
                 width={200}
