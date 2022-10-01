@@ -41,7 +41,7 @@ const Feature: NextComponentType = () => {
               width={350}
               height={350}
               className="object-fit rounded"
-              alt="Image 1"
+              alt="Clean Energy"
             ></Image>
           </SplideSlide>
           <SplideSlide className="flex items-center justify-center">
@@ -50,7 +50,7 @@ const Feature: NextComponentType = () => {
               width={350}
               height={350}
               className="object-fit rounded"
-              alt="Image 2"
+              alt="Reduces Carbon Footprint"
             ></Image>
           </SplideSlide>
           <SplideSlide className="flex items-center justify-center">
@@ -59,7 +59,7 @@ const Feature: NextComponentType = () => {
               width={350}
               height={350}
               className="object-fit rounded"
-              alt="Image 3"
+              alt="Zero maintainance"
             ></Image>
           </SplideSlide>
           <SplideSlide className="flex items-center justify-center">
@@ -68,7 +68,7 @@ const Feature: NextComponentType = () => {
               width={350}
               height={350}
               className="object-fit rounded"
-              alt="Image 4"
+              alt="Chemical Free"
             ></Image>
           </SplideSlide>
           <SplideSlide className="flex items-center justify-center">
@@ -77,7 +77,7 @@ const Feature: NextComponentType = () => {
               width={350}
               height={350}
               className="object-fit rounded"
-              alt="Image 5"
+              alt="Saves Energy"
             ></Image>
           </SplideSlide>
           <SplideSlide className="flex items-center justify-center">
@@ -86,7 +86,7 @@ const Feature: NextComponentType = () => {
               width={350}
               height={350}
               className="object-fit rounded"
-              alt="Image 6"
+              alt="Environment Friendly"
             ></Image>
           </SplideSlide>
         </Splide>

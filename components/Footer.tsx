@@ -23,7 +23,7 @@ const Footer: NextComponentType = () => {
               width={200}
               height={50}
               alt="logo"
-              className="object-contain"
+              className="object-contain rounded-sm"
             ></Image>
           </div>
         </div>

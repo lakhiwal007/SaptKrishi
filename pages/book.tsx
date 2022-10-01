@@ -66,7 +66,9 @@ const book: NextPage<Props> = ({ productsList }) => {
   const buttonRef = useRef(null);
   const collectionRef = collection(database, "Bookings");
 
-  const handleInput = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleInput = (
+    event: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
+  ) => {
     event.preventDefault();
     const newInput = { [event.target.name]: event.target.value };
 

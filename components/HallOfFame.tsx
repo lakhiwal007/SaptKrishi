@@ -63,7 +63,8 @@ const HallOfFame: NextComponentType = () => {
           <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end bg-black opacity-40"></div>
           <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end lg:justify-center">
             <p className="text-lg sm:text-2xl text-white font-bold mb-2 md:text-4xl lg:text-6xl text-center">
-              SabjiKothi Demonstration in Front of Hon&apos;ble PM Modi
+              SabjiKothi Demonstration in Front of Hon&apos;ble Prime Minister
+              Narendra Modi
             </p>
             <Link href={"/gallery/#modiji"}>
               <button className="btn btn-primary rounded-full mb-8">
