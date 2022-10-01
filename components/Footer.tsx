@@ -19,7 +19,7 @@ const Footer: NextComponentType = () => {
         <div className="w-full flex items-center justify-center">
           <div className="w-full flex items-center justify-center">
             <Image
-              src="/../public/src/SaptKrishiLogo.png"
+              src="/src/SaptKrishiLogo.png"
               width={200}
               height={50}
               alt="logo"

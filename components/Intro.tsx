@@ -9,7 +9,7 @@ const Intro: NextComponentType = () => {
       <div className="w-full flex items-center justify-center">
         <div className="w-full flex items-center justify-center">
           <Image
-            src="/../public/src/Thela-and-Box3D.png"
+            src="/src/Thela-and-Box3D.png"
             width={524}
             height={434}
           ></Image>

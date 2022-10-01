@@ -27,7 +27,7 @@ const Profiles: NextPage = () => {
       </div>
       <div className="row p-16 flex items-center justify-center">
         <Profile
-          imgURL={"/../public/src/team/nikky-jha.jpg"}
+          imgURL={"/src/team/nikky-jha.jpg"}
           fbURL={"#"}
           twURL={"#"}
           liURL={"#"}
@@ -35,7 +35,7 @@ const Profiles: NextPage = () => {
           designation={"Co-Founder & CEO"}
         />
         <Profile
-          imgURL={"/../public/src/team/rashmi-jha.jpg"}
+          imgURL={"/src/team/rashmi-jha.jpg"}
           fbURL={"#"}
           twURL={"#"}
           liURL={"#"}
@@ -68,7 +68,7 @@ const Profiles: NextPage = () => {
       </div>
       <div className="row p-16 flex items-center justify-center">
         <Profile
-          imgURL={"/../public/src/team/diksha.png"}
+          imgURL={"/src/team/diksha.png"}
           fbURL={"#"}
           twURL={"#"}
           liURL={"#"}
@@ -76,7 +76,7 @@ const Profiles: NextPage = () => {
           designation={"..."}
         />
         <Profile
-          imgURL={"/../public/src/team/shivani.png"}
+          imgURL={"/src/team/shivani.png"}
           fbURL={"#"}
           twURL={"#"}
           liURL={"#"}
@@ -84,7 +84,7 @@ const Profiles: NextPage = () => {
           designation={"..."}
         />
         <Profile
-          imgURL={"/../public/src/team/harsh.jpeg"}
+          imgURL={"/src/team/harsh.jpeg"}
           fbURL={"#"}
           twURL={"#"}
           liURL={"#"}
@@ -92,7 +92,7 @@ const Profiles: NextPage = () => {
           designation={"..."}
         />
         <Profile
-          imgURL={"/../public/src/team/sourabh.png"}
+          imgURL={"/src/team/sourabh.png"}
           fbURL={"#"}
           twURL={"#"}
           liURL={"#"}
@@ -122,7 +122,7 @@ const Profiles: NextPage = () => {
       </div>
       <div className="row p-16 flex items-center justify-center">
         <Profile
-          imgURL={"/../public/src/team/j-ramkumar.jpg"}
+          imgURL={"/src/team/j-ramkumar.jpg"}
           fbURL={"#"}
           twURL={"#"}
           liURL={"#"}
@@ -130,7 +130,7 @@ const Profiles: NextPage = () => {
           designation={"Advisory Board"}
         />
         <Profile
-          imgURL={"/../public/src/team/amitabha.png"}
+          imgURL={"/src/team/amitabha.png"}
           fbURL={"#"}
           twURL={"#"}
           liURL={"#"}
@@ -138,7 +138,7 @@ const Profiles: NextPage = () => {
           designation={"Advisory Board"}
         />
         <Profile
-          imgURL={"/../public/src/team/jagdesh-suknad.jpg"}
+          imgURL={"/src/team/jagdesh-suknad.jpg"}
           fbURL={"#"}
           twURL={"#"}
           liURL={"#"}

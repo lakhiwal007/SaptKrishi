@@ -45,7 +45,7 @@ const Modiji: NextComponentType = () => {
         >
           <SplideSlide className="flex items-center justify-center">
             <Image
-              src="/../public/src/gallery/modiji/modiji2.png"
+              src="/src/gallery/modiji/modiji2.png"
               width={500}
               height={350}
               className="object-fit rounded"
@@ -54,7 +54,7 @@ const Modiji: NextComponentType = () => {
           </SplideSlide>
           <SplideSlide className="flex items-center justify-center">
             <Image
-              src="/../public/src/gallery/modiji/modiji3.png"
+              src="/src/gallery/modiji/modiji3.png"
               width={500}
               height={350}
               className="object-fit rounded"
@@ -63,7 +63,7 @@ const Modiji: NextComponentType = () => {
           </SplideSlide>
           <SplideSlide className="flex items-center justify-center">
             <Image
-              src="/../public/src/gallery/modiji/modiji4.png"
+              src="/src/gallery/modiji/modiji4.png"
               width={500}
               height={350}
               className="object-fit rounded"

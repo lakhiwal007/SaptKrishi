@@ -37,7 +37,7 @@ const Feature: NextComponentType = () => {
         >
           <SplideSlide className="flex items-center justify-center">
             <Image
-              src="/../public/src/Feature/cleanEnergy.png"
+              src="/src/Feature/cleanEnergy.png"
               width={350}
               height={350}
               className="object-fit rounded"
@@ -46,7 +46,7 @@ const Feature: NextComponentType = () => {
           </SplideSlide>
           <SplideSlide className="flex items-center justify-center">
             <Image
-              src="/../public/src/Feature/carbonFootprint.png"
+              src="/src/Feature/carbonFootprint.png"
               width={350}
               height={350}
               className="object-fit rounded"
@@ -55,7 +55,7 @@ const Feature: NextComponentType = () => {
           </SplideSlide>
           <SplideSlide className="flex items-center justify-center">
             <Image
-              src="/../public/src/Feature/zeroMaint.png"
+              src="/src/Feature/zeroMaint.png"
               width={350}
               height={350}
               className="object-fit rounded"
@@ -64,7 +64,7 @@ const Feature: NextComponentType = () => {
           </SplideSlide>
           <SplideSlide className="flex items-center justify-center">
             <Image
-              src="/../public/src/Feature/chemFree.png"
+              src="/src/Feature/chemFree.png"
               width={350}
               height={350}
               className="object-fit rounded"
@@ -73,7 +73,7 @@ const Feature: NextComponentType = () => {
           </SplideSlide>
           <SplideSlide className="flex items-center justify-center">
             <Image
-              src="/../public/src/Feature/saveEnergy.png"
+              src="/src/Feature/saveEnergy.png"
               width={350}
               height={350}
               className="object-fit rounded"
@@ -82,7 +82,7 @@ const Feature: NextComponentType = () => {
           </SplideSlide>
           <SplideSlide className="flex items-center justify-center">
             <Image
-              src="/../public/src/Feature/envFrind.png"
+              src="/src/Feature/envFrind.png"
               width={350}
               height={350}
               className="object-fit rounded"

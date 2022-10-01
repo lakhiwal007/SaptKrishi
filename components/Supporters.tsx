@@ -43,19 +43,19 @@ const Supporters: NextComponentType = () => {
           <SplideSlide className="w-full flex items-center justify-center">
             <div className="w-full flex items-center justify-around flex-col lg:flex-row">
               <Image
-                src="/../public/src/supporters/siicllogoAssetLOf.png"
+                src="/src/supporters/siicllogoAssetLOf.png"
                 width={700}
                 height={300}
                 className="rounded-full object-contain"
               ></Image>
               <Image
-                src="/../public/src/supporters/Incubation-Center-IIT-Patna-Logo-Original-Colors.png"
+                src="/src/supporters/Incubation-Center-IIT-Patna-Logo-Original-Colors.png"
                 width={220}
                 height={220}
                 className="rounded-full object-contain"
               ></Image>
               <Image
-                src="/../public/src/supporters/MafwAbiUast.png"
+                src="/src/supporters/MafwAbiUast.png"
                 width={600}
                 height={400}
                 className="rounded-full object-contain"
@@ -66,19 +66,19 @@ const Supporters: NextComponentType = () => {
           <SplideSlide className="flex items-center justify-center">
             <div className="w-full flex items-center justify-around flex-col lg:flex-row">
               <Image
-                src="/../public/src/supporters/msme.png"
+                src="/src/supporters/msme.png"
                 width={200}
                 height={200}
                 className="rounded object-contain"
               ></Image>
               <Image
-                src="/../public/src/supporters/mst.png"
+                src="/src/supporters/mst.png"
                 width={200}
                 height={200}
                 className="rounded object-contain"
               ></Image>
               <Image
-                src="/../public/src/supporters/panchayatiRaj.png"
+                src="/src/supporters/panchayatiRaj.png"
                 width={200}
                 height={200}
                 className="rounded object-contain"
@@ -89,19 +89,19 @@ const Supporters: NextComponentType = () => {
           <SplideSlide className="flex items-center justify-center">
             <div className="w-full flex items-center justify-around flex-col lg:flex-row">
               <Image
-                src="/../public/src/supporters/rtagiitk.png"
+                src="/src/supporters/rtagiitk.png"
                 width={200}
                 height={200}
                 className="rounded object-contain"
               ></Image>
               <Image
-                src="/../public/src/supporters/medTechIITK.jfif"
+                src="/src/supporters/medTechIITK.jfif"
                 width={200}
                 height={200}
                 className="rounded object-contain"
               ></Image>
               <Image
-                src="/../public/src/supporters/rkvy.jpeg"
+                src="/src/supporters/rkvy.jpeg"
                 width={200}
                 height={200}
                 className="rounded object-contain"

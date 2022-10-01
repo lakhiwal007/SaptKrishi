@@ -344,37 +344,37 @@ book.getInitialProps = () => {
     {
       id: 1,
       name: "SabjiKothi",
-      imgURL: "/../public/src/products/sabjikothi-farmer-web-min.png",
+      imgURL: "/src/products/sabjikothi-farmer-web-min.png",
     },
     {
       id: 2,
       name: "Preservator",
-      imgURL: "/../public/src/products/preservator.jpg",
+      imgURL: "/src/products/preservator.jpg",
     },
     {
       id: 3,
       name: "Preservator Trader",
-      imgURL: "/../public/src/products/preservator-trader-web-min.jpg",
+      imgURL: "/src/products/preservator-trader-web-min.jpg",
     },
     {
       id: 4,
       name: "SabjiKothi Cart",
-      imgURL: "/../public/src/products/threeWheelCart.JPG",
+      imgURL: "/src/products/threeWheelCart.JPG",
     },
     {
       id: 5,
       name: "Four Wheel Cart",
-      imgURL: "/../public/src/products/4WheelCart.png",
+      imgURL: "/src/products/4WheelCart.png",
     },
     {
       id: 6,
       name: "SabjiKothi E-Cart",
-      imgURL: "/../public/src/products/ecart.PNG",
+      imgURL: "/src/products/ecart.PNG",
     },
     {
       id: 7,
       name: "Nano Kawach Pesticide",
-      imgURL: "/../public/src/products/NanoKawach.jpeg",
+      imgURL: "/src/products/NanoKawach.jpeg",
     },
   ];
   return { productsList };

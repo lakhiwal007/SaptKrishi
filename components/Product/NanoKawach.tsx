@@ -7,7 +7,7 @@ const NanoKawach: NextComponentType = () => {
     <div className="w-[95%] h-auto grid grid-cols-1 gap-4 lg:grid-cols-2 rounded bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-gray-200 mt-8 pb-4 lg:w-[70%]">
       <div className="w-full flex items-center justify-center lg:justify-start relative m-auto p-2">
         <Image
-          src="/../public/src/products/NanoKawach.jpeg"
+          src="/src/products/NanoKawach.jpeg"
           width={450}
           height={450}
           className="rounded object-cover"
@@ -22,7 +22,7 @@ const NanoKawach: NextComponentType = () => {
             <li className="w-full flex flex-col items-center justify-start">
               <p className="text-green-700 text-xl mb-2">
                 <Image
-                  src="/../public/src/NanoKawach/BioDegradable.jpeg"
+                  src="/src/NanoKawach/BioDegradable.jpeg"
                   width={50}
                   height={50}
                   className="rounded-full"
@@ -34,7 +34,7 @@ const NanoKawach: NextComponentType = () => {
             <li className="w-full flex flex-col items-center justify-start">
               <p className="text-green-700 text-xl mb-2">
                 <Image
-                  src="/../public/src/NanoKawach/ChemicalFree.jpeg"
+                  src="/src/NanoKawach/ChemicalFree.jpeg"
                   width={50}
                   height={50}
                   className="rounded-full"
@@ -46,7 +46,7 @@ const NanoKawach: NextComponentType = () => {
             <li className="w-full flex flex-col items-center justify-start">
               <p className="text-green-700 text-xl mb-2">
                 <Image
-                  src="/../public/src/NanoKawach/NanoTech.jpeg"
+                  src="/src/NanoKawach/NanoTech.jpeg"
                   width={50}
                   height={50}
                   className="rounded-full"
@@ -58,7 +58,7 @@ const NanoKawach: NextComponentType = () => {
             <li className="w-full flex flex-col items-center justify-start">
               <p className="text-green-700 text-xl mb-2">
                 <Image
-                  src="/../public/src/NanoKawach/EcoFriendly.jpeg"
+                  src="/src/NanoKawach/EcoFriendly.jpeg"
                   width={50}
                   height={50}
                   className="rounded-full"
@@ -70,7 +70,7 @@ const NanoKawach: NextComponentType = () => {
             <li className="w-full flex flex-col items-center justify-start">
               <p className="text-green-700 text-xl mb-2">
                 <Image
-                  src="/../public/src/NanoKawach/Natural.jpeg"
+                  src="/src/NanoKawach/Natural.jpeg"
                   width={50}
                   height={50}
                   className="rounded-full"

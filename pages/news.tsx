@@ -46,7 +46,7 @@ const news: NextPage = () => {
               <div className="w-[250px] h-[300px] m-auto mb-4 flex items-center justify-start flex-col relative border border-[1px] border-slate-300 drop-shadow-xl rounded-lg shadow-inner bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500">
                 <div className="w-full flex items-start justify-center">
                   <Image
-                    src="/../public/src/news/betterindia.png"
+                    src="/src/news/betterindia.png"
                     width={200}
                     height={200}
                     className=" object-contain p-2"
@@ -72,7 +72,7 @@ const news: NextPage = () => {
               <div className="w-[250px] h-[300px] m-auto mb-4 flex items-center justify-start flex-col relative border border-[1px] border-slate-300 drop-shadow-xl rounded-lg shadow-inner bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500">
                 <div className="w-full flex items-start justify-center">
                   <Image
-                    src="/../public/src/news/bloc.jpg"
+                    src="/src/news/bloc.jpg"
                     width={200}
                     height={200}
                     className=" object-contain p-2"
@@ -100,7 +100,7 @@ const news: NextPage = () => {
               <div className="w-[250px] h-[300px] m-auto mb-4 flex items-center justify-start flex-col relative border border-[1px] border-slate-300 drop-shadow-xl rounded-lg shadow-inner bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500">
                 <div className="w-full flex items-start justify-center">
                   <Image
-                    src="/../public/src/news/optimist.png"
+                    src="/src/news/optimist.png"
                     width={200}
                     height={200}
                     className=" object-contain p-2"
@@ -126,7 +126,7 @@ const news: NextPage = () => {
               <div className="w-[250px] h-[300px] m-auto mb-4 flex items-center justify-start flex-col relative border border-[1px] border-slate-300 drop-shadow-xl rounded-lg shadow-inner  bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500">
                 <div className="w-full flex items-start justify-center">
                   <Image
-                    src="/../public/src/news/yourstory.png"
+                    src="/src/news/yourstory.png"
                     width={200}
                     height={200}
                     className=" object-contain p-2"
@@ -154,7 +154,7 @@ const news: NextPage = () => {
               <div className="w-[250px] h-[300px] m-auto mb-4 flex items-center justify-start flex-col relative border border-[1px] border-slate-300 drop-shadow-xl rounded-lg shadow-inner  bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500">
                 <div className="w-full flex items-start justify-center">
                   <Image
-                    src="/../public/src/news/indiaTimes.png"
+                    src="/src/news/indiaTimes.png"
                     width={150}
                     height={150}
                     className=" object-contain rounded-full p-2"
@@ -180,7 +180,7 @@ const news: NextPage = () => {
               <div className="w-[250px] h-[300px] m-auto mb-4 flex items-center justify-start flex-col relative border border-[1px] border-slate-300 drop-shadow-xl rounded-lg shadow-inner  bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500">
                 <div className="w-full flex items-start justify-center">
                   <Image
-                    src="/../public/src/news/csrbox.png"
+                    src="/src/news/csrbox.png"
                     width={200}
                     height={200}
                     className="object-contain p-2"
@@ -236,7 +236,7 @@ const news: NextPage = () => {
           >
             <SplideSlide className="flex items-center justify-center">
               <Image
-                src="/../public/src/news/img47.jpg"
+                src="/src/news/img47.jpg"
                 width={500}
                 height={450}
                 className="object-fit rounded"
@@ -245,7 +245,7 @@ const news: NextPage = () => {
             </SplideSlide>
             <SplideSlide className="flex items-center justify-center">
               <Image
-                src="/../public/src/news/img7.jpg"
+                src="/src/news/img7.jpg"
                 width={500}
                 height={450}
                 className="object-fit rounded"
@@ -254,7 +254,7 @@ const news: NextPage = () => {
             </SplideSlide>
             <SplideSlide className="flex items-center justify-center">
               <Image
-                src="/../public/src/news/img27.jpg"
+                src="/src/news/img27.jpg"
                 width={500}
                 height={450}
                 className="object-fit rounded"
@@ -263,7 +263,7 @@ const news: NextPage = () => {
             </SplideSlide>
             <SplideSlide className="flex items-center justify-center">
               <Image
-                src="/../public/src/news/img72.jpg"
+                src="/src/news/img72.jpg"
                 width={500}
                 height={450}
                 className="object-fit rounded"
@@ -272,7 +272,7 @@ const news: NextPage = () => {
             </SplideSlide>
             <SplideSlide className="flex items-center justify-center">
               <Image
-                src="/../public/src/news/img32.jpg"
+                src="/src/news/img32.jpg"
                 width={500}
                 height={450}
                 className="object-fit rounded"
@@ -281,7 +281,7 @@ const news: NextPage = () => {
             </SplideSlide>
             <SplideSlide className="flex items-center justify-center">
               <Image
-                src="/../public/src/news/img37.jpg"
+                src="/src/news/img37.jpg"
                 width={500}
                 height={450}
                 className="object-fit rounded"
@@ -290,7 +290,7 @@ const news: NextPage = () => {
             </SplideSlide>
             <SplideSlide className="flex items-center justify-center">
               <Image
-                src="/../public/src/news/img62.jpg"
+                src="/src/news/img62.jpg"
                 width={500}
                 height={450}
                 className="object-fit rounded"
@@ -299,7 +299,7 @@ const news: NextPage = () => {
             </SplideSlide>
             <SplideSlide className="flex items-center justify-center">
               <Image
-                src="/../public/src/news/img57.jpg"
+                src="/src/news/img57.jpg"
                 width={500}
                 height={450}
                 className="object-fit rounded"
@@ -308,7 +308,7 @@ const news: NextPage = () => {
             </SplideSlide>
             <SplideSlide className="flex items-center justify-center">
               <Image
-                src="/../public/src/news/img22.jpg"
+                src="/src/news/img22.jpg"
                 width={500}
                 height={450}
                 className="object-fit rounded"

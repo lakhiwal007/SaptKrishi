@@ -40,6 +40,7 @@
     "react-spinners": "^0.13.4",
     "react-tweet-embed": "^2.0.0",
     "react-twitter-embed": "^4.0.4",
+    "sharp": "^0.31.1",
     "styled-components": "^5.3.6",
     "tailwind-hamburgers": "^1.2.2",
     "tailwind-scrollbar-hide": "^1.1.7",

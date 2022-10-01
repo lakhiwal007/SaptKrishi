@@ -35,7 +35,7 @@ const HallOfFame: NextComponentType = () => {
       >
         <SplideSlide className=" w-full h-auto flex items-center justify-center">
           <Image
-            src="/../public/src/gallery/sharkTank/st7.png"
+            src="/src/gallery/sharkTank/st7.png"
             width={2500}
             height={1500}
             className="w-full h-full object-cover"
@@ -55,7 +55,7 @@ const HallOfFame: NextComponentType = () => {
 
         <SplideSlide className=" w-full h-auto flex items-center justify-center">
           <Image
-            src="/../public/src/gallery/modiji/modiji2.png"
+            src="/src/gallery/modiji/modiji2.png"
             width={2500}
             height={1500}
             className="w-full h-full object-cover"
@@ -76,7 +76,7 @@ const HallOfFame: NextComponentType = () => {
 
         <SplideSlide className=" w-full h-auto flex items-center justify-center">
           <Image
-            src="/../public/src/gallery/img1.jpeg"
+            src="/src/gallery/img1.jpeg"
             width={2500}
             height={1500}
             className="w-full h-full object-cover"
@@ -96,7 +96,7 @@ const HallOfFame: NextComponentType = () => {
 
         <SplideSlide className=" w-full h-auto flex items-center justify-center">
           <Image
-            src="/../public/src/gallery/img2.jpeg"
+            src="/src/gallery/img2.jpeg"
             width={2500}
             height={1500}
             className="w-full h-full object-cover"
@@ -116,7 +116,7 @@ const HallOfFame: NextComponentType = () => {
 
         <SplideSlide className=" w-full h-auto flex items-center justify-center">
           <Image
-            src="/../public/src/HappyFace.JPG"
+            src="/src/HappyFace.JPG"
             width={2500}
             height={1500}
             className="w-full h-full object-cover"

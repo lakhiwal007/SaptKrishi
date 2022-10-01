@@ -12,7 +12,7 @@ const Photos: NextComponentType = () => {
       <div className="w-full grid grid-cols-1 p-4 gap-y-4 md:grid-cols-2 md:gap-2 lg:grid-cols-4 lg:gap-4">
         <div className="w-full h-auto flex flex-cols flex-wrap items-start justify-center rounded">
           <Image
-            src="/../public/src/gallery/img1.jpeg"
+            src="/src/gallery/img1.jpeg"
             width={300}
             height={300}
             className="object-cover rounded "
@@ -23,7 +23,7 @@ const Photos: NextComponentType = () => {
         </div>
         <div className="w-full h-auto flex flex-cols flex-wrap items-start justify-center rounded">
           <Image
-            src="/../public/src/gallery/img2.jpeg"
+            src="/src/gallery/img2.jpeg"
             width={300}
             height={300}
             className="object-cover rounded "
@@ -34,7 +34,7 @@ const Photos: NextComponentType = () => {
         </div>
         <div className="w-full h-auto flex flex-cols flex-wrap items-start justify-center rounded">
           <Image
-            src="/../public/src/gallery/img3.jpeg"
+            src="/src/gallery/img3.jpeg"
             width={300}
             height={300}
             className="object-cover rounded "
@@ -46,7 +46,7 @@ const Photos: NextComponentType = () => {
         </div>
         <div className="w-full h-auto flex flex-cols flex-wrap items-start justify-center rounded">
           <Image
-            src="/../public/src/gallery/img4.jpeg"
+            src="/src/gallery/img4.jpeg"
             width={300}
             height={300}
             className="object-cover rounded "
@@ -58,7 +58,7 @@ const Photos: NextComponentType = () => {
         </div>
         <div className="w-full h-auto flex flex-cols flex-wrap items-start justify-center rounded">
           <Image
-            src="/../public/src/gallery/img5.jpeg"
+            src="/src/gallery/img5.jpeg"
             width={300}
             height={300}
             className="object-cover rounded "
@@ -69,7 +69,7 @@ const Photos: NextComponentType = () => {
         </div>
         <div className="w-full h-auto flex flex-cols flex-wrap items-start justify-center rounded">
           <Image
-            src="/../public/src/gallery/img6.jpeg"
+            src="/src/gallery/img6.jpeg"
             width={300}
             height={300}
             className="object-cover rounded "
@@ -80,7 +80,7 @@ const Photos: NextComponentType = () => {
         </div>
         <div className="w-full h-auto flex flex-cols flex-wrap items-start justify-center rounded">
           <Image
-            src="/../public/src/gallery/imgWithProf.jpg"
+            src="/src/gallery/imgWithProf.jpg"
             width={300}
             height={300}
             className="object-cover rounded "
@@ -92,7 +92,7 @@ const Photos: NextComponentType = () => {
         </div>
         <div className="w-full h-auto flex flex-cols flex-wrap items-start justify-center rounded">
           <Image
-            src="/../public/src/gallery/img7.jpeg"
+            src="/src/gallery/img7.jpeg"
             width={300}
             height={300}
             className="object-cover rounded "
@@ -104,7 +104,7 @@ const Photos: NextComponentType = () => {
         </div>
         <div className="w-full h-auto flex flex-cols flex-wrap items-start justify-center rounded">
           <Image
-            src="/../public/src/gallery/img8.jpeg"
+            src="/src/gallery/img8.jpeg"
             width={300}
             height={300}
             className="object-cover rounded "
@@ -115,7 +115,7 @@ const Photos: NextComponentType = () => {
         </div>
         <div className="w-full h-auto flex flex-cols flex-wrap items-start justify-center rounded">
           <Image
-            src="/../public/src/gallery/img9.jpeg"
+            src="/src/gallery/img9.jpeg"
             width={300}
             height={300}
             className="object-cover rounded "
@@ -126,7 +126,7 @@ const Photos: NextComponentType = () => {
         </div>
         <div className="w-full h-auto flex flex-cols flex-wrap items-start justify-center rounded">
           <Image
-            src="/../public/src/gallery/Team.JPG"
+            src="/src/gallery/Team.JPG"
             width={300}
             height={300}
             className="object-cover rounded "

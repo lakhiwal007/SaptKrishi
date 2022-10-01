@@ -42,30 +42,13 @@ const Supporters: NextComponentType = () => {
           <SplideSlide className="flex items-center justify-center">
             <div className="w-full flex items-center justify-around flex-col lg:flex-row">
               <Image
-                src="/../public/src/awards/Award1.png"
+                src="/src/awards/Award1.png"
                 width={200}
                 height={200}
                 className="rounded object-contain"
               ></Image>
               <Image
-                src="/../public/src/awards/Award2.png"
-                width={200}
-                height={200}
-                className="rounded object-contain"
-              ></Image>
-            </div>
-          </SplideSlide>
-
-          <SplideSlide className="flex items-center justify-center">
-            <div className="w-full flex items-center justify-around flex-col lg:flex-row">
-              <Image
-                src="/../public/src/awards/Award3.png"
-                width={200}
-                height={200}
-                className="rounded object-contain"
-              ></Image>
-              <Image
-                src="/../public/src/awards/Award4.png"
+                src="/src/awards/Award2.png"
                 width={200}
                 height={200}
                 className="rounded object-contain"
@@ -76,13 +59,30 @@ const Supporters: NextComponentType = () => {
           <SplideSlide className="flex items-center justify-center">
             <div className="w-full flex items-center justify-around flex-col lg:flex-row">
               <Image
-                src="/../public/src/awards/Award5.png"
+                src="/src/awards/Award3.png"
                 width={200}
                 height={200}
                 className="rounded object-contain"
               ></Image>
               <Image
-                src="/../public/src/awards/Award6.png"
+                src="/src/awards/Award4.png"
+                width={200}
+                height={200}
+                className="rounded object-contain"
+              ></Image>
+            </div>
+          </SplideSlide>
+
+          <SplideSlide className="flex items-center justify-center">
+            <div className="w-full flex items-center justify-around flex-col lg:flex-row">
+              <Image
+                src="/src/awards/Award5.png"
+                width={200}
+                height={200}
+                className="rounded object-contain"
+              ></Image>
+              <Image
+                src="/src/awards/Award6.png"
                 width={200}
                 height={200}
                 className="rounded object-contain"

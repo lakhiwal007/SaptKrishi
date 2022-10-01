@@ -16,7 +16,7 @@ const SabjiKothiCart: NextComponentType = () => {
     <div className="w-[95%] h-auto grid grid-cols-1 gap-4 lg:grid-cols-2 rounded bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-gray-200 mt-8 pb-4 lg:w-[70%]">
       <div className="w-full flex items-center justify-center relative order-2 p-2 lg:justify-start">
         <Image
-          src="/../public/src/products/threeWheelCart.JPG"
+          src="/src/products/threeWheelCart.JPG"
           width={450}
           height={450}
           className="rounded object-cover"
