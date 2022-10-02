@@ -19,6 +19,7 @@ const SharkTank: NextComponentType = () => {
             type: "slide",
             perPage: 3,
             drag: "free",
+            snap: true,
             focus: "center",
             gap: "1rem",
             perMove: 1,
