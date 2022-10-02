@@ -91,8 +91,8 @@ const book: NextPage<Props> = ({ productsList }) => {
         alert("Booking Confirmed!");
         emailjs
           .send(
-            process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-            process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+            process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!, // eslint-disable-line
+            process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!, // eslint-disable-line
             data,
             process.env.NEXT_PUBLIC_EMAILJS_USER_ID
           )
@@ -128,7 +128,7 @@ const book: NextPage<Props> = ({ productsList }) => {
                       src={
                         productName
                           ? productName.imgURL
-                          : "/../public/src/products/sabjikothi-farmer-web-min.png"
+                          : "/src/products/sabjikothi-farmer-web-min.png"
                       }
                       width={650}
                       height={600}
