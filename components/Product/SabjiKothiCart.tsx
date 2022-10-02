@@ -13,8 +13,8 @@ import BookNow from "../BookNow";
 
 const SabjiKothiCart: NextComponentType = () => {
   return (
-    <div className="w-[95%] h-auto grid grid-cols-1 gap-4 lg:grid-cols-2 rounded bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-gray-200 mt-8 pb-4 lg:w-[70%]">
-      <div className="w-full flex items-center justify-center relative order-2 p-2 lg:justify-start">
+    <div className="w-[95%] h-auto grid grid-cols-1 gap-4  rounded border border-gray-200 m-auto mt-4 pb-4 md:w-[70%]">
+      <div className="w-full flex items-center justify-center relative order-2 p-2">
         <Image
           src="/src/products/threeWheelCart.JPG"
           width={450}

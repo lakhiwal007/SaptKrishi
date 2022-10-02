@@ -127,7 +127,7 @@ const Profiles: NextPage = () => {
           twURL={"#"}
           liURL={"#"}
           name={"Dr. J Ramkumar"}
-          designation={"Advisory Board"}
+          designation={"Mentors"}
         />
         <Profile
           imgURL={"/src/team/amitabha.png"}
@@ -135,7 +135,7 @@ const Profiles: NextPage = () => {
           twURL={"#"}
           liURL={"#"}
           name={"Prof. Amitabha Bandyopadhyay"}
-          designation={"Advisory Board"}
+          designation={"Mentors"}
         />
         <Profile
           imgURL={"/src/team/jagdesh-suknad.jpg"}
@@ -143,7 +143,7 @@ const Profiles: NextPage = () => {
           twURL={"#"}
           liURL={"#"}
           name={"Jagdeesh Suknad"}
-          designation={"Advisory Board"}
+          designation={"Mentors"}
         />
       </div>
     </div>
