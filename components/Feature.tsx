@@ -21,6 +21,7 @@ const Feature: NextComponentType = () => {
             perMove: 1,
             gap: "30px",
             autoplay: true,
+            pauseOnHover: false,
             breakpoints: {
               912: {
                 perPage: 2,
