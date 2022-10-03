@@ -28,6 +28,8 @@ const Photos: NextComponentType = () => {
             url="https://www.facebook.com/plugins/video.php?height=300&href=https%3A%2F%2Fwww.facebook.com%2Fsharktank.india%2Fvideos%2F227593306249977%2F&show_text=false&width=300&t=0"
             width="300px"
             height="300px"
+            allowFullScreen={true}
+            overflow="hidden"
             className="rounded"
           ></Iframe>
         </div>

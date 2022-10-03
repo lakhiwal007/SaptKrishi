@@ -11,7 +11,12 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="description"
+          content="Saptkrishi Scientific Pvt Ltd is an agri-tech startup 
+committed to solve the problem of perishability of 
+horticultural commodities."
+        />
         <title>SaptKrishi Scientific Pvt. Ltd.</title>
       </Head>
       <Script
