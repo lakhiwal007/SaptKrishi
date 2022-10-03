@@ -8,11 +8,11 @@ import { BsDisplayFill, BsFillKeyFill } from "react-icons/bs";
 
 const SabjiKothiECart: NextComponentType = () => {
   return (
-    <div className="w-[95%] h-auto grid grid-cols-1 gap-4 rounded border border-gray-200 m-auto mt-4 pb-4 md:w-[70%]">
+    <div className="w-[95%] h-auto grid grid-cols-1 gap-4 rounded border border-gray-200 m-auto mt-4 pb-4 md:w-[85%]">
       <div className="w-full flex items-center justify-center relative m-auto p-2">
         <Image
           src="/src/products/ecart.PNG"
-          width={450}
+          width={500}
           height={450}
           className="rounded object-fit"
         ></Image>

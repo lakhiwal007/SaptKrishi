@@ -7,8 +7,7 @@ const Technology: NextComponentType = () => {
       <div
         className="w-full h-full flex items-center justify-center p-4 lg:p-16 relative"
         style={{
-          backgroundImage:
-            "url('https://images.pexels.com/photos/4550763/pexels-photo-4550763.jpeg')",
+          backgroundImage: "url('/src/green-tech.jpg')",
           width: "100%",
           height: "100%",
           backgroundRepeat: "no-repeat",

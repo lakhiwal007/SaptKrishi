@@ -1,20 +1,25 @@
 import React from "react";
 import { NextComponentType } from "next";
 import Image from "next/image";
-import { FaRupeeSign, FaPlug, FaInbox } from "react-icons/fa";
+import {
+  FaRupeeSign,
+  FaInbox,
+  FaSolarPanel,
+  FaRulerCombined,
+} from "react-icons/fa";
 import { GoGear } from "react-icons/go";
 import { HiChip } from "react-icons/hi";
 import BookNow from "../BookNow";
 
 const SabjiKothi: NextComponentType = () => {
   return (
-    <div className="w-[95%] h-auto grid grid-cols-1 gap-4 rounded border border-gray-200 m-auto mt-4 pb-4 md:w-[70%]">
+    <div className="w-[95%] h-auto grid grid-cols-1 gap-4 rounded border border-gray-200 m-auto mt-4 pb-4 md:w-[85%]">
       <div className="w-full flex items-center justify-center relative m-auto p-2 relative ">
         <Image
-          src="/src/products/sabjikothi-farmer-web-min.png"
-          width={450}
+          src="/src/products/SabjiKothi.png"
+          width={500}
           height={450}
-          className="rounded object-cover"
+          className="rounded object-fit"
         ></Image>
       </div>
       <div className="w-full h-full flex flex-col items-center justify-center">
@@ -25,22 +30,24 @@ const SabjiKothi: NextComponentType = () => {
               <p className="text-green-700 text-xl mb-2">
                 <FaRupeeSign />
               </p>
-              <p className="text-green-700 mb-2 text-center">Flexible</p>
+              <p className="text-green-700 mb-2 text-center">Low Cost</p>
               <p className="text-center">Affordable</p>
             </li>
             <li className="w-full flex flex-col items-center justify-start">
               <p className="text-green-700 text-xl mb-2">
-                <FaPlug />
+                <FaSolarPanel />
               </p>
-              <p className="text-green-700 mb-2 text-center">20-Watts</p>
-              <p className="text-center">Saves Energy</p>
+              <p className="text-green-700 mb-2 text-center">Yes</p>
+              <p className="text-center">Solar Powered</p>
             </li>
             <li className="w-full flex flex-col items-center justify-start">
               <p className="text-green-700 text-xl mb-2">
-                <GoGear />
+                <FaRulerCombined />
               </p>
-              <p className="text-green-700 mb-2 text-center">1 litre/day</p>
-              <p className="text-center">Zero Maintainance</p>
+              <p className="text-green-700 mb-2 text-center">
+                4 x 3.5 x 2.5 (in feet)
+              </p>
+              <p className="text-center">Outer Dimensions</p>
             </li>
             <li className="w-full flex flex-col items-center justify-start">
               <p className="text-green-700 text-xl mb-2">

@@ -128,7 +128,7 @@ const book: NextPage<Props> = ({ productsList }) => {
                       src={
                         productName
                           ? productName.imgURL
-                          : "/src/products/sabjikothi-farmer-web-min.png"
+                          : "/src/products/SabjiKothi.png"
                       }
                       width={650}
                       height={600}
@@ -344,7 +344,7 @@ book.getInitialProps = () => {
     {
       id: 1,
       name: "SabjiKothi",
-      imgURL: "/src/products/sabjikothi-farmer-web-min.png",
+      imgURL: "/src/products/SabjiKothi.png",
     },
     {
       id: 2,

@@ -36,18 +36,19 @@ const HallOfFame: NextComponentType = () => {
       >
         <SplideSlide className=" w-full h-auto flex items-center justify-center">
           <Image
-            src="/src/gallery/sharkTank/st7.png"
+            src="/src/gallery/modiji/modiji2.png"
             width={2500}
             height={1500}
             className="w-full h-full object-cover"
           ></Image>
           <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end bg-black opacity-40"></div>
-          <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end lg:justify-center">
-            <p className=" text-lg sm:text-2xl text-white font-bold mb-2 md:text-4xl lg:text-6xl text-center">
-              SabjiKothi in Shark Tank
+          <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end">
+            <p className="text-lg sm:text-2xl p-2 text-white font-bold mb-2 md:text-4xl lg:text-6xl text-center">
+              SabjiKothi Demonstration in Front of Hon&apos;ble Prime Minister
+              Narendra Modi
             </p>
-            <Link href={"/gallery/#shark-tank"}>
-              <button className="btn btn-primary rounded-full mb-8">
+            <Link href={"/gallery/#modiji"}>
+              <button className="btn btn-primary rounded-full mb-4">
                 Know More
               </button>
             </Link>
@@ -56,19 +57,18 @@ const HallOfFame: NextComponentType = () => {
 
         <SplideSlide className=" w-full h-auto flex items-center justify-center">
           <Image
-            src="/src/gallery/modiji/modiji2.png"
+            src="/src/gallery/sharkTank/st7.png"
             width={2500}
             height={1500}
             className="w-full h-full object-cover"
           ></Image>
           <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end bg-black opacity-40"></div>
-          <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end lg:justify-center">
-            <p className="text-lg sm:text-2xl text-white font-bold mb-2 md:text-4xl lg:text-6xl text-center">
-              SabjiKothi Demonstration in Front of Hon&apos;ble Prime Minister
-              Narendra Modi
+          <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end">
+            <p className=" text-lg sm:text-2xl text-white font-bold mb-2 md:text-4xl lg:text-6xl text-center">
+              SabjiKothi in Shark Tank
             </p>
-            <Link href={"/gallery/#modiji"}>
-              <button className="btn btn-primary rounded-full mb-8">
+            <Link href={"/gallery/#shark-tank"}>
+              <button className="btn btn-primary rounded-full mb-4">
                 Know More
               </button>
             </Link>
@@ -83,12 +83,12 @@ const HallOfFame: NextComponentType = () => {
             className="w-full h-full object-cover"
           ></Image>
           <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end bg-black opacity-40"></div>
-          <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end lg:justify-center">
-            <p className="text-lg sm:text-2xl text-white font-bold mb-4 md:text-4xl lg:text-6xl text-center">
+          <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end">
+            <p className="text-lg sm:text-2xl p-2 text-white font-bold mb-2 md:text-4xl lg:text-6xl text-center">
               Conferred By Youth Affairs & Sports Minister Anurag Thakur
             </p>
             <Link href={"/gallery/#photos"}>
-              <button className="btn btn-primary rounded-full mb-8">
+              <button className="btn btn-primary rounded-full mb-4">
                 Know More
               </button>
             </Link>
@@ -103,12 +103,12 @@ const HallOfFame: NextComponentType = () => {
             className="w-full h-full object-cover"
           ></Image>
           <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end bg-black opacity-40"></div>
-          <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end lg:justify-center">
-            <p className="text-lg sm:text-2xl text-white font-bold mb-2 md:text-4xl lg:text-6xl text-center">
-              Photo with Governer of UN
+          <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end">
+            <p className="text-lg sm:text-2xl p-2 text-white font-bold mb-2 md:text-4xl lg:text-6xl text-center">
+              Photo with UN Resident Coordinator
             </p>
             <Link href={"/gallery/#photos"}>
-              <button className="btn btn-primary rounded-full mb-8">
+              <button className="btn btn-primary rounded-full mb-4">
                 Know More
               </button>
             </Link>
@@ -123,8 +123,8 @@ const HallOfFame: NextComponentType = () => {
             className="w-full h-full object-cover"
           ></Image>
           <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end bg-black opacity-40"></div>
-          <div className="w-full h-full absolute top-0 flex flex-col items-center justify-center">
-            <p className="text-lg sm:text-2xl text-white font-bold mb-2 md:text-4xl lg:text-6xl text-center">
+          <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end">
+            <p className="text-lg sm:text-2xl p-2 text-white font-bold mb-8 md:text-4xl lg:text-6xl text-center">
               Our Happy Customer
             </p>
           </div>
