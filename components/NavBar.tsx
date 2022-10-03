@@ -7,11 +7,6 @@ import Hamburger from "hamburger-react";
 import { useState } from "react";
 import Menu from "../components/Menu";
 
-// interface IProps {
-//     isOpen: boolean;
-//     setOpen: Dispatch<SetStateAction<boolean>>;
-//   }
-
 const NavBar: NextComponentType = () => {
   const [isOpen, setOpen] = useState(false);
   const handleToggle = () => {
@@ -24,7 +19,7 @@ const NavBar: NextComponentType = () => {
           <div className="pl-8 block w-full h-auto">
             <Link href="/">
               <Image
-                src="/../public/src/saptkrishi-logo.png"
+                src="/src/saptkrishi logo.png"
                 width={112.25}
                 height={43.91}
                 alt="logo"
@@ -81,7 +76,7 @@ const NavBar: NextComponentType = () => {
                   <a
                     className="dropdown-item"
                     target="_blank"
-                    href="https://firebasestorage.googleapis.com/v0/b/saptkrishi-8eb12.appspot.com/o/S_eng.jpg?alt=media&token=f4559adc-799e-4352-8b7a-a45eed634aa0"
+                    href="https://firebasestorage.googleapis.com/v0/b/saptkrishi-8eb12.appspot.com/o/Sapthkrishi-Brochure-English.pdf?alt=media&token=3e0f3c8b-ade3-4bed-9e8a-5e79151665e0"
                     rel="noreferrer"
                   >
                     English

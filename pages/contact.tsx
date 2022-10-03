@@ -22,7 +22,9 @@ const contact: NextPage = () => {
   const [inputData, setInputData] = useState({});
   const collectionRef = collection(database, "Queries");
 
-  const handleInput = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleInput = (
+    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const newInput = { [event.target.name]: event.target.value };
     setInputData({ ...inputData, ...newInput });
   };

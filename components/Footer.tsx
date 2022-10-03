@@ -19,10 +19,11 @@ const Footer: NextComponentType = () => {
         <div className="w-full flex items-center justify-center">
           <div className="w-full flex items-center justify-center">
             <Image
-              src="/../public/src/saptkrishi-logo.png"
-              width={112.25}
-              height={43.91}
+              src="/src/SaptKrishiLogo.png"
+              width={200}
+              height={50}
               alt="logo"
+              className="object-contain rounded-sm"
             ></Image>
           </div>
         </div>
@@ -47,6 +48,9 @@ const Footer: NextComponentType = () => {
               <a href="contact/">Contact Us</a>{" "}
             </li>
             <li>Developer</li>
+            <li>
+              <a href="terms/">Terms and conditions</a>{" "}
+            </li>
           </ul>
         </div>
         <div className="w-full h-full flex flex-col justify-start text-center p-4">
@@ -67,13 +71,6 @@ const Footer: NextComponentType = () => {
                 <FaPhoneAlt />
               </span>{" "}
               <a href="tel:+91-8826217394">+91-8826217394</a>{" "}
-            </li>
-            <li className="flex items-center space-x-4">
-              {" "}
-              <span>
-                <FaPhoneAlt />
-              </span>{" "}
-              <a href="tel:+91-8340742701">+91-8340742701</a>{" "}
             </li>
           </ul>
         </div>
@@ -116,7 +113,10 @@ const Footer: NextComponentType = () => {
         <div className="w-full flex items-center justify-center bg-gray-500 p-2">
           <p className="text-[12px] text-center text-slate-200">
             Copyright © 2022 All rights reserved | SaptKrishi Scientific Pvt.
-            Ltd. | Terms and conditions
+            Ltd. |{" "}
+            <a href="terms/" className="font-bold">
+              Terms and conditions
+            </a>
           </p>
         </div>
       </div>

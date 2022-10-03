@@ -66,7 +66,9 @@ const book: NextPage<Props> = ({ productsList }) => {
   const buttonRef = useRef(null);
   const collectionRef = collection(database, "Bookings");
 
-  const handleInput = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleInput = (
+    event: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
+  ) => {
     event.preventDefault();
     const newInput = { [event.target.name]: event.target.value };
 
@@ -89,8 +91,8 @@ const book: NextPage<Props> = ({ productsList }) => {
         alert("Booking Confirmed!");
         emailjs
           .send(
-            process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-            process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+            process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!, // eslint-disable-line
+            process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!, // eslint-disable-line
             data,
             process.env.NEXT_PUBLIC_EMAILJS_USER_ID
           )
@@ -126,7 +128,7 @@ const book: NextPage<Props> = ({ productsList }) => {
                       src={
                         productName
                           ? productName.imgURL
-                          : "/../public/src/products/sabjikothi-farmer-web-min.png"
+                          : "/src/products/SabjiKothi.png"
                       }
                       width={650}
                       height={600}
@@ -342,37 +344,37 @@ book.getInitialProps = () => {
     {
       id: 1,
       name: "SabjiKothi",
-      imgURL: "/../public/src/products/sabjikothi-farmer-web-min.png",
+      imgURL: "/src/products/SabjiKothi.png",
     },
     {
       id: 2,
       name: "Preservator",
-      imgURL: "/../public/src/products/preservator.jpg",
+      imgURL: "/src/products/preservator.jpg",
     },
     {
       id: 3,
       name: "Preservator Trader",
-      imgURL: "/../public/src/products/preservator-trader-web-min.jpg",
+      imgURL: "/src/products/preservator-trader-web-min.jpg",
     },
     {
       id: 4,
       name: "SabjiKothi Cart",
-      imgURL: "/../public/src/products/threeWheelCart.JPG",
+      imgURL: "/src/products/threeWheelCart.JPG",
     },
     {
       id: 5,
       name: "Four Wheel Cart",
-      imgURL: "/../public/src/products/4WheelCart.png",
+      imgURL: "/src/products/4WheelCart.png",
     },
     {
       id: 6,
       name: "SabjiKothi E-Cart",
-      imgURL: "/../public/src/products/ecart.PNG",
+      imgURL: "/src/products/ecart.PNG",
     },
     {
       id: 7,
       name: "Nano Kawach Pesticide",
-      imgURL: "/../public/src/products/NanoKawach.jpeg",
+      imgURL: "/src/products/NanoKawach.jpeg",
     },
   ];
   return { productsList };

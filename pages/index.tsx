@@ -10,7 +10,7 @@ import Feature from "../components/Feature";
 import Awards from "../components/Awards";
 import Technology from "../components/Product/Technology";
 import HallOfFame from "../components/HallOfFame";
-
+import Videos from "../components/Videos";
 const Home: NextPage = () => {
   return (
     <div className="w-full min-h-screen p-0 m-0 scroll-smooth">
@@ -19,6 +19,7 @@ const Home: NextPage = () => {
       <Intro />
       <Feature />
       <Products />
+      <Videos />
       <Technology />
       <SocialMedia />
       <Supporters />

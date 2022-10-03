@@ -37,11 +37,7 @@ const Info: NextComponentType = () => {
       </div>
       <div className="w-full flex items-center justify-center">
         <div className="w-[424px] h-[338px] shadow-xl">
-          <Image
-            src="/../public/src/preservator.jpg"
-            width={424}
-            height={338}
-          ></Image>
+          <Image src="/src/preservator.jpg" width={424} height={338}></Image>
         </div>
       </div>
     </div>
