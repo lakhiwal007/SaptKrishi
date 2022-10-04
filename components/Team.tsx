@@ -140,7 +140,7 @@ const Profiles: NextPage = () => {
                   <div className="member-view-box">
                     <div className="member-image">
                       <img
-                        src="./src/team/j-ramkumar.jpg"
+                        src="./src/team/j-ramkumar.jfif"
                         alt="Dr. J Ramkumar"
                       />
                       <div className="member-details">
