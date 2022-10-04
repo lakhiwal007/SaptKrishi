@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "../styles/globals.css";
 import "../styles/profile.css";
 import "../styles/autoscroll.css";
+import "../styles/team.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import Script from "next/script";

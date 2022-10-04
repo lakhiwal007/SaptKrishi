@@ -15,19 +15,22 @@ const about: NextPage = () => {
             <h1 className=" text-4xl md:text-5xl font-bold pb-8 pr-4 pl-4 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-teal-600 md:text-6xl">
               SAPTKRISHI
             </h1>
-            <p className="text-justify">
-              SaptKrishi is a young Agri-Tech start-up incubated at IIT Kanpur,
-              with youth in decisive roles who are determined to work towards
-              agricultural innovation and the transformation of rural South-East
-              Asia.. The extremely short shelf-life of horticultural and
-              floricultural produce results in a big chunk of the produce not
-              making it to the market and ends up getting wasted. 70% of fruit
-              and vegetable output is wasted, accounting for 40% of the total
-              cost. As a social enterprise, the focus sector for its first phase
-              is the development of low-cost storage and transportation solution
-              for farmers and traders engaged with horticulture and
-              floriculture.
-            </p>
+            <ul className="text-center text-lg ">
+              <li>
+                Saptkrishi Scientific Pvt Ltd is an agri-tech startup committed
+                to solve the problem of perishability of horti cultural
+                commodities. We are focused on development of affordable,
+                available and accessible storage and transportation solution
+                directly to individual farmers, cooperatives, and traders to
+                ensure better post-harvest outcomes. We also provide advisory,
+                support on agri-processing and market linkages to farmers and
+                traders engaged with horticulture. Incubated at Agri-Business
+                Incubator, SKUAST-Jammu Under RKVY-RAFTAAR Project of Ministry
+                of Agriculture and Farmers&apos; Welfare, Govt. of India. We are
+                receiving technical support from IIT-Patna and receiving
+                accelerated support from IIT Kanpur.
+              </li>
+            </ul>
           </div>
         </div>
 

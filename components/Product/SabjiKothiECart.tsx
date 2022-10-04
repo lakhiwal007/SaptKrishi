@@ -12,9 +12,9 @@ const SabjiKothiECart: NextComponentType = () => {
       <div className="w-full flex items-center justify-center relative m-auto p-2">
         <Image
           src="/src/products/ecart.PNG"
-          width={500}
+          width={600}
           height={450}
-          className="rounded object-fit"
+          className="rounded object-contain"
         ></Image>
       </div>
       <div className="w-full h-full flex flex-col items-center justify-center order-2 md:order-1">

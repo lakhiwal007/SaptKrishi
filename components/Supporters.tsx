@@ -29,15 +29,15 @@ const Supporters: NextComponentType = () => {
               className="rounded-full object-contain"
             ></Image>
           </div>
+
           <div className="slide">
             <Image
-              src="/src/supporters/mafw.png"
-              width={200}
-              height={200}
+              src="/src/supporters/uast.jpeg"
+              width={180}
+              height={180}
               className="rounded object-contain"
             ></Image>
           </div>
-
           <div className="slide">
             <Image
               src="/src/supporters/abiJammu.jfif"
@@ -48,9 +48,9 @@ const Supporters: NextComponentType = () => {
           </div>
           <div className="slide">
             <Image
-              src="/src/supporters/uast.jpeg"
-              width={180}
-              height={180}
+              src="/src/supporters/mafw.png"
+              width={200}
+              height={200}
               className="rounded object-contain"
             ></Image>
           </div>
@@ -65,7 +65,7 @@ const Supporters: NextComponentType = () => {
           </div>
           <div className="slide">
             <Image
-              src="/src/supporters/mst.png"
+              src="/src/supporters/panchayatiRaj.png"
               width={200}
               height={200}
               className="rounded object-contain"
@@ -73,7 +73,7 @@ const Supporters: NextComponentType = () => {
           </div>
           <div className="slide">
             <Image
-              src="/src/supporters/panchayatiRaj.png"
+              src="/src/supporters/mst.png"
               width={200}
               height={200}
               className="rounded object-contain"

@@ -76,7 +76,7 @@ const NavBar: NextComponentType = () => {
                   <a
                     className="dropdown-item"
                     target="_blank"
-                    href="https://firebasestorage.googleapis.com/v0/b/saptkrishi-8eb12.appspot.com/o/Sapthkrishi-Brochure-English.pdf?alt=media&token=3e0f3c8b-ade3-4bed-9e8a-5e79151665e0"
+                    href="https://firebasestorage.googleapis.com/v0/b/saptkrishi-8eb12.appspot.com/o/Saptkrishi%20Brouchere%20English.pdf?alt=media&token=7a2c148c-ee81-4105-a6cd-2c22d189ccc6"
                     rel="noreferrer"
                   >
                     English
