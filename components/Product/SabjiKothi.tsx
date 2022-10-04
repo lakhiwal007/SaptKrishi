@@ -7,7 +7,7 @@ import {
   FaSolarPanel,
   FaRulerCombined,
 } from "react-icons/fa";
-import { GoGear } from "react-icons/go";
+// import { GoGear } from "react-icons/go";
 import { HiChip } from "react-icons/hi";
 import BookNow from "../BookNow";
 
