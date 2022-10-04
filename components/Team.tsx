@@ -53,7 +53,7 @@ const Profiles: NextPage = () => {
               <div className="member-view-box">
                 <div className="member-image designation">
                   <div className="member-details">
-                    <h3>Our Creative team</h3>
+                    <h3>Our Creative Team</h3>
                   </div>
                 </div>
               </div>
