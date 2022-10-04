@@ -9,7 +9,7 @@ const Profiles: NextPage = () => {
           <li>
             <a href="#">
               <div className="member-view-box">
-                <div className="member-image">
+                <div className="member-image designation">
                   <div className="member-details">
                     <h3>Founder and CEO</h3>
                   </div>
@@ -51,7 +51,7 @@ const Profiles: NextPage = () => {
           <li>
             <a href="#">
               <div className="member-view-box">
-                <div className="member-image">
+                <div className="member-image designation">
                   <div className="member-details">
                     <h3>Our Creative team</h3>
                   </div>
@@ -96,6 +96,69 @@ const Profiles: NextPage = () => {
                       />
                       <div className="member-details">
                         <h4>Mr. Sourabh Tiwary</h4>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div className="genealogy-tree">
+        <ul>
+          <li>
+            <a href="#">
+              <div className="member-view-box">
+                <div className="member-image designation">
+                  <div className="member-details">
+                    <h3>Advisory Board Members</h3>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <ul className="active">
+              <li>
+                <a href="#">
+                  <div className="member-view-box">
+                    <div className="member-image">
+                      <img
+                        src="./src/team/j-ramkumar.jpg"
+                        alt="Dr. J Ramkumar"
+                      />
+                      <div className="member-details">
+                        <h4>Dr. J Ramkumar</h4>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div className="member-view-box">
+                    <div className="member-image">
+                      <img
+                        src="./src/team/amitabha.png"
+                        alt="Prof. Amitabha Bandyopadhyay"
+                      />
+                      <div className="member-details">
+                        <h4>Prof. Amitabha Bandyopadhyay</h4>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div className="member-view-box">
+                    <div className="member-image">
+                      <img
+                        src="./src/team/jagdesh-suknad.jpg"
+                        alt="Jagdeesh Suknad"
+                      />
+                      <div className="member-details">
+                        <h4>Jagdeesh Suknad</h4>
                       </div>
                     </div>
                   </div>
