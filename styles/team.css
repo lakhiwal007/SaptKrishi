@@ -155,7 +155,39 @@
   color: #fff;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
+  /* .genealogy-body,
+  .genealogy-tree {
+    align-items: start;
+    justify-content: start;
+  } */
+  .genealogy-tree li a {
+    margin-left: 20;
+    margin-right: 20px;
+  }
+  .member-view-box {
+    padding: 0px 20px;
+  }
+
+  .member-image {
+    width: 120px;
+  }
+  .member-image img {
+    width: 120px;
+    height: 120px;
+  }
+  .member-image h4 {
+    font-size: 30px;
+  }
+  .member-image h3 {
+    font-size: 40px;
+  }
+  .designation {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
   /* .genealogy-body,
   .genealogy-tree {
     align-items: start;
@@ -165,7 +197,7 @@
     margin: 0;
   }
   .member-view-box {
-    padding: 0px 20px;
+    padding: 0px 15px;
   }
 
   .member-image {
@@ -175,10 +207,13 @@
     width: 90px;
     height: 90px;
   }
-  .member-image h4,
-  .member-image h3 {
+  .member-image h4 {
     font-size: 20px;
   }
+  .member-image h3 {
+    font-size: 35px;
+  }
+
   .designation {
     width: 250px;
   }
