@@ -20,15 +20,23 @@
 
 /*----------------genealogy-tree----------*/
 .genealogy-body {
-  white-space: nowrap;
+  /* white-space: nowrap; */
+  width: 100%;
   overflow-y: hidden;
   padding: 50px;
-  min-height: 500px;
+  min-height: 100vh;
   padding-top: 10px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #212121;
 }
 .genealogy-tree {
+  width: 100%;
   display: inline-block;
+  margin-top: 20px;
 }
 .genealogy-tree ul {
   padding-top: 20px;
@@ -94,7 +102,7 @@
   text-decoration: none;
   color: #666;
   font-family: arial, verdana, tahoma;
-  font-size: 11px;
+  font-size: 40px;
   display: inline-block;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -110,19 +118,29 @@
 
 /*--------------memeber-card-design----------*/
 .member-view-box {
-  padding: 0px 20px;
+  padding: 0px 60px;
   text-align: center;
   border-radius: 4px;
   position: relative;
+  background-color: #23ff;
 }
 .member-image {
-  width: 60px;
+  width: 250px;
   position: relative;
 }
 .member-image img {
-  width: 60px;
-  height: 60px;
-  border-radius: 6px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
   background-color: #000;
   z-index: 1;
+  -webkit-filter: grayscale(100%);
+}
+
+.member-image img:hover {
+  -webkit-filter: grayscale(0%);
+}
+
+.member-image:hover img .member-details {
+  color: #fff;
 }
