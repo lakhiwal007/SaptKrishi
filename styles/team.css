@@ -23,7 +23,7 @@
   /* white-space: nowrap; */
   width: 100%;
   overflow-y: hidden;
-  overflow-x: scroll;
+  overflow-x: hidden;
   padding: 50px;
   min-height: 100vh;
   padding-top: 10px;
@@ -64,11 +64,13 @@
   border-top: 2px solid #ccc;
   width: 50%;
   height: 18px;
+  border-color: #fbba00;
 }
 .genealogy-tree li::after {
   right: auto;
   left: 50%;
   border-left: 2px solid #ccc;
+  border-color: #fbba00;
 }
 .genealogy-tree li:only-child::after,
 .genealogy-tree li:only-child::before {
@@ -86,6 +88,7 @@
   border-radius: 0 5px 0 0;
   -webkit-border-radius: 0 5px 0 0;
   -moz-border-radius: 0 5px 0 0;
+  border-color: #fbba00;
 }
 .genealogy-tree li:first-child::after {
   border-radius: 5px 0 0 0;
@@ -100,6 +103,7 @@
   border-left: 2px solid #ccc;
   width: 0;
   height: 20px;
+  border-color: #fbba00;
 }
 .genealogy-tree li a {
   text-decoration: none;
@@ -112,13 +116,6 @@
   -moz-border-radius: 5px;
   margin-left: 40px;
   margin-right: 40px;
-}
-
-.genealogy-tree li a:hover + ul li::after,
-.genealogy-tree li a:hover + ul li::before,
-.genealogy-tree li a:hover + ul::before,
-.genealogy-tree li a:hover + ul ul::before {
-  border-color: #fbba00;
 }
 
 /*--------------memeber-card-design----------*/
