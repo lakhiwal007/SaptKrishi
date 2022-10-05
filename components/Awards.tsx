@@ -37,8 +37,8 @@ const Supporters: NextComponentType = () => {
                   // You can define rows/cols instead of dimensions.
                   dimensions: [[3, 3]],
                   gap: {
-                    row: "40px",
-                    col: "70px",
+                    row: "30px",
+                    col: "50px",
                   },
                 },
               },
