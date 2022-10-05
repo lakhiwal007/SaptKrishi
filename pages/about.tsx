@@ -43,7 +43,7 @@ const about: NextPage = () => {
           </div>
           <div className="w-full flex items-center justify-center mt-16 m-auto">
             <div className="w-full flex items-center justify-center flex-wrap">
-              <div className=" w-90  m-2 flex items-center justify-center shadow-lg rounded transition ease-in-out duration-500 hover:scale-110 ">
+              <div className=" w-90  m-2 flex items-center justify-center shadow-lg rounded transition ease-in-out duration-500 hover:scale-110 hover:z-10 ">
                 <Image
                   src="/src/certificates/certificate1.jpg"
                   width={450}
@@ -52,7 +52,7 @@ const about: NextPage = () => {
                   alt="..."
                 ></Image>
               </div>
-              <div className=" w-90  m-2 flex items-center justify-center shadow-lg rounded transition ease-in-out duration-500 hover:scale-110">
+              <div className=" w-90  m-2 flex items-center justify-center shadow-lg rounded transition ease-in-out duration-500 hover:scale-110 hover:z-10">
                 <Image
                   src="/src/certificates/certificate2.jpg"
                   width={450}
@@ -61,7 +61,7 @@ const about: NextPage = () => {
                   alt="..."
                 ></Image>
               </div>
-              <div className=" w-90  m-2 flex items-center justify-center shadow-lg rounded transition ease-in-out duration-500 hover:scale-110">
+              <div className=" w-90  m-2 flex items-center justify-center shadow-lg rounded transition ease-in-out duration-500 hover:scale-110 hover:z-10">
                 <Image
                   src="/src/certificates/certificate3.jpg"
                   width={450}
@@ -70,9 +70,63 @@ const about: NextPage = () => {
                   alt="..."
                 ></Image>
               </div>
-              <div className=" w-90  m-2 flex items-center justify-center shadow-lg rounded transition ease-in-out duration-500 hover:scale-110">
+              <div className=" w-90  m-2 flex items-center justify-center shadow-lg rounded transition ease-in-out duration-500 hover:scale-110 hover:z-10">
                 <Image
                   src="/src/certificates/certificate4.jpeg"
+                  width={450}
+                  height={450}
+                  className="border rounded"
+                  alt="..."
+                ></Image>
+              </div>
+              <div className=" w-90  m-2 flex items-center justify-center shadow-lg rounded transition ease-in-out duration-500 hover:scale-110 hover:z-10">
+                <Image
+                  src="/src/certificates/certificate5.jpg"
+                  width={450}
+                  height={450}
+                  className="border rounded"
+                  alt="..."
+                ></Image>
+              </div>
+              <div className=" w-90  m-2 flex items-center justify-center shadow-lg rounded transition ease-in-out duration-500 hover:scale-110 hover:z-10">
+                <Image
+                  src="/src/certificates/certificate6.jpg"
+                  width={450}
+                  height={450}
+                  className="border rounded"
+                  alt="..."
+                ></Image>
+              </div>
+              <div className=" w-90  m-2 flex items-center justify-center shadow-lg rounded transition ease-in-out duration-500 hover:scale-110 hover:z-10">
+                <Image
+                  src="/src/certificates/certificate7.jpg"
+                  width={450}
+                  height={450}
+                  className="border rounded"
+                  alt="..."
+                ></Image>
+              </div>
+              <div className=" w-90  m-2 flex items-center justify-center shadow-lg rounded transition ease-in-out duration-500 hover:scale-110 hover:z-10">
+                <Image
+                  src="/src/awards/Award9.jpg"
+                  width={450}
+                  height={450}
+                  className="border rounded"
+                  alt="..."
+                ></Image>
+              </div>
+              <div className=" w-90  m-2 flex items-center justify-center shadow-lg rounded transition ease-in-out duration-500 hover:scale-110 hover:z-10">
+                <Image
+                  src="/src/awards/Award10.jpg"
+                  width={450}
+                  height={450}
+                  className="border rounded"
+                  alt="..."
+                ></Image>
+              </div>
+              <div className=" w-90  m-2 flex items-center justify-center shadow-lg rounded transition ease-in-out duration-500 hover:scale-110 hover:z-10">
+                <Image
+                  src="/src/awards/Award11.jpg"
                   width={450}
                   height={450}
                   className="border rounded"
@@ -93,7 +147,7 @@ const about: NextPage = () => {
           </div>
           <div className="w-full flex items-center justify-center mt-16">
             <div className="w-full grid grid-cols-1 place-items-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-              <div className=" w-48 h-48   flex items-center justify-center shadow-lg rounded-full transition ease-in-out duration-500 hover:scale-110 ">
+              <div className=" w-48 h-48   flex items-center justify-center shadow-lg rounded-full transition ease-in-out duration-500 hover:scale-110 hover:z-10 ">
                 <Image
                   src="/src/awards/Award8.png"
                   width={150}
@@ -102,7 +156,7 @@ const about: NextPage = () => {
                   alt="..."
                 ></Image>
               </div>
-              <div className=" w-48 h-48   flex items-center justify-center shadow-lg rounded-full transition ease-in-out duration-500 hover:scale-110 ">
+              <div className=" w-48 h-48   flex items-center justify-center shadow-lg rounded-full transition ease-in-out duration-500 hover:scale-110 hover:z-10 ">
                 <Image
                   src="/src/awards/Award7.png"
                   width={150}
@@ -111,7 +165,7 @@ const about: NextPage = () => {
                   alt="..."
                 ></Image>
               </div>
-              <div className=" w-48 h-48   flex items-center justify-center shadow-lg rounded-full transition ease-in-out duration-500 hover:scale-110 ">
+              <div className=" w-48 h-48   flex items-center justify-center shadow-lg rounded-full transition ease-in-out duration-500 hover:scale-110 hover:z-10 ">
                 <Image
                   src="/src/awards/Award1.png"
                   width={150}
@@ -120,7 +174,7 @@ const about: NextPage = () => {
                   alt="..."
                 ></Image>
               </div>
-              <div className=" w-48 h-48  flex items-center justify-center shadow-lg rounded-full transition ease-in-out duration-500 hover:scale-110">
+              <div className=" w-48 h-48  flex items-center justify-center shadow-lg rounded-full transition ease-in-out duration-500 hover:scale-110 hover:z-10">
                 <Image
                   src="/src/awards/Award2.png"
                   width={150}
@@ -129,7 +183,7 @@ const about: NextPage = () => {
                   alt="..."
                 ></Image>
               </div>
-              <div className=" w-48 h-48  flex items-center justify-center shadow-lg rounded-full transition ease-in-out duration-500 hover:scale-110">
+              <div className=" w-48 h-48  flex items-center justify-center shadow-lg rounded-full transition ease-in-out duration-500 hover:scale-110 hover:z-10">
                 <Image
                   src="/src/awards/Award3.png"
                   width={150}
@@ -138,7 +192,7 @@ const about: NextPage = () => {
                   alt="..."
                 ></Image>
               </div>
-              <div className=" w-48 h-48  flex items-center justify-center shadow-lg rounded-full transition ease-in-out duration-500 hover:scale-110">
+              <div className=" w-48 h-48  flex items-center justify-center shadow-lg rounded-full transition ease-in-out duration-500 hover:scale-110 hover:z-10">
                 <Image
                   src="/src/awards/Award4.png"
                   width={150}
@@ -147,7 +201,7 @@ const about: NextPage = () => {
                   alt="..."
                 ></Image>
               </div>
-              <div className=" w-48 h-48  flex items-center justify-center shadow-lg rounded-full transition ease-in-out duration-500 hover:scale-110">
+              <div className=" w-48 h-48  flex items-center justify-center shadow-lg rounded-full transition ease-in-out duration-500 hover:scale-110 hover:z-10">
                 <Image
                   src="/src/awards/Award5.png"
                   width={150}
@@ -156,7 +210,7 @@ const about: NextPage = () => {
                   alt="..."
                 ></Image>
               </div>
-              <div className=" w-48 h-48  flex items-center justify-center shadow-lg rounded-full transition ease-in-out duration-500 hover:scale-110">
+              <div className=" w-48 h-48  flex items-center justify-center shadow-lg rounded-full transition ease-in-out duration-500 hover:scale-110 hover:z-10">
                 <Image
                   src="/src/awards/Award6.png"
                   width={150}
