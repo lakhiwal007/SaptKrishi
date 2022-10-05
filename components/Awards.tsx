@@ -24,7 +24,7 @@ const Supporters: NextComponentType = () => {
 
             grid: {
               // You can define rows/cols instead of dimensions.
-              dimensions: [[2, 3]],
+              dimensions: [[2, 4]],
               gap: {
                 row: "30px",
                 col: "70px",
@@ -35,7 +35,7 @@ const Supporters: NextComponentType = () => {
               640: {
                 grid: {
                   // You can define rows/cols instead of dimensions.
-                  dimensions: [[3, 2]],
+                  dimensions: [[3, 3]],
                   gap: {
                     row: "40px",
                     col: "70px",
@@ -46,6 +46,26 @@ const Supporters: NextComponentType = () => {
           }}
           extensions={{ Grid }}
         >
+          <SplideSlide className="flex items-center justify-center">
+            <div className="w-full flex items-center justify-around flex-col lg:flex-row">
+              <Image
+                src="/src/awards/Award8.png"
+                width={200}
+                height={200}
+                className="rounded object-contain"
+              ></Image>
+            </div>
+          </SplideSlide>
+          <SplideSlide className="flex items-center justify-center">
+            <div className="w-full flex items-center justify-around flex-col lg:flex-row">
+              <Image
+                src="/src/awards/Award7.png"
+                width={200}
+                height={200}
+                className="rounded object-contain"
+              ></Image>
+            </div>
+          </SplideSlide>
           <SplideSlide className="flex items-center justify-center">
             <div className="w-full flex items-center justify-around flex-col lg:flex-row">
               <Image

@@ -18,10 +18,14 @@ const Profiles: NextPage = () => {
             </a>
             <ul className="active">
               <li>
-                <a href="#">
+                <a
+                  href="https://www.linkedin.com/in/nikkykumarjha/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <div className="member-view-box">
                     <div className="member-image">
-                      <img src="./src/team/nikky-jha.jpg" alt="nikky jha" />
+                      <img src="./src/team/nikky-jha.jpeg" alt="nikky jha" />
                       <div className="member-details">
                         <h4>Nikky Jha</h4>
                       </div>
@@ -60,7 +64,11 @@ const Profiles: NextPage = () => {
             </a>
             <ul className="active">
               <li>
-                <a href="#">
+                <a
+                  href="https://www.linkedin.com/in/shivani-jha-701776185/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <div className="member-view-box">
                     <div className="member-image">
                       <img src="./src/team/shivani.png" alt="Shivani Jha" />
@@ -76,18 +84,22 @@ const Profiles: NextPage = () => {
                   <div className="member-view-box">
                     <div className="member-image">
                       <img
-                        src="./src/team/harsh.jpeg"
-                        alt="Mr. Harsh Marolia"
+                        src="./src/team/saurabh-sharma.jpeg"
+                        alt="Mr. Saurabh Sharma"
                       />
                       <div className="member-details">
-                        <h4>Mr. Harsh Marolia</h4>
+                        <h4>Mr. Saurabh Sharma</h4>
                       </div>
                     </div>
                   </div>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a
+                  href="https://www.linkedin.com/in/sourab-tiwary-6a0680201"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <div className="member-view-box">
                     <div className="member-image">
                       <img
@@ -120,11 +132,15 @@ const Profiles: NextPage = () => {
             </a>
             <ul className="active">
               <li>
-                <a href="#">
+                <a
+                  href="https://www.linkedin.com/in/drjramkr/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <div className="member-view-box">
                     <div className="member-image">
                       <img
-                        src="./src/team/j-ramkumar.jpg"
+                        src="./src/team/j-ramkumar.jpeg"
                         alt="Dr. J Ramkumar"
                       />
                       <div className="member-details">
@@ -135,7 +151,11 @@ const Profiles: NextPage = () => {
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a
+                  href="https://www.linkedin.com/in/amitabha-bandyopadhyay-bb943a22/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <div className="member-view-box">
                     <div className="member-image">
                       <img
@@ -150,7 +170,11 @@ const Profiles: NextPage = () => {
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a
+                  href="https://www.linkedin.com/in/jagadeeshsunkad"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <div className="member-view-box">
                     <div className="member-image">
                       <img
