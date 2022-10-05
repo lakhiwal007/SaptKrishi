@@ -11,6 +11,7 @@ import Awards from "../components/Awards";
 import Technology from "../components/Product/Technology";
 import HallOfFame from "../components/HallOfFame";
 import Videos from "../components/Videos";
+import Vision from "../components/Vision";
 const Home: NextPage = () => {
   return (
     <div className="w-full min-h-screen p-0 m-0 scroll-smooth">
@@ -24,6 +25,7 @@ const Home: NextPage = () => {
       <SocialMedia />
       <Supporters />
       <Awards />
+      <Vision />
       <Footer />
     </div>
   );

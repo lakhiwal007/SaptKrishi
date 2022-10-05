@@ -44,6 +44,11 @@ const Menu: NextComponentType = () => {
               Team
             </li>
           </Link>
+          <Link href="career/">
+            <li className="pt-2 pb-2 pl-4 pr-4 hover:cursor-pointer rounded-full hover:bg-emerald-500 hover:text-white">
+              Career
+            </li>
+          </Link>
 
           <li className=" nav-item dropdown p-[15px] hover:cursor-pointer rounded-full hover:bg-emerald-500 hover:text-white lg:block">
             <a
