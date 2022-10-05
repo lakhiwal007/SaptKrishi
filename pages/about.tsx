@@ -11,7 +11,7 @@ const about: NextPage = () => {
       <div className="w-full min-h-full flex flex-column items-center justify-center bg-white">
         {/* Saptkrishi */}
         <div className="w-full min-h-full flex flex-column items-center justify-center mt-8">
-          <div className="w-[80%] p-4 text-center flex flex-column items-center justify-center rounded-xl shadow-lg shadow-slate-300 lg:p-16">
+          <div className="w-[90%] p-4 text-center flex flex-column items-center justify-center rounded-xl shadow-lg shadow-slate-300 lg:p-16">
             <h1 className=" text-4xl md:text-5xl font-bold pb-8 pr-4 pl-4 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-teal-600 md:text-6xl">
               SAPTKRISHI
             </h1>
@@ -35,7 +35,7 @@ const about: NextPage = () => {
         </div>
 
         {/* Certificates */}
-        <div className="w-[80%] min-h-full flex flex-col items-center justify-center rounded-xl shadow-lg shadow-slate-300 mt-16 p-8 mb-16">
+        <div className="w-[90%] min-h-full flex flex-col items-center justify-center rounded-xl shadow-lg shadow-slate-300 mt-16 p-8 mb-16">
           <div>
             <h1 className="text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 md:text-6xl">
               Certificates
@@ -85,64 +85,82 @@ const about: NextPage = () => {
 
         {/* Awards */}
 
-        <div className="w-[80%] min-h-full flex flex-col items-center justify-center rounded-xl shadow-lg shadow-slate-300 mt-8 p-16 mb-16">
+        <div className="w-[90%] min-h-full flex flex-col items-center justify-center rounded-xl shadow-lg shadow-slate-300 mt-8 p-16 mb-16">
           <div>
             <h1 className="text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600 md:text-6xl">
               Awards
             </h1>
           </div>
           <div className="w-full flex items-center justify-center mt-16">
-            <div className="w-full grid grid-cols-1 place-items-center  md:grid-cols-2 lg:grid-cols-3 gap-4">
-              <div className=" w-40 h-40 md:w-60 md:h-60   flex items-center justify-center shadow-lg rounded-full transition ease-in-out duration-500 hover:scale-110 ">
+            <div className="w-full grid grid-cols-1 place-items-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              <div className=" w-48 h-48   flex items-center justify-center shadow-lg rounded-full transition ease-in-out duration-500 hover:scale-110 ">
+                <Image
+                  src="/src/awards/Award8.png"
+                  width={150}
+                  height={150}
+                  className=" object-contain rounded"
+                  alt="..."
+                ></Image>
+              </div>
+              <div className=" w-48 h-48   flex items-center justify-center shadow-lg rounded-full transition ease-in-out duration-500 hover:scale-110 ">
+                <Image
+                  src="/src/awards/Award7.png"
+                  width={150}
+                  height={150}
+                  className=" object-contain rounded"
+                  alt="..."
+                ></Image>
+              </div>
+              <div className=" w-48 h-48   flex items-center justify-center shadow-lg rounded-full transition ease-in-out duration-500 hover:scale-110 ">
                 <Image
                   src="/src/awards/Award1.png"
-                  width={200}
-                  height={200}
+                  width={150}
+                  height={150}
                   className=" object-contain rounded"
                   alt="..."
                 ></Image>
               </div>
-              <div className=" w-40 h-40 md:w-60 md:h-60  flex items-center justify-center shadow-lg rounded-full transition ease-in-out duration-500 hover:scale-110">
+              <div className=" w-48 h-48  flex items-center justify-center shadow-lg rounded-full transition ease-in-out duration-500 hover:scale-110">
                 <Image
                   src="/src/awards/Award2.png"
-                  width={200}
-                  height={200}
+                  width={150}
+                  height={150}
                   className=" object-contain rounded"
                   alt="..."
                 ></Image>
               </div>
-              <div className=" w-40 h-40 md:w-60 md:h-60  flex items-center justify-center shadow-lg rounded-full transition ease-in-out duration-500 hover:scale-110">
+              <div className=" w-48 h-48  flex items-center justify-center shadow-lg rounded-full transition ease-in-out duration-500 hover:scale-110">
                 <Image
                   src="/src/awards/Award3.png"
-                  width={200}
-                  height={200}
+                  width={150}
+                  height={150}
                   className=" object-contain rounded"
                   alt="..."
                 ></Image>
               </div>
-              <div className=" w-40 h-40 md:w-60 md:h-60  flex items-center justify-center shadow-lg rounded-full transition ease-in-out duration-500 hover:scale-110">
+              <div className=" w-48 h-48  flex items-center justify-center shadow-lg rounded-full transition ease-in-out duration-500 hover:scale-110">
                 <Image
                   src="/src/awards/Award4.png"
-                  width={200}
-                  height={200}
+                  width={150}
+                  height={150}
                   className=" object-contain rounded"
                   alt="..."
                 ></Image>
               </div>
-              <div className=" w-40 h-40 md:w-60 md:h-60  flex items-center justify-center shadow-lg rounded-full transition ease-in-out duration-500 hover:scale-110">
+              <div className=" w-48 h-48  flex items-center justify-center shadow-lg rounded-full transition ease-in-out duration-500 hover:scale-110">
                 <Image
                   src="/src/awards/Award5.png"
-                  width={200}
-                  height={200}
+                  width={150}
+                  height={150}
                   className=" object-contain rounded"
                   alt="..."
                 ></Image>
               </div>
-              <div className=" w-40 h-40 md:w-60 md:h-60  flex items-center justify-center shadow-lg rounded-full transition ease-in-out duration-500 hover:scale-110">
+              <div className=" w-48 h-48  flex items-center justify-center shadow-lg rounded-full transition ease-in-out duration-500 hover:scale-110">
                 <Image
                   src="/src/awards/Award6.png"
-                  width={200}
-                  height={200}
+                  width={150}
+                  height={150}
                   className=" object-contain rounded"
                   alt="..."
                 ></Image>

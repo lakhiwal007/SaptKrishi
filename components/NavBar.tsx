@@ -19,7 +19,7 @@ const NavBar: NextComponentType = () => {
           <div className="pl-8 block w-full h-auto">
             <Link href="/">
               <Image
-                src="/src/saptkrishi logo.png"
+                src="/src/saptkrishi-logo.png"
                 width={112.25}
                 height={43.91}
                 alt="logo"
