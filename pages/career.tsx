@@ -14,12 +14,13 @@ import * as yup from "yup";
 type Inputs = {
   FullName?: string;
   Email?: string;
-  MobileNo?: number;
+  MobileNo?: string;
   FileUrl?: string;
   Message?: string;
 };
 
 const emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; //eslint-disable-line
+const mobilenoPattern = /^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$/; //eslint-disable-line
 // const SUPPORTED_FORMATS = ["application/pdf", "application/msword"];
 const schema = yup.object().shape({
   FullName: yup
@@ -30,8 +31,13 @@ const schema = yup.object().shape({
     .string()
     .matches(emailPattern, { message: "email is invalid" })
     .required("Required"),
-  MobileNo: yup.number().positive().integer().required("Required"),
-  FileUrl: yup.mixed().required("Required"),
+  MobileNo: yup
+    .string()
+    .min(10, "Enter valid mobile no.")
+    .max(10, "Enter valid mobile no.")
+    .matches(mobilenoPattern, { message: "Mobile no. is invalid" })
+    .required("Required"),
+  FileUrl: yup.string().required("Required"),
   Message: yup.string().min(3).required("Required"),
 });
 
@@ -60,7 +66,7 @@ const career: NextPage = () => {
 
   const onSubmit = (data: Inputs) => {
     // buttonRef.current.disabled = true;
-    console.log(data);
+    // console.log(data);
     addDoc(collectionRef, {
       full_name: data.FullName,
       email: data.Email,
@@ -70,20 +76,20 @@ const career: NextPage = () => {
     })
       .then(() => {
         alert("Form Successfully Submitted!");
-        // emailjs
-        //   .send(
-        //     process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!, // eslint-disable-line
-        //     process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!, // eslint-disable-line
-        //     data,
-        //     process.env.NEXT_PUBLIC_EMAILJS_USER_ID
-        //   )
-        //   .then((response) => {
-        //     console.log("SUCCESS!", response.status, response.text);
-        //   })
-        //   .catch((err) => {
-        //     console.log("FAILED...", err);
-        //   });
-        // router.push("/");
+        emailjs
+          .send(
+            process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID_2!, // eslint-disable-line
+            process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID_2!, // eslint-disable-line
+            data,
+            process.env.NEXT_PUBLIC_EMAILJS_USER_ID_2
+          )
+          .then((response) => {
+            console.log("SUCCESS!", response.status, response.text);
+          })
+          .catch((err) => {
+            console.log("FAILED...", err);
+          });
+        router.push("/");
       })
       .catch((err) => {
         alert(err.message);
@@ -94,20 +100,20 @@ const career: NextPage = () => {
     <div className="relative">
       <NavBar />
       <form method="POST" onSubmit={handleSubmit(onSubmit)} autoComplete="off">
-        <div className="w-full mih-h-screen flex justify-center">
-          <div className="w-full mih-h-screen grid grid-cols-1 lg:grid-cols-2">
-            <div className="w-full mih-h-screen flex items-center  justify-center">
-              <div className="w-full flex items-center justify-center">
+        <div className="w-full mih-h-screen flex justify-center bg-white">
+          <div className="w-full h-full grid  grid-cols-1 place-items-center lg:grid-cols-2 border m-4">
+            <div className="w-full h-full flex items-center  justify-center">
+              <div className="w-full h-full flex items-center justify-center">
                 <Image
                   src={"/src/career.jpg"}
                   width={650}
                   height={600}
-                  className="object-fit rounded"
+                  className="object-fit"
                 ></Image>
               </div>
             </div>
-            <div className="w-full mih-h-screen flex items-center justify-center">
-              <div className="w-[90%]  mih-h-screen border shadow-lg p-3 mb-5 bg-body rounded lg:w-3/4">
+            <div className="w-full h-full flex items-center justify-center bg-white p-8">
+              <div className="w-[95%]  h-full  bg-white lg:w-3/4">
                 <div className="mb-3">
                   <label htmlFor="FullName" className="form-label">
                     Full Name
@@ -122,7 +128,7 @@ const career: NextPage = () => {
                     onBlur={(event) => handleInput(event)}
                   />
                   {errors.FullName && (
-                    <p className="text-sm bg-red-300 text-red-600 p-2 rounded">
+                    <p className="text-sm text-red-600 pt-2">
                       {errors.FullName.message}
                     </p>
                   )}
@@ -144,7 +150,7 @@ const career: NextPage = () => {
                     onBlur={(event) => handleInput(event)}
                   />
                   {errors.Email && (
-                    <p className="text-sm bg-red-300 text-red-600 p-2 rounded">
+                    <p className="text-sm text-red-600 p-2">
                       {errors.Email.message}
                     </p>
                   )}
@@ -157,7 +163,7 @@ const career: NextPage = () => {
                     Mob. No.
                   </label>
                   <input
-                    type="tel"
+                    type="text"
                     // name="MobileNo"
                     className="form-control"
                     id="formGroupExampleInput3"
@@ -165,13 +171,12 @@ const career: NextPage = () => {
                     {...register("MobileNo", {
                       required: true,
                       minLength: 10,
-                      pattern:
-                        /^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$/, //eslint-disable-line
+                      maxLength: 10,
                     })}
                     onBlur={(event) => handleInput(event)}
                   />
                   {errors.MobileNo && (
-                    <p className="text-sm bg-red-300 text-red-600 p-2 rounded">
+                    <p className="text-sm text-red-600 p-2">
                       {errors.MobileNo.message}
                     </p>
                   )}
@@ -189,7 +194,7 @@ const career: NextPage = () => {
                     onChange={(event) => handleInput(event)}
                   />
                   {errors.FileUrl && (
-                    <p className="text-sm bg-red-300 text-red-600 p-2 rounded">
+                    <p className="text-sm text-red-600 p-2">
                       {errors.FileUrl.message}
                     </p>
                   )}
