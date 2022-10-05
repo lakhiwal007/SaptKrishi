@@ -19,7 +19,7 @@ const NavBar: NextComponentType = () => {
           <div className="pl-8 block w-full h-auto">
             <Link href="/">
               <Image
-                src="/src/saptkrishi logo.png"
+                src="/src/saptkrishi-logo.png"
                 width={112.25}
                 height={43.91}
                 alt="logo"
@@ -59,6 +59,11 @@ const NavBar: NextComponentType = () => {
             <Link href="team/">
               <li className="pt-2 pb-2 pl-4 pr-4 hover:cursor-pointer rounded-full hover:bg-emerald-500 hover:text-white">
                 Team
+              </li>
+            </Link>
+            <Link href="career/">
+              <li className="pt-2 pb-2 pl-4 pr-4 hover:cursor-pointer rounded-full hover:bg-emerald-500 hover:text-white">
+                Career
               </li>
             </Link>
             <li className="hidden nav-item dropdown pt-2 pb-2 pl-4 pr-4 hover:cursor-pointer rounded-full hover:bg-emerald-500 hover:text-white lg:block">

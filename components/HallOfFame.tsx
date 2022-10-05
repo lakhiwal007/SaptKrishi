@@ -41,7 +41,7 @@ const HallOfFame: NextComponentType = () => {
             height={940}
             className="w-full h-full object-fit"
           ></Image>
-          <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end bg-black opacity-60"></div>
+          <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end bg-black opacity-40"></div>
           <div className="w-full h-full absolute bootom-0 flex flex-col items-center justify-end">
             <p className="text-lg text-white font-bold p-2 md:text-4xl lg:text-6xl text-center">
               SabjiKothi Demonstration in Front of Hon&apos;ble Prime Minister
@@ -62,7 +62,7 @@ const HallOfFame: NextComponentType = () => {
             height={940}
             className="w-full h-full object-fit"
           ></Image>
-          <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end bg-black opacity-60"></div>
+          <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end bg-black opacity-40"></div>
           <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end">
             <p className=" text-lg sm:text-2xl text-white font-bold mb-2 md:text-4xl lg:text-6xl text-center">
               SabjiKothi in Shark Tank
@@ -82,7 +82,7 @@ const HallOfFame: NextComponentType = () => {
             height={940}
             className="w-full h-full object-fit"
           ></Image>
-          <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end bg-black opacity-60"></div>
+          <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end bg-black opacity-40"></div>
           <div className="w-full h-full absolute bootom-0 flex flex-col items-center justify-end">
             <p className="text-lg text-white font-bold p-2 md:text-4xl lg:text-6xl text-center">
               Conferred By Youth Affairs & Sports Minister Anurag Thakur
@@ -102,7 +102,7 @@ const HallOfFame: NextComponentType = () => {
             height={940}
             className="w-full h-full object-fit"
           ></Image>
-          <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end bg-black opacity-60"></div>
+          <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end bg-black opacity-40"></div>
           <div className="w-full h-full absolute bootom-0 flex flex-col items-center justify-end">
             <p className="text-lg text-white font-bold p-2 md:text-4xl lg:text-6xl text-center">
               Photo with UN Resident Coordinator
@@ -122,7 +122,7 @@ const HallOfFame: NextComponentType = () => {
             height={940}
             className="w-full h-full object-fit"
           ></Image>
-          <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end bg-black opacity-60"></div>
+          <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end bg-black opacity-40"></div>
           <div className="w-full h-full absolute bootom-0 flex flex-col items-center justify-end">
             <p className="text-lg text-white font-bold p-2 md:text-4xl lg:text-6xl text-center mb-8">
               Our Happy Customer

@@ -71,7 +71,7 @@ const Profiles: NextPage = () => {
                 >
                   <div className="member-view-box">
                     <div className="member-image">
-                      <img src="./src/team/shivani.png" alt="Shivani Jha" />
+                      <img src="./src/team/shivani-jha.jpg" alt="Shivani Jha" />
                       <div className="member-details">
                         <h4>Ms. Shivani Jha</h4>
                       </div>

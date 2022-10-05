@@ -12,8 +12,8 @@ const SabjiKothiECart: NextComponentType = () => {
       <div className="w-full flex items-center justify-center relative m-auto p-2">
         <Image
           src="/src/products/ecart.PNG"
-          width={600}
-          height={450}
+          width={700}
+          height={600}
           className="rounded object-contain"
         ></Image>
       </div>
