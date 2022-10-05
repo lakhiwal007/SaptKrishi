@@ -71,7 +71,7 @@ const Profiles: NextPage = () => {
                 >
                   <div className="member-view-box">
                     <div className="member-image">
-                      <img src="./src/team/shivani-jha.jpg" alt="Shivani Jha" />
+                      <img src="./src/team/shivani.png" alt="Shivani Jha" />
                       <div className="member-details">
                         <h4>Ms. Shivani Jha</h4>
                       </div>
@@ -85,10 +85,10 @@ const Profiles: NextPage = () => {
                     <div className="member-image">
                       <img
                         src="./src/team/saurabh-sharma.jpeg"
-                        alt="Mr. Sourabh Sharma"
+                        alt="Mr. Saurabh Sharma"
                       />
                       <div className="member-details">
-                        <h4>Mr. Sourabh Sharma</h4>
+                        <h4>Mr. Saurabh Sharma</h4>
                       </div>
                     </div>
                   </div>
@@ -96,7 +96,7 @@ const Profiles: NextPage = () => {
               </li>
               <li>
                 <a
-                  href="https://www.linkedin.com/in/sourab-tiwary-6a0680201/"
+                  href="https://www.linkedin.com/in/sourab-tiwary-6a0680201"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -140,7 +140,7 @@ const Profiles: NextPage = () => {
                   <div className="member-view-box">
                     <div className="member-image">
                       <img
-                        src="./src/team/j-ramkumar.jfif"
+                        src="./src/team/j-ramkumar.jpeg"
                         alt="Dr. J Ramkumar"
                       />
                       <div className="member-details">
@@ -171,7 +171,7 @@ const Profiles: NextPage = () => {
               </li>
               <li>
                 <a
-                  href="https://www.linkedin.com/in/jagadeeshsunkad/"
+                  href="https://www.linkedin.com/in/jagadeeshsunkad"
                   target="_blank"
                   rel="noreferrer"
                 >
