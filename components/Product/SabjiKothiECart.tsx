@@ -13,7 +13,7 @@ const SabjiKothiECart: NextComponentType = () => {
         <Image
           src="/src/products/ecart.PNG"
           width={700}
-          height={600}
+          height={450}
           className="rounded object-contain"
         ></Image>
       </div>

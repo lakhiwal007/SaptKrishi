@@ -101,7 +101,7 @@ const career: NextPage = () => {
       <NavBar />
       <form method="POST" onSubmit={handleSubmit(onSubmit)} autoComplete="off">
         <div className="w-full mih-h-screen flex justify-center bg-white">
-          <div className="w-full h-full grid  grid-cols-1 place-items-center lg:grid-cols-2 border m-4">
+          <div className="w-full h-full grid  grid-cols-1 place-items-center lg:grid-cols-2 border border-gray-200 m-4 xl:w-[70%]">
             <div className="w-full h-full flex items-center  justify-center">
               <div className="w-full h-full flex items-center justify-center">
                 <Image
