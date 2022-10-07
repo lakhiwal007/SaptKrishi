@@ -54,7 +54,7 @@ const Photos: NextComponentType = () => {
           ></Image>
           <p className="text-md p-4 text-center font-semibold">
             Interaction with Manoj Sinha <br></br>
-            (Lieutenant Governor of Jammu Kashmir)
+            (Lieutenant Governor of Jammu & Kashmir)
           </p>
         </div>
         <div className="w-full h-auto flex flex-col items-center justify-start rounded">

@@ -8,7 +8,7 @@ import "@splidejs/react-splide/css";
 const Vision: NextComponentType = () => {
   return (
     <div className="w-full flex flex-col items-center justify-center mt-8">
-      <h1 className="text-4xl md:text-5xl">
+      <h1 className="text-4xl md:text-5xl text-center">
         Sustainable Development Goals that Drive Our Mission
       </h1>
 

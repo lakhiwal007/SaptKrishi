@@ -11,7 +11,7 @@ const Modiji: NextComponentType = () => {
         className="text-xl p-2  mb-2 border-l-8 border-emerald-600 md:text-4xl"
         id="modiji"
       >
-        Demonstration of Sabjikothi to the PM Modi{" "}
+        Demonstration of sabjikothi to Honourable Prime minister Narendra Modi{" "}
       </h2>
       <div className="w-full flex flex-col  items-center justify-center lg:p-8">
         <Splide
