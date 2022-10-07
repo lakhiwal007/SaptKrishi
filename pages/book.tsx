@@ -369,7 +369,7 @@ book.getInitialProps = () => {
     {
       id: 6,
       name: "SabjiKothi E-Cart",
-      imgURL: "/src/products/ecart.PNG",
+      imgURL: "/src/products/SabjiKothiECart.jpeg",
     },
     {
       id: 7,
