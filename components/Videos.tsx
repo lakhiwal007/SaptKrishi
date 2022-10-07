@@ -1,7 +1,7 @@
 import React from "react";
 import { NextComponentType } from "next";
 import Iframe from "react-iframe";
-import Image from "next/image";
+
 const Photos: NextComponentType = () => {
   return (
     <div className="w-full flex flex-col items-center justify-center p-4 overflow-hidden">
