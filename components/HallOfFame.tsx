@@ -105,7 +105,8 @@ const HallOfFame: NextComponentType = () => {
           <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end bg-black opacity-40"></div>
           <div className="w-full h-full absolute bootom-0 flex flex-col items-center justify-end">
             <p className="text-lg text-white font-bold p-2 md:text-4xl lg:text-6xl text-center">
-              Photo with UN Resident Coordinator
+              Demonstration of SabjiKothi to the UN Resident Coordinator Ms.
+              Deirdre Boyd
             </p>
             <Link href={"/gallery/#photos"}>
               <button className="btn btn-primary rounded-full mb-2">
