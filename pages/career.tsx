@@ -11,6 +11,7 @@ import emailjs from "@emailjs/browser";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
+
 type Inputs = {
   FullName?: string;
   Email?: string;
@@ -113,7 +114,7 @@ const career: NextPage = () => {
               </div>
             </div>
             <div className="w-full h-full flex items-center justify-center bg-white p-8">
-              <div className="w-[95%]  h-full  bg-white lg:w-3/4">
+              <div className="w-[95%]  h-full  bg-white lg:w-[80%]">
                 <div className="mb-3">
                   <label htmlFor="FullName" className="form-label">
                     Full Name

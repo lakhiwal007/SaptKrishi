@@ -24,14 +24,6 @@ const Supporters: NextComponentType = () => {
 
           <div className="slide">
             <Image
-              src="/src/supporters/medTechIITK.jfif"
-              width={200}
-              height={200}
-              className="rounded object-contain"
-            ></Image>
-          </div>
-          <div className="slide">
-            <Image
               src="/src/supporters/Incubation-Center-IIT-Patna-Logo-Original-Colors.png"
               width={200}
               height={200}
@@ -114,14 +106,6 @@ const Supporters: NextComponentType = () => {
             ></Image>
           </div>
 
-          <div className="slide">
-            <Image
-              src="/src/supporters/medTechIITK.jfif"
-              width={200}
-              height={200}
-              className="rounded object-contain"
-            ></Image>
-          </div>
           <div className="slide">
             <Image
               src="/src/supporters/Incubation-Center-IIT-Patna-Logo-Original-Colors.png"
