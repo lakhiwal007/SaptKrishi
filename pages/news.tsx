@@ -14,7 +14,7 @@ const news: NextPage = () => {
         <h1 className="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-yellow-400 md:text-6xl">
           News
         </h1>
-        <div className="w-full grid grid-cols-1 p-4 gap-y-4 md:grid-cols-2 md:gap-2 lg:grid-cols-3 lg:gap-4">
+        <div className="w-full grid grid-cols-1 p-4 gap-y-4 md:w-[90%] md:grid-cols-2 md:gap-2 lg:grid-cols-3 lg:gap-4 lg:w-[80%]">
           <div className="w-[250px] h-[300px] m-auto mb-4 flex items-center justify-start flex-col relative border border-[1px] border-slate-300 drop-shadow-xl rounded-lg shadow-inner bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500">
             <div className="w-full flex items-start justify-center">
               <Image

@@ -1,4 +1,3 @@
-
 import React, { useState, useRef } from "react";
 import { NextPage } from "next";
 import { useRouter } from "next/router";
@@ -11,7 +10,6 @@ import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-
 
 type Inputs = {
   ProductName?: string;
@@ -348,33 +346,20 @@ book.getInitialProps = () => {
       name: "SabjiKothi",
       imgURL: "/src/products/SabjiKothi.png",
     },
+
     {
       id: 2,
-      name: "Preservator",
-      imgURL: "/src/products/preservator.jpg",
-    },
-    {
-      id: 3,
-      name: "Preservator Trader",
-      imgURL: "/src/products/preservator-trader-web-min.jpg",
-    },
-    {
-      id: 4,
       name: "SabjiKothi Cart",
       imgURL: "/src/products/threeWheelCart.JPG",
     },
+
     {
-      id: 5,
-      name: "Four Wheel Cart",
-      imgURL: "/src/products/4WheelCart.png",
-    },
-    {
-      id: 6,
+      id: 3,
       name: "SabjiKothi E-Cart",
       imgURL: "/src/products/SabjiKothiECart.jpeg",
     },
     {
-      id: 7,
+      id: 4,
       name: "Nano Kawach Pesticide",
       imgURL: "/src/products/NanoKawach.jpeg",
     },

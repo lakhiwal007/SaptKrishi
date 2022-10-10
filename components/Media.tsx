@@ -1,23 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import { NextComponentType } from "next";
-import { HiOutlinePlus } from "react-icons/hi";
+
 import {
   FaFacebookF,
   FaTwitter,
   FaLinkedin,
   FaInstagram,
-  FaShare,
 } from "react-icons/fa";
 const Media: NextComponentType = () => {
-  const [show, setShow] = useState(false);
-  const isShow = () => {
-    setShow(!show);
-    // console.log(show);
-  };
   return (
     <>
-      {/* {show ? ( */}
-      <div className="w-[50px] h-[250px] fixed bottom-10 right-2 flex flex-col rounded  z-50 cursor-pointer transition duration-200 ease-in-out">
+      <div className="w-[50px] h-[250px] fixed bottom-[25%] right-2 flex flex-col rounded  z-50 cursor-pointer transition duration-200 ease-in-out">
         <div className="w-[50px] h-[50px] absolute bottom-[100%] right-0 flex items-center justify-center bg-blue-800  rounded-full hover:scale-110 transition duartion-100 shadow-inner drop-shadow-xl">
           <a
             href="https://www.facebook.com/saptkrishi"
