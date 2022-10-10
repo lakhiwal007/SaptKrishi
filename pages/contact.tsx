@@ -8,7 +8,6 @@ import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import { useRouter } from "next/router";
 
-
 type Inputs = {
   Name: string;
   Email: string;

@@ -32,39 +32,39 @@ const NavBar: NextComponentType = () => {
         <div className="">
           <ul className="hidden w-full flex  items-center justify-center space-x-4 p-4 lg:flex">
             <Link href="/">
-              <li className="pt-2 pb-2 pl-4 pr-4 hover:cursor-pointer rounded-full hover:bg-emerald-500 hover:text-white">
+              <a><li className="pt-2 pb-2 pl-4 pr-4 hover:cursor-pointer rounded-full hover:bg-emerald-500 hover:text-white">
                 Home
-              </li>
+              </li></a>
             </Link>
             <Link href="products/">
-              <li className="pt-2 pb-2 pl-4 pr-4 hover:cursor-pointer rounded-full hover:bg-emerald-500 hover:text-white">
+              <a><li className="pt-2 pb-2 pl-4 pr-4 hover:cursor-pointer rounded-full hover:bg-emerald-500 hover:text-white">
                 Products
-              </li>
+              </li></a>
             </Link>
             <Link href="about/">
-              <li className="pt-2 pb-2 pl-4 pr-4 hover:cursor-pointer rounded-full hover:bg-emerald-500 hover:text-white">
+              <a><li className="pt-2 pb-2 pl-4 pr-4 hover:cursor-pointer rounded-full hover:bg-emerald-500 hover:text-white">
                 About
-              </li>
+              </li></a>
             </Link>
             <Link href="gallery/">
-              <li className="pt-2 pb-2 pl-4 pr-4 hover:cursor-pointer rounded-full hover:bg-emerald-500 hover:text-white">
+              <a><li className="pt-2 pb-2 pl-4 pr-4 hover:cursor-pointer rounded-full hover:bg-emerald-500 hover:text-white">
                 Gallery
-              </li>
+              </li></a>
             </Link>
             <Link href="news/">
-              <li className="pt-2 pb-2 pl-4 pr-4 hover:cursor-pointer rounded-full hover:bg-emerald-500 hover:text-white">
+              <a><li className="pt-2 pb-2 pl-4 pr-4 hover:cursor-pointer rounded-full hover:bg-emerald-500 hover:text-white">
                 News
-              </li>
+              </li></a>
             </Link>
             <Link href="team/">
-              <li className="pt-2 pb-2 pl-4 pr-4 hover:cursor-pointer rounded-full hover:bg-emerald-500 hover:text-white">
+              <a><li className="pt-2 pb-2 pl-4 pr-4 hover:cursor-pointer rounded-full hover:bg-emerald-500 hover:text-white">
                 Team
-              </li>
+              </li></a>
             </Link>
             <Link href="career/">
-              <li className="pt-2 pb-2 pl-4 pr-4 hover:cursor-pointer rounded-full hover:bg-emerald-500 hover:text-white">
+              <a><li className="pt-2 pb-2 pl-4 pr-4 hover:cursor-pointer rounded-full hover:bg-emerald-500 hover:text-white">
                 Career
-              </li>
+              </li></a>
             </Link>
             <li className="hidden nav-item dropdown pt-2 pb-2 pl-4 pr-4 hover:cursor-pointer rounded-full hover:bg-emerald-500 hover:text-white lg:block">
               <a
@@ -143,13 +143,13 @@ const NavBar: NextComponentType = () => {
         </div>
         <div className="w-full flex items-center justify-center ml-2 ">
           <Link href="book/">
-            <button className="btn btn-outline-success flex hover:bg-gradient-to-r hover:from-green-500  hover:to-cyan-400 hover:border-0 items-center rounded-full hover:bg-gradient-to-r hover:from-green-500  hover:to-cyan-400 text-sm md:text-md md:pl-0">
+            <a><button className="btn btn-outline-success flex hover:bg-gradient-to-r hover:from-green-500  hover:to-cyan-400 hover:border-0 items-center rounded-full hover:bg-gradient-to-r hover:from-green-500  hover:to-cyan-400 text-sm md:text-md md:pl-0">
               {" "}
               <span className="p-2">
                 <FaShoppingCart />
               </span>{" "}
               Book Now
-            </button>
+            </button></a>
           </Link>
         </div>
 

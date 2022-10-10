@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 type Props = {
-//   imgURL: string;
+  //   imgURL: string;
   name: string;
 };
 const KnowMore = ({ name }: Props) => {
@@ -14,7 +14,9 @@ const KnowMore = ({ name }: Props) => {
           query: { name: name },
         }}
       >
-        <button className="btn btn-primary rounded-full">Book Now</button>
+        <a>
+          <button className="btn btn-primary rounded-full">Book Now</button>
+        </a>
       </Link>
     </div>
   );

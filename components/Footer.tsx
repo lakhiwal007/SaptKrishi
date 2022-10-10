@@ -10,7 +10,6 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 import { MdMail } from "react-icons/md";
-import Link from "next/link";
 
 const Footer: NextComponentType = () => {
   return (
