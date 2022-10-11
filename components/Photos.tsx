@@ -169,17 +169,6 @@ const Photos: NextComponentType = () => {
             Visual of SabjiKothi with Fruits and Vegetables
           </p>
         </div>
-        <div className="w-full h-auto flex flex-col items-center justify-start rounded">
-          <Image
-            src="/src/gallery/Team.JPG"
-            width={400}
-            height={400}
-            className="object-cover rounded "
-          ></Image>
-          <p className="text-md p-4 text-center font-semibold">
-            MedTech IIT Kanpur
-          </p>
-        </div>
       </div>
 
       <p className="text-4xl p-2 border-l-8 border-emerald-600">Videos</p>
