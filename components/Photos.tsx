@@ -138,6 +138,17 @@ const Photos: NextComponentType = () => {
         </div>
         <div className="w-full h-auto flex flex-col items-center justify-start rounded">
           <Image
+            src="/src/gallery/upl.jpg"
+            width={400}
+            height={400}
+            className="object-cover rounded "
+          ></Image>
+          <p className="text-md p-4 text-center font-semibold">
+            Sabjikothi deployed at UPL centre for Agriculture excellence
+          </p>
+        </div>
+        <div className="w-full h-auto flex flex-col items-center justify-start rounded">
+          <Image
             src="/src/gallery/img11.jpeg"
             width={400}
             height={400}
