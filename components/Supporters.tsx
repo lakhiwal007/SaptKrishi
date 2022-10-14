@@ -16,7 +16,7 @@ const Supporters: NextComponentType = () => {
           <div className="slide">
             <Image
               src="/src/supporters/siicllogoAssetLOf.png"
-              width={600}
+              width={650}
               height={150}
               className="rounded object-fit"
             ></Image>
@@ -100,7 +100,7 @@ const Supporters: NextComponentType = () => {
           <div className="slide">
             <Image
               src="/src/supporters/siicllogoAssetLOf.png"
-              width={600}
+              width={650}
               height={150}
               className="rounded object-fit"
             ></Image>
