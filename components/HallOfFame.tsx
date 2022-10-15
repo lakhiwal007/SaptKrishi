@@ -44,8 +44,9 @@ const HallOfFame: NextComponentType = () => {
           <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end bg-black opacity-40"></div>
           <div className="w-full h-full absolute lg:bottom-[20%] md:p-2 lg:p-8 flex flex-col items-center justify-end">
             <p className=" text-sm text-white md:mb-2 lg:mb-4 font-bold md:text-2xl lg:text-4xl text-center">
-              Demonstration of Sabjikothi to honble pri min of India Shri
-              Narendra Modi, Lt gov of ut of j&k Shri Manoj sinha
+              Demonstration of Sabjikothi to Hon. Prime Minister Shri. Narendra
+              Modi , Lt. Governor J&K Shri. Manoj Sinha , Minister of Panchayati
+              Raj Shri. Giriraj Singh
             </p>
             <Link href={"/gallery/#modiji"}>
               <button className="btn btn-primary rounded-full mb-2">
@@ -84,7 +85,7 @@ const HallOfFame: NextComponentType = () => {
           ></Image>
           <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end bg-black opacity-40"></div>
           <div className="w-full h-full absolute lg:bottom-[20%] md:p-2 lg:p-8 flex flex-col items-center justify-end">
-            <p className=" text-sm text-white md:mb-2 lg:mb-4 font-bold md:text-2xl lg:text-4xl text-center">
+            <p className=" text-[11px] text-white md:mb-2 lg:mb-4 font-bold md:text-2xl lg:text-4xl text-center">
               Solved champion award by United National Volunteer India, and
               Ministry of sports and youth affairs Govt. Of India and being
               conferred by Honble minister of sports and youth affairs Shri
