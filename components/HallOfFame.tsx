@@ -38,14 +38,14 @@ const HallOfFame: NextComponentType = () => {
           <Image
             src="/src/gallery/modiji/modiji2.png"
             width={2000}
-            height={940}
+            height={1000}
             className="w-full h-full object-fit"
           ></Image>
           <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end bg-black opacity-40"></div>
-          <div className="w-full h-full absolute bootom-0 flex flex-col items-center justify-end">
-            <p className=" text-lg sm:text-2xl text-white font-bold p-2 md:text-4xl lg:text-6xl text-center">
-              SabjiKothi Demonstration in Front of Hon&apos;ble Prime Minister
-              Narendra Modi
+          <div className="w-full h-full absolute lg:bottom-[20%] md:p-2 lg:p-8 flex flex-col items-center justify-end">
+            <p className=" text-sm text-white md:mb-2 lg:mb-4 font-bold md:text-2xl lg:text-4xl text-center">
+              Demonstration of Sabjikothi to honble pri min of India Shri
+              Narendra Modi, Lt gov of ut of j&k Shri Manoj sinha
             </p>
             <Link href={"/gallery/#modiji"}>
               <button className="btn btn-primary rounded-full mb-2">
@@ -59,13 +59,13 @@ const HallOfFame: NextComponentType = () => {
           <Image
             src="/src/gallery/sharkTank/st7.png"
             width={2000}
-            height={940}
+            height={1000}
             className="w-full h-full object-fit"
           ></Image>
           <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end bg-black opacity-40"></div>
-          <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end">
-            <p className=" text-lg sm:text-2xl text-white font-bold mb-2 md:text-4xl lg:text-6xl text-center">
-              SabjiKothi in Shark Tank
+          <div className="w-full h-full absolute lg:bottom-[20%] md:p-2 lg:p-8 flex flex-col items-center justify-end">
+            <p className=" text-sm text-white md:mb-2 lg:mb-4 font-bold mb-2 md:text-2xl lg:text-4xl text-center">
+              Sabjikothi, As seen in sharktank India.
             </p>
             <Link href={"/gallery/#shark-tank"}>
               <button className="btn btn-primary rounded-full mb-2">
@@ -79,13 +79,16 @@ const HallOfFame: NextComponentType = () => {
           <Image
             src="/src/gallery/img1.jpeg"
             width={2000}
-            height={940}
+            height={1000}
             className="w-full h-full object-fit"
           ></Image>
           <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end bg-black opacity-40"></div>
-          <div className="w-full h-full absolute bootom-0 flex flex-col items-center justify-end">
-            <p className=" text-lg sm:text-2xl text-white font-bold p-2 mb-4 md:text-4xl lg:text-6xl text-center">
-              Conferred By Youth Affairs & Sports Minister Anurag Thakur
+          <div className="w-full h-full absolute lg:bottom-[20%] md:p-2 lg:p-8 flex flex-col items-center justify-end">
+            <p className=" text-sm text-white md:mb-2 lg:mb-4 font-bold md:text-2xl lg:text-4xl text-center">
+              Solved champion award by United National Volunteer India, and
+              Ministry of sports and youth affairs Govt. Of India and being
+              conferred by Honble minister of sports and youth affairs Shri
+              Anurag thakur
             </p>
             <Link href={"/gallery/#photos"}>
               <button className="btn btn-primary rounded-full mb-2">
@@ -99,12 +102,12 @@ const HallOfFame: NextComponentType = () => {
           <Image
             src="/src/gallery/img2.jpeg"
             width={2000}
-            height={940}
+            height={1000}
             className="w-full h-full object-fit"
           ></Image>
           <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end bg-black opacity-40"></div>
-          <div className="w-full h-full absolute bootom-0 flex flex-col items-center justify-end">
-            <p className=" text-lg sm:text-2xl text-white font-bold p-2 md:text-4xl lg:text-6xl text-center">
+          <div className="w-full h-full absolute lg:bottom-[20%] md:p-2 lg:p-8 flex flex-col items-center justify-end">
+            <p className=" text-sm text-white md:mb-2 lg:mb-4 font-bold md:text-2xl lg:text-4xl text-center">
               Demonstration of SabjiKothi to the UN Resident Coordinator Ms.
               Deirdre Boyd
             </p>
@@ -120,12 +123,12 @@ const HallOfFame: NextComponentType = () => {
           <Image
             src="/src/HappyFace.JPG"
             width={2000}
-            height={940}
+            height={1000}
             className="w-full h-full object-fit"
           ></Image>
           <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end bg-black opacity-40"></div>
-          <div className="w-full h-full absolute bootom-0 flex flex-col items-center justify-end">
-            <p className=" text-lg sm:text-2xl text-white font-bold p-2 md:text-4xl lg:text-6xl text-center mb-8">
+          <div className="w-full h-full absolute md:bottom-[30%] lg:bottom-[20%] md:p-2 lg:p-8 flex flex-col items-center justify-end">
+            <p className=" text-sm text-white md:mb-2 lg:mb-4 font-bold md:text-2xl lg:text-4xl text-center mb-8">
               Our Happy Customer
             </p>
           </div>

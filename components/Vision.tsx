@@ -8,7 +8,7 @@ import "@splidejs/react-splide/css";
 const Vision: NextComponentType = () => {
   return (
     <div className="w-full flex flex-col items-center justify-center mt-8">
-      <h1 className="text-4xl md:text-5xl text-center">
+      <h1 className="text-3xl md:text-5xl text-center p-2">
         Sustainable Development Goals that Drive Our Mission
       </h1>
 
@@ -23,6 +23,7 @@ const Vision: NextComponentType = () => {
             arrows: false,
             pagination: false,
             padding: "10px",
+            height: "250px",
 
             grid: {
               // You can define rows/cols instead of dimensions.
