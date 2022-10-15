@@ -6,11 +6,11 @@ import Image from "next/image";
 
 const SharkTank: NextComponentType = () => {
   return (
-    <div className="w-full row p-4" id="shark-tank">
+    <div className="w-full pt-4" id="shark-tank">
       <h2 className="text-xl p-2 mb-2 border-l-8 border-emerald-600 md:text-4xl">
         SabjiKothi in Shark Tank
       </h2>
-      <div className="w-full flex flex-col  items-center justify-center lg:p-8">
+      <div className="w-full flex flex-col p-4  items-center justify-center lg:p-8">
         <Splide
           aria-label="My Favorite Images"
           options={{

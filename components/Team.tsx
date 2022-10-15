@@ -7,7 +7,7 @@ const Profiles: NextPage = () => {
       <div className="genealogy-tree">
         <ul>
           <li>
-            <a href="#">
+            <a href="#founderandceo">
               <div className="member-view-box">
                 <div className="member-image designation">
                   <div className="member-details">
@@ -34,7 +34,7 @@ const Profiles: NextPage = () => {
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#rashmijha">
                   <div className="member-view-box">
                     <div className="member-image">
                       <img src="./src/team/rashmi-jha.jpg" alt="Member" />
@@ -53,7 +53,7 @@ const Profiles: NextPage = () => {
       <div className="genealogy-tree">
         <ul>
           <li>
-            <a href="#">
+            <a href="#creativeteam">
               <div className="member-view-box">
                 <div className="member-image designation">
                   <div className="member-details">
@@ -80,7 +80,7 @@ const Profiles: NextPage = () => {
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#saurabh">
                   <div className="member-view-box">
                     <div className="member-image">
                       <img
@@ -121,7 +121,7 @@ const Profiles: NextPage = () => {
       <div className="genealogy-tree">
         <ul>
           <li>
-            <a href="#">
+            <a href="#advisoryboardmembers">
               <div className="member-view-box">
                 <div className="member-image designation">
                   <div className="member-details">
