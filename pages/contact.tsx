@@ -5,6 +5,8 @@ import Footer from "../components/Footer";
 import { database } from "../firebaseConfig";
 import { addDoc, collection } from "firebase/firestore";
 import { useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser";
+import { useRouter } from "next/router";
 
 type Inputs = {
   Name: string;
@@ -14,6 +16,7 @@ type Inputs = {
 };
 
 const contact: NextPage = () => {
+  const router = useRouter();
   const {
     register,
     handleSubmit,
@@ -36,7 +39,21 @@ const contact: NextPage = () => {
       message: data.Message,
     })
       .then(() => {
-        alert("Query added!");
+        alert("Message received!");
+        emailjs
+          .send(
+            process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID_3!, // eslint-disable-line
+            process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID_3!, // eslint-disable-line
+            data,
+            process.env.NEXT_PUBLIC_EMAILJS_USER_ID_3
+          )
+          .then((response) => {
+            console.log("SUCCESS!", response.status, response.text);
+          })
+          .catch((err) => {
+            alert(`FAILED: ${err}`);
+          });
+        router.push("/");
       })
       .catch((err) => {
         alert(err.message);
@@ -130,9 +147,10 @@ const contact: NextPage = () => {
                 Message
               </label>
               <textarea
-                name="Message"
+                // name="Message"
                 className="form-control"
                 id="exampleFormControlTextarea1"
+                {...register("Message")}
                 onChange={(event) => handleInput(event)}
               ></textarea>
             </div>

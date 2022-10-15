@@ -346,33 +346,20 @@ book.getInitialProps = () => {
       name: "SabjiKothi",
       imgURL: "/src/products/SabjiKothi.png",
     },
+
     {
       id: 2,
-      name: "Preservator",
-      imgURL: "/src/products/preservator.jpg",
-    },
-    {
-      id: 3,
-      name: "Preservator Trader",
-      imgURL: "/src/products/preservator-trader-web-min.jpg",
-    },
-    {
-      id: 4,
       name: "SabjiKothi Cart",
       imgURL: "/src/products/threeWheelCart.JPG",
     },
+
     {
-      id: 5,
-      name: "Four Wheel Cart",
-      imgURL: "/src/products/4WheelCart.png",
-    },
-    {
-      id: 6,
+      id: 3,
       name: "SabjiKothi E-Cart",
-      imgURL: "/src/products/ecart.PNG",
+      imgURL: "/src/products/SabjiKothiECart.jpeg",
     },
     {
-      id: 7,
+      id: 4,
       name: "Nano Kawach Pesticide",
       imgURL: "/src/products/NanoKawach.jpeg",
     },

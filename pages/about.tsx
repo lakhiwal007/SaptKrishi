@@ -37,8 +37,8 @@ const about: NextPage = () => {
         {/* Certificates */}
         <div className="w-[90%] min-h-full flex flex-col items-center justify-center rounded-xl shadow-lg shadow-slate-300 mt-16 p-8 mb-16">
           <div>
-            <h1 className="text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 md:text-6xl">
-              Certificates
+            <h1 className="text-5xl text-center font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 md:text-6xl">
+              Awards & Certificates
             </h1>
           </div>
           <div className="w-full flex items-center justify-center mt-16 m-auto">
@@ -139,7 +139,7 @@ const about: NextPage = () => {
 
         {/* Awards */}
 
-        <div className="w-[90%] min-h-full flex flex-col items-center justify-center rounded-xl shadow-lg shadow-slate-300 mt-8 p-16 mb-16">
+        {/* <div className="w-[90%] min-h-full flex flex-col items-center justify-center rounded-xl shadow-lg shadow-slate-300 mt-8 p-16 mb-16">
           <div>
             <h1 className="text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600 md:text-6xl">
               Awards
@@ -221,7 +221,7 @@ const about: NextPage = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <Footer />
     </div>

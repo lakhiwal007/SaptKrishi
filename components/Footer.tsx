@@ -10,7 +10,6 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 import { MdMail } from "react-icons/md";
-import Link from "next/link";
 
 const Footer: NextComponentType = () => {
   return (
@@ -81,31 +80,52 @@ const Footer: NextComponentType = () => {
         </div>
         <div className="w-full flex items-center justify-center pt-4 md:pt-0">
           <ul className="flex items-center text-emerald-600 space-x-4">
-            <Link href="https://www.facebook.com/saptkrishi">
+            <a
+              href="https://www.facebook.com/saptkrishi"
+              target="_blank"
+              rel="noreferrer"
+            >
               <li className="hover:cursor-pointer">
                 <FaFacebookF className="text-2xl" />
               </li>
-            </Link>
-            <Link href="https://twitter.com/saptkrishi?lang=en">
+            </a>
+
+            <a
+              href="https://twitter.com/saptkrishi?lang=en"
+              target="_blank"
+              rel="noreferrer"
+            >
               <li className="hover:cursor-pointer">
                 <FaTwitter className="text-2xl" />
               </li>
-            </Link>
-            <Link href="https://www.google.com/search?q=saptkrishi&oq=saptkrishi&aqs=chrome..69i57j46i39i175i199i275j35i39j69i60l4.3752j0j7&sourceid=chrome&ie=UTF-8">
+            </a>
+            <a
+              href="https://www.google.com/search?q=saptkrishi&oq=saptkrishi&aqs=chrome..69i57j46i39i175i199i275j35i39j69i60l4.3752j0j7&sourceid=chrome&ie=UTF-8"
+              target="_blank"
+              rel="noreferrer"
+            >
               <li className="hover:cursor-pointer">
                 <FaGoogle className="text-2xl" />
               </li>
-            </Link>
-            <Link href="https://www.linkedin.com/company/saptkrishi/?originalSubdomain=in">
+            </a>
+            <a
+              href="https://www.linkedin.com/company/saptkrishi/?originalSubdomain=in"
+              target="_blank"
+              rel="noreferrer"
+            >
               <li className="hover:cursor-pointer">
                 <FaLinkedin className="text-2xl" />
               </li>
-            </Link>
-            <Link href="https://www.instagram.com/saptkrishi/?hl=en">
+            </a>
+            <a
+              href="https://www.instagram.com/saptkrishi/?hl=en"
+              target="_blank"
+              rel="noreferrer"
+            >
               <li className="hover:cursor-pointer">
                 <FaInstagram className="text-2xl" />
               </li>
-            </Link>
+            </a>
           </ul>
         </div>
       </div>

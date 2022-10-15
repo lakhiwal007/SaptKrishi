@@ -138,6 +138,8 @@
   border-radius: 50%;
   background-color: #000;
   z-index: 1;
+  object-fit: cover;
+  object-position: 50% 0%;
   -webkit-filter: grayscale(100%);
 }
 

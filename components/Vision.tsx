@@ -8,7 +8,9 @@ import "@splidejs/react-splide/css";
 const Vision: NextComponentType = () => {
   return (
     <div className="w-full flex flex-col items-center justify-center mt-8">
-      <h1 className="text-4xl md:text-6xl">Our Vision</h1>
+      <h1 className="text-3xl md:text-5xl text-center p-2">
+        Sustainable Development Goals that Drive Our Mission
+      </h1>
 
       <div className="w-full flex items-center justify-center m-8">
         <Splide
@@ -21,6 +23,7 @@ const Vision: NextComponentType = () => {
             arrows: false,
             pagination: false,
             padding: "10px",
+            height: "250px",
 
             grid: {
               // You can define rows/cols instead of dimensions.
@@ -43,7 +46,7 @@ const Vision: NextComponentType = () => {
           extensions={{ Grid }}
         >
           <SplideSlide className="flex items-center justify-center">
-            <div className="w-full flex items-center justify-around flex-col lg:flex-row">
+            <div className="w-full items-center justify-center rounded transition ease-in-out duration-500 hover:scale-110 hover:z-10 rounded">
               <Image
                 src="/src/vision/vision1.jpeg"
                 width={200}
@@ -53,7 +56,7 @@ const Vision: NextComponentType = () => {
             </div>
           </SplideSlide>
           <SplideSlide className="flex items-center justify-center">
-            <div>
+            <div className="w-full items-center justify-center rounded transition ease-in-out duration-500 hover:scale-110 hover:z-10 rounded">
               <Image
                 src="/src/vision/vision2.jpeg"
                 width={200}
@@ -64,7 +67,7 @@ const Vision: NextComponentType = () => {
           </SplideSlide>
 
           <SplideSlide className="flex items-center justify-center">
-            <div className="w-full flex items-center justify-around flex-col lg:flex-row">
+            <div className="w-full items-center justify-center rounded transition ease-in-out duration-500 hover:scale-110 hover:z-10 rounded">
               <Image
                 src="/src/vision/vision3.jpeg"
                 width={200}
@@ -74,7 +77,7 @@ const Vision: NextComponentType = () => {
             </div>
           </SplideSlide>
           <SplideSlide className="flex items-center justify-center">
-            <div>
+            <div className="w-full items-center justify-center rounded transition ease-in-out duration-500 hover:scale-110 hover:z-10 rounded">
               <Image
                 src="/src/vision/vision4.jpeg"
                 width={200}
@@ -85,7 +88,7 @@ const Vision: NextComponentType = () => {
           </SplideSlide>
 
           <SplideSlide className="flex items-center justify-center">
-            <div className="w-full flex items-center justify-around flex-col lg:flex-row">
+            <div className="w-full items-center justify-center rounded transition ease-in-out duration-500 hover:scale-110 hover:z-10 rounded">
               <Image
                 src="/src/vision/vision5.jpeg"
                 width={200}
@@ -95,7 +98,7 @@ const Vision: NextComponentType = () => {
             </div>
           </SplideSlide>
           <SplideSlide className="flex items-center justify-center">
-            <div>
+            <div className="w-full items-center justify-center rounded transition ease-in-out duration-500 hover:scale-110 hover:z-10 rounded">
               <Image
                 src="/src/vision/vision6.jpeg"
                 width={200}

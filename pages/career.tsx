@@ -11,6 +11,7 @@ import emailjs from "@emailjs/browser";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
+
 type Inputs = {
   FullName?: string;
   Email?: string;
@@ -101,7 +102,7 @@ const career: NextPage = () => {
       <NavBar />
       <form method="POST" onSubmit={handleSubmit(onSubmit)} autoComplete="off">
         <div className="w-full mih-h-screen flex justify-center bg-white">
-          <div className="w-full h-full grid  grid-cols-1 place-items-center lg:grid-cols-2 border m-4">
+          <div className="w-full h-full grid  grid-cols-1 place-items-center lg:grid-cols-2 border border-gray-200 m-4 xl:w-[70%]">
             <div className="w-full h-full flex items-center  justify-center">
               <div className="w-full h-full flex items-center justify-center">
                 <Image
@@ -113,7 +114,7 @@ const career: NextPage = () => {
               </div>
             </div>
             <div className="w-full h-full flex items-center justify-center bg-white p-8">
-              <div className="w-[95%]  h-full  bg-white lg:w-3/4">
+              <div className="w-[95%]  h-full  bg-white lg:w-[80%]">
                 <div className="mb-3">
                   <label htmlFor="FullName" className="form-label">
                     Full Name
