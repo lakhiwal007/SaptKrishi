@@ -87,7 +87,7 @@ const Photos: NextComponentType = () => {
             className="object-cover rounded "
           ></Image>
           <p className="text-md p-4 text-center font-semibold">
-            Interaction with Saurabh Shrivastav<br></br>
+            Interaction with Shri. Saurabh Shrivastav<br></br>
             (Former chairman of Nasscom)
           </p>
         </div>
