@@ -5,7 +5,7 @@ import Iframe from "react-iframe";
 
 const Photos: NextComponentType = () => {
   return (
-    <div className="w-full row p-4">
+    <div className="w-full pt-4">
       <p className="text-4xl p-2 border-l-8 border-emerald-600" id="photos">
         Photos
       </p>
@@ -18,7 +18,7 @@ const Photos: NextComponentType = () => {
             className="object-cover rounded "
           ></Image>
           <p className="text-md p-4 text-center font-semibold">
-            Conferred By Youth Affairs & Sports Minister Anurag Thakur
+            Conferred By Youth Affairs & Sports Shri. Minister Anurag Thakur
           </p>
         </div>
         <div className="w-full h-auto flex flex-col items-center justify-start rounded">
@@ -41,8 +41,8 @@ const Photos: NextComponentType = () => {
             className="object-cover rounded "
           ></Image>
           <p className="text-md p-4 text-center font-semibold">
-            Demonstration of Sabjikothi to the CM of Arunachal Pradesh Pema
-            Khandu
+            Demonstration of Sabjikothi to the CM of Arunachal Pradesh Shri.
+            Pema Khandu
           </p>
         </div>
         <div className="w-full h-auto flex flex-col items-center justify-start rounded">
@@ -53,7 +53,7 @@ const Photos: NextComponentType = () => {
             className="object-cover rounded "
           ></Image>
           <p className="text-md p-4 text-center font-semibold">
-            Interaction with Manoj Sinha <br></br>
+            Interaction with Shri. Manoj Sinha <br></br>
             (Lieutenant Governor of Jammu & Kashmir)
           </p>
         </div>
@@ -87,7 +87,7 @@ const Photos: NextComponentType = () => {
             className="object-cover rounded "
           ></Image>
           <p className="text-md p-4 text-center font-semibold">
-            Interaction with Saurabh Shrivastav<br></br>
+            Interaction with Shri. Saurabh Shrivastav<br></br>
             (Former chairman of Nasscom)
           </p>
         </div>

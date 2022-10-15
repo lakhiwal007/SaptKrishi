@@ -6,16 +6,16 @@ import Image from "next/image";
 
 const Modiji: NextComponentType = () => {
   return (
-    <div className="w-full row p-4">
+    <div className="w-full pt-4">
       <h2
         className="text-xl p-2  mb-2 border-l-8 border-emerald-600 md:text-4xl"
         id="modiji"
       >
-        Demonstration of sabjikothi to Honourable Prime minister Narendra Modi ,
-        Lt. Governor Jammu and Kashmir Manoj Sinha , minister of panchayati raj
-        Giriraj Singh{" "}
+        Demonstration of Sabjikothi to Hon. Prime Minister Shri. Narendra Modi,
+        Lt. Governor J&K Shri. Manoj Sinha, Minister of Panchayati Raj Shri.
+        Giriraj Singh
       </h2>
-      <div className="w-full flex flex-col  items-center justify-center lg:p-8">
+      <div className="w-full flex flex-col p-4  items-center justify-center lg:p-8">
         <Splide
           aria-label="My Favorite Images"
           options={{
