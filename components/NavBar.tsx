@@ -24,6 +24,7 @@ const NavBar: NextComponentType = () => {
                 height={43.91}
                 alt="logo"
                 className="cursor-pointer object-contain"
+                loading="eager"
               ></Image>
             </Link>
           </div>

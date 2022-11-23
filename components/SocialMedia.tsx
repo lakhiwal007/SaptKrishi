@@ -48,6 +48,8 @@ const SocialMedia: NextComponentType = () => {
                   sourceType="profile"
                   screenName={"saptkrishi"}
                   options={{ height: 450 }}
+                  placeholder="blur"
+                  tweetLimit={2}
                 />
               </div>
             </div>
@@ -61,6 +63,7 @@ const SocialMedia: NextComponentType = () => {
                   width="335px"
                   height="450px"
                   className="rounded-lg"
+                  loading="lazy"
                 ></Iframe>
               </div>
             </div>
@@ -73,6 +76,7 @@ const SocialMedia: NextComponentType = () => {
                   width="330px"
                   height="450px"
                   className="rounded "
+                  loading="lazy"
                 ></Iframe>
               </div>
             </div>

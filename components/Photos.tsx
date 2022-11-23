@@ -3,6 +3,7 @@ import { NextComponentType } from "next";
 import Image from "next/image";
 import Iframe from "react-iframe";
 
+
 const Photos: NextComponentType = () => {
   return (
     <div className="w-full pt-4">
@@ -184,53 +185,59 @@ const Photos: NextComponentType = () => {
 
       <p className="text-4xl p-2 border-l-8 border-emerald-600">Videos</p>
       <div className="w-full grid grid-cols-1 p-4 gap-4 md:grid-cols-2 md:gap-2 lg:grid-cols-3 lg:gap-4">
-        <div className="w-full h-auto flex flex-col items-center justify-start rounded m-auto">
+        <div className="w-[350px] h-[350px] flex flex-col items-center justify-start rounded m-auto">
           <Iframe
             url="https://youtube.com/embed/Hkw_DshpD9k"
             width="350px"
             height="350px"
             className="rounded"
           ></Iframe>
+         
         </div>
-        <div className="w-full h-auto flex flex-col items-center justify-start rounded m-auto">
+        <div className="w-[350px] h-[350px] flex flex-col items-center justify-start rounded m-auto">
           <Iframe
             url="https://www.youtube.com/embed/fcvBBfiToCk"
             width="350px"
             height="350px"
             className="rounded"
           ></Iframe>
+          
         </div>
-        <div className="w-full h-auto flex flex-col items-center justify-start rounded m-auto">
+        <div className="w-[350px] h-[350px] flex flex-col items-center justify-start rounded m-auto">
           <Iframe
             url="https://www.youtube.com/embed/xkc5BG0lylY"
             width="350px"
             height="350px"
             className="rounded"
           ></Iframe>
+          
         </div>
-        <div className="w-full h-auto flex flex-col items-center justify-start rounded m-auto">
+        <div className="w-[350px] h-[350px] flex flex-col items-center justify-start rounded m-auto">
           <Iframe
             url="https://www.youtube.com/embed/fkRwxSoD6Ro"
             width="350px"
             height="350px"
             className="rounded"
           ></Iframe>
+         
         </div>
-        <div className="w-full h-auto flex flex-col items-center justify-start rounded m-auto">
+        <div className="w-[350px] h-[350px] flex flex-col items-center justify-start rounded m-auto">
           <Iframe
             url="https://www.youtube.com/embed/jMkMuVtViAo"
             width="350px"
             height="350px"
             className="rounded"
           ></Iframe>
+          
         </div>
-        <div className="w-full h-auto flex flex-col items-center justify-start rounded m-auto">
+        <div className="w-[350px] h-[350px] flex flex-col items-center justify-start rounded m-auto">
           <Iframe
             url="https://www.youtube.com/embed/fb4wdTeRYj0"
             width="350px"
             height="350px"
             className="rounded"
           ></Iframe>
+          
         </div>
       </div>
     </div>

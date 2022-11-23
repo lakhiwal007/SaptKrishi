@@ -99,6 +99,14 @@ const Supporters: NextComponentType = () => {
           </div>
           <div className="slide">
             <Image
+              src="/src/supporters/nexus-logo.png"
+              width={500}
+              height={400}
+              className="rounded object-contain"
+            ></Image>
+          </div>
+          <div className="slide">
+            <Image
               src="/src/supporters/siicllogoAssetLOf.png"
               width={650}
               height={150}
@@ -181,6 +189,14 @@ const Supporters: NextComponentType = () => {
               src="/src/supporters/rkvy.jpeg"
               width={200}
               height={200}
+              className="rounded object-contain"
+            ></Image>
+          </div>
+          <div className="slide">
+            <Image
+              src="/src/supporters/nexus-logo.png"
+              width={600}
+              height={500}
               className="rounded object-contain"
             ></Image>
           </div>

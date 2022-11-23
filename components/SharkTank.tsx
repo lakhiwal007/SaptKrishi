@@ -43,6 +43,7 @@ const SharkTank: NextComponentType = () => {
               height={350}
               className="object-fit rounded"
               alt="Image 1"
+              placeholder="blur"
             ></Image>
           </SplideSlide>
           <SplideSlide className="flex items-center justify-center">
@@ -52,6 +53,7 @@ const SharkTank: NextComponentType = () => {
               height={350}
               className="object-fit rounded"
               alt="Image 2"
+              placeholder="blur"
             ></Image>
           </SplideSlide>
           <SplideSlide className="flex items-center justify-center">
@@ -61,6 +63,7 @@ const SharkTank: NextComponentType = () => {
               height={350}
               className="object-fit rounded"
               alt="Image 1"
+              placeholder="blur"
             ></Image>
           </SplideSlide>
           <SplideSlide className="flex items-center justify-center">
@@ -70,6 +73,7 @@ const SharkTank: NextComponentType = () => {
               height={350}
               className="object-fit rounded"
               alt="Image 2"
+              placeholder="blur"
             ></Image>
           </SplideSlide>
           <SplideSlide className="flex items-center justify-center">
@@ -79,6 +83,7 @@ const SharkTank: NextComponentType = () => {
               height={350}
               className="object-fit rounded"
               alt="Image 1"
+              placeholder="blur"
             ></Image>
           </SplideSlide>
           <SplideSlide className="flex items-center justify-center">
@@ -88,6 +93,7 @@ const SharkTank: NextComponentType = () => {
               height={350}
               className="object-fit rounded"
               alt="Image 2"
+              placeholder="blur"
             ></Image>
           </SplideSlide>
           <SplideSlide className="flex items-center justify-center">
@@ -97,6 +103,7 @@ const SharkTank: NextComponentType = () => {
               height={350}
               className="object-fit rounded"
               alt="Image 2"
+              placeholder="blur"
             ></Image>
           </SplideSlide>
         </Splide>

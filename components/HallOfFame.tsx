@@ -36,10 +36,12 @@ const HallOfFame: NextComponentType = () => {
       >
         <SplideSlide className=" w-full h-auto flex items-center justify-center relative">
           <Image
-            src="/src/gallery/modiji/modiji2.png"
+            src="/src/gallery/modiji/modiji2.webp"
             width={2000}
             height={1000}
             className="w-full h-full object-fit"
+            loading="eager"
+            priority
           ></Image>
           <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end bg-black opacity-40"></div>
           <div className="w-full h-full absolute lg:bottom-[20%] md:p-2 lg:p-8 flex flex-col items-center justify-end">
@@ -62,6 +64,7 @@ const HallOfFame: NextComponentType = () => {
             width={2000}
             height={1000}
             className="w-full h-full object-fit"
+            loading="eager"
           ></Image>
           <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end bg-black opacity-40"></div>
           <div className="w-full h-full absolute lg:bottom-[20%] md:p-2 lg:p-8 flex flex-col items-center justify-end">
@@ -82,6 +85,7 @@ const HallOfFame: NextComponentType = () => {
             width={2000}
             height={1000}
             className="w-full h-full object-fit"
+            loading="eager"
           ></Image>
           <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end bg-black opacity-40"></div>
           <div className="w-full h-full absolute lg:bottom-[20%] md:p-2 lg:p-8 flex flex-col items-center justify-end">
@@ -105,6 +109,7 @@ const HallOfFame: NextComponentType = () => {
             width={2000}
             height={1000}
             className="w-full h-full object-fit"
+            loading="eager"
           ></Image>
           <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end bg-black opacity-40"></div>
           <div className="w-full h-full absolute lg:bottom-[20%] md:p-2 lg:p-8 flex flex-col items-center justify-end">
@@ -122,10 +127,12 @@ const HallOfFame: NextComponentType = () => {
 
         <SplideSlide className=" w-full h-auto flex items-center justify-center relative">
           <Image
-            src="/src/HappyFace.JPG"
+            src="/src/HappyFace.webp"
             width={2000}
             height={1000}
             className="w-full h-full object-fit"
+            loading="eager"
+            priority
           ></Image>
           <div className="w-full h-full absolute top-0 flex flex-col items-center justify-end bg-black opacity-40"></div>
           <div className="w-full h-full absolute md:bottom-[30%] lg:bottom-[20%] md:p-2 lg:p-8 flex flex-col items-center justify-end">

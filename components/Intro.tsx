@@ -12,13 +12,15 @@ const Intro: NextComponentType = () => {
             src="/src/Thela-and-Box3D.png"
             width={524}
             height={434}
+            loading="eager"
+            
           ></Image>
         </div>
       </div>
       <div className="w-full flex items-center justify-center md:items-start md:justify-start">
         <div className="w-3/4 h-full flex flex-col items-center justify-center md:items-start">
           <h1 className="font-semibold pb-2 md:pb-4 text-6xl text-orange-600">
-            Sabji<span className="text-green-700">Kothi</span>
+            Sabji<span className="text-green-700re">Kothi</span>
           </h1>
           <div className="flex items-center justify-center md:items-start">
             <p className="text-xl text-justify">

@@ -52,6 +52,7 @@ const Modiji: NextComponentType = () => {
               height={350}
               className="object-fit rounded"
               alt="Image 2"
+              
             ></Image>
           </SplideSlide>
           <SplideSlide className="flex items-center justify-center">
@@ -61,6 +62,7 @@ const Modiji: NextComponentType = () => {
               height={350}
               className="object-fit rounded"
               alt="Image 3"
+              
             ></Image>
           </SplideSlide>
           <SplideSlide className="flex items-center justify-center">
@@ -70,6 +72,7 @@ const Modiji: NextComponentType = () => {
               height={350}
               className="object-fit rounded"
               alt="Image 4"
+              
             ></Image>
           </SplideSlide>
         </Splide>
